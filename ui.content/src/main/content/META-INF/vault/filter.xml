@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/ipp-bikes" mode="merge"/>
+    <filter root="/content/ipp-bikes" mode="merge"/>
+    <filter root="/content/dam/ipp-bikes/asset.jpg" mode="merge"/>
+    <filter root="/content/experience-fragments/ipp-bikes" mode="merge"/>
+</workspaceFilter>

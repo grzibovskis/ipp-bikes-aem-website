@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/ipp-bikes/clientlibs"/>
+    <filter root="/apps/ipp-bikes/components"/>
+    <filter root="/apps/ipp-bikes/i18n"/>
+</workspaceFilter>
