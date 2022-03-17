@@ -3,9 +3,9 @@ We are a group of AEM-dev interns in Accenture. With most of our current roadmap
 The goal is to put our limited knowledge to the test, and become a better at working with AEM. Also learn to use GitHub. 
 
 ### Our group consists of -
-    Ivars Knets, Līga Rozite, Verners Grizbovskis;
+Ivars Knets; Līga Rozite; Verners Grizbovskis;
 
 ### Some hints -
-    - When you preformed changes on a page in AEM, to snyc it to the local files go to "ui.content/src/main/content/jcr_root/content/ipp-bikes" and "Import" on that, or just the whole "jcr_root" folder a bit above. And then you can push it to github.  
+- When you preformed changes on a page in AEM, to snyc it to the local files go to "ui.content/src/main/content/jcr_root/content/ipp-bikes" and "Import" on that. Or just "Import" the whole "jcr_root" folder a bit above. And then you can push it to github.  
 
 # Good luck, have fun! 
