@@ -2,8 +2,8 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2022-03-17T10:02:13.795+02:00"
-        cq:lastModifiedBy="reference-adjustment-service"
+        cq:lastModified="{Date}2022-03-17T14:34:15.193+02:00"
+        cq:lastModifiedBy="admin"
         cq:tags="[]"
         cq:template="/conf/ipp-bikes/settings/wcm/templates/xf-web-variation"
         cq:xfMasterVariation="{Boolean}true"
@@ -15,22 +15,42 @@
             jcr:primaryType="nt:unstructured"
             sling:resourceType="ipp-bikes/components/container"
             layout="simple">
-            <navigation
+            <_1_copy jcr:primaryType="nt:unstructured"/>
+            <title
+                jcr:created="{Date}2022-03-17T14:33:39.641+02:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2022-03-17T14:34:15.116+02:00"
+                jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="ipp-bikes/components/navigation"
-                collectAllPages="false"
-                navigationRoot="/content/ipp-bikes/language-masters/en"
-                skipNavigationRoot="false"
-                structureDepth="1"/>
+                jcr:title="Brand Logo =)"
+                sling:resourceType="ipp-bikes/components/title"
+                linkURL="/content/ipp-bikes/language-masters/en"
+                type="h1"/>
             <languagenavigation
+                jcr:created="{Date}2022-03-17T12:44:20.348+02:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2022-03-17T12:44:20.348+02:00"
+                jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="ipp-bikes/components/languagenavigation"
-                navigationRoot="/content/ipp-bikes/us"
-                structureDepth="2"/>
+                sling:resourceType="ipp-bikes/components/languagenavigation">
+                <cq:responsive jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:primaryType="nt:unstructured"
+                        offset="7"
+                        width="5"/>
+                </cq:responsive>
+            </languagenavigation>
             <search
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="ipp-bikes/components/search"
-                searchRoot="/content/ipp-bikes/us"/>
+                searchRoot="/content/ipp-bikes/us">
+                <cq:responsive jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:primaryType="nt:unstructured"
+                        offset="9"
+                        width="3"/>
+                </cq:responsive>
+            </search>
             <logo/>
         </root>
     </jcr:content>
