@@ -4,7 +4,9 @@
     <jcr:content
         cq:allowedTemplates="[/conf/ipp-bikes/settings/wcm/templates/(?!xf-).*]"
         cq:conf="/conf/ipp-bikes"
-        cq:redirectTarget="/content/ipp-bikes/us/en"
+        cq:lastModified="{Date}2022-03-17T10:02:13.794+02:00"
+        cq:lastModifiedBy="reference-adjustment-service"
+        cq:redirectTarget="/content/ipp-bikes/language-masters/en"
         cq:template="/conf/ipp-bikes/settings/wcm/templates/page-content"
         jcr:primaryType="cq:PageContent"
         jcr:title="IPP Bikes"
@@ -16,5 +18,5 @@
             <file/>
         </image>
     </jcr:content>
-    <us/>
+    <language-masters/>
 </jcr:root>

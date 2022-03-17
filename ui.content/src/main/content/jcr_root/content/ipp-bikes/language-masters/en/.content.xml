@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        pageTitle="IPP Bikes"
-        jcr:primaryType="cq:PageContent"
-        jcr:title="en"
         cq:contextHubPath="/etc/cloudsettings/default/contexthub"
         cq:contextHubSegmentsPath="/etc/segmentation/contexthub"
+        cq:lastModified="{Date}2022-03-17T10:10:57.402+02:00"
+        cq:lastModifiedBy="admin"
         cq:template="/conf/ipp-bikes/settings/wcm/templates/page-content"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="English Home"
+        jcr:uuid="175e7dfd-12c8-4443-afe5-8b9c130de3c4"
         sling:resourceType="ipp-bikes/components/page"
-    >
+        pageTitle="IPP Bikes">
         <root
             jcr:primaryType="nt:unstructured"
             sling:resourceType="ipp-bikes/components/container"
@@ -18,19 +22,37 @@
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="ipp-bikes/components/container">
                 <title
+                    jcr:lastModified="{Date}2022-03-17T10:08:12.269+02:00"
+                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
+                    jcr:title="Intern Practice Project - Bikes"
                     sling:resourceType="ipp-bikes/components/title"/>
                 <container
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="ipp-bikes/components/container"
                     layout="responsiveGrid">
+                    <image
+                        jcr:created="{Date}2022-03-17T10:10:37.316+02:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-03-17T10:10:57.398+02:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="ipp-bikes/components/image"
+                        altValueFromDAM="true"
+                        displayPopupTitle="true"
+                        fileReference="/content/dam/ipp-bikes/asset.jpg"
+                        isDecorative="false"
+                        titleValueFromDAM="true"/>
                     <teaser
                         jcr:description="&lt;p>Don't stop half way, go for the top!&lt;/p>&#xd;&#xa;"
+                        jcr:lastModified="{Date}2022-03-17T10:09:26.806+02:00"
+                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         jcr:title="Epic Journey"
                         sling:resourceType="ipp-bikes/components/teaser"
                         actionsEnabled="false"
                         descriptionFromPage="false"
+                        fileReference="/content/dam/wknd/asset.jpg"
                         textIsRich="true"
                         titleFromPage="false">
                         <cq:responsive jcr:primaryType="nt:unstructured">
@@ -42,11 +64,14 @@
                     </teaser>
                     <teaser_copy
                         jcr:description="&lt;p>Don't stop half way, go for the top!&lt;/p>&#xd;&#xa;"
+                        jcr:lastModified="{Date}2022-03-17T10:09:31.529+02:00"
+                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         jcr:title="Epic Journey"
                         sling:resourceType="ipp-bikes/components/teaser"
                         actionsEnabled="false"
                         descriptionFromPage="false"
+                        fileReference="/content/dam/wknd/asset.jpg"
                         textIsRich="true"
                         titleFromPage="false">
                         <cq:responsive jcr:primaryType="nt:unstructured">
@@ -58,11 +83,14 @@
                     </teaser_copy>
                     <teaser_copy_1579324932
                         jcr:description="&lt;p>Don't stop half way, go for the top!&lt;/p>&#xd;&#xa;"
+                        jcr:lastModified="{Date}2022-03-17T10:09:35.984+02:00"
+                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         jcr:title="Epic Journey"
                         sling:resourceType="ipp-bikes/components/teaser"
                         actionsEnabled="false"
                         descriptionFromPage="false"
+                        fileReference="/content/dam/wknd/asset.jpg"
                         textIsRich="true"
                         titleFromPage="false">
                         <cq:responsive jcr:primaryType="nt:unstructured">
@@ -72,10 +100,15 @@
                                 width="4"/>
                         </cq:responsive>
                     </teaser_copy_1579324932>
-                    <helloworld
+                    <text
+                        jcr:created="{Date}2022-03-17T10:09:49.512+02:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-03-17T10:10:14.760+02:00"
+                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="ipp-bikes/components/helloworld"
-                        text="lalala :)"/>
+                        sling:resourceType="ipp-bikes/components/text"
+                        text="&lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p>&#xa;"
+                        textIsRich="true"/>
                 </container>
             </container>
         </root>
