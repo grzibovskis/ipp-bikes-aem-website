@@ -2,11 +2,11 @@
 <jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
     jcr:primaryType="cq:Template">
     <jcr:content
-        cq:lastModified="{Date}2022-03-18T12:40:53.727+02:00"
+        cq:lastModified="{Date}2022-03-18T12:01:42.270+02:00"
         cq:lastModifiedBy="admin"
-        cq:templateType="/conf/ipp-bikes/settings/wcm/template-types/xf"
-        jcr:description="My Site Experience Fragment Template"
+        cq:templateType="/conf/ipp-bikes/settings/wcm/template-types/page"
+        jcr:description="Just an template."
         jcr:primaryType="cq:PageContent"
-        jcr:title="Web Variation"
-        status="enabled"/>
+        jcr:title="Template__1"
+        status="draft"/>
 </jcr:root>
