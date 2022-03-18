@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2022-03-17T14:34:15.193+02:00"
+        cq:lastModified="{Date}2022-03-18T09:46:45.986+02:00"
         cq:lastModifiedBy="admin"
         cq:tags="[]"
         cq:template="/conf/ipp-bikes/settings/wcm/templates/xf-web-variation"
@@ -12,20 +12,32 @@
         jcr:title="Header"
         sling:resourceType="ipp-bikes/components/xfpage">
         <root
+            jcr:lastModified="{Date}2022-03-18T09:35:17.692+02:00"
+            jcr:lastModifiedBy="admin"
             jcr:primaryType="nt:unstructured"
             sling:resourceType="ipp-bikes/components/container"
-            layout="simple">
+            layout="responsiveGrid">
             <_1_copy jcr:primaryType="nt:unstructured"/>
-            <title
-                jcr:created="{Date}2022-03-17T14:33:39.641+02:00"
+            <image
+                jcr:created="{Date}2022-03-18T09:36:07.236+02:00"
                 jcr:createdBy="admin"
-                jcr:lastModified="{Date}2022-03-17T14:34:15.116+02:00"
+                jcr:lastModified="{Date}2022-03-18T09:46:40.953+02:00"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
-                jcr:title="Brand Logo =)"
-                sling:resourceType="ipp-bikes/components/title"
+                sling:resourceType="ipp-bikes/components/image"
+                altValueFromDAM="true"
+                displayPopupTitle="true"
+                fileReference="/content/dam/ipp-bikes/harley-davidson-brandlogo.net.png"
+                isDecorative="false"
                 linkURL="/content/ipp-bikes/language-masters/en"
-                type="h1"/>
+                titleValueFromDAM="true">
+                <cq:responsive jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:primaryType="nt:unstructured"
+                        offset="0"
+                        width="1"/>
+                </cq:responsive>
+            </image>
             <languagenavigation
                 jcr:created="{Date}2022-03-17T12:44:20.348+02:00"
                 jcr:createdBy="admin"
@@ -37,7 +49,7 @@
                     <default
                         jcr:primaryType="nt:unstructured"
                         offset="7"
-                        width="5"/>
+                        width="3"/>
                 </cq:responsive>
             </languagenavigation>
             <search
@@ -47,7 +59,7 @@
                 <cq:responsive jcr:primaryType="nt:unstructured">
                     <default
                         jcr:primaryType="nt:unstructured"
-                        offset="9"
+                        offset="7"
                         width="3"/>
                 </cq:responsive>
             </search>
