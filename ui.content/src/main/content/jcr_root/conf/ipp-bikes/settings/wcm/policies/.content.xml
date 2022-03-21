@@ -303,6 +303,16 @@
                         </assetToComponentMapping>
                     </cq:authoring>
                 </policy_1575040440977>
+                <policy_16557677044500
+                    jcr:lastModified="{Date}2022-03-18T12:47:49.763+02:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Container_image"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    components="[/libs/foundation/components/adaptiveimage,/libs/foundation/components/image,/libs/wcm/foundation/components/image,/libs/foundation/components/textimage,/libs/wcm/foundation/components/textimage]"
+                    layoutDisabled="false">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                </policy_16557677044500>
             </container>
             <teaser jcr:primaryType="nt:unstructured">
                 <policy_1575031387650
