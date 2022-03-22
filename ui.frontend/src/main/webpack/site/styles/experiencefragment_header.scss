@@ -78,10 +78,10 @@ header.experiencefragment {
     //== Search
         .cmp-search__field {
             display: flex;
-            margin: -3px 0;
+            margin: 13px auto; //margin: -3px 0;
         }
         .cmp-search__input {
-            height: 26px;
+            height: 32px; //26px;
         }
     //!! Search
 
@@ -96,6 +96,7 @@ header.experiencefragment {
             button{
                 height: 32px;
                 font-size: 10px;
+                font-weight: bold;
                 border: none;
                 background-color: black;
                 color: white;
@@ -115,10 +116,10 @@ header.experiencefragment {
             button{
                 height: 64px;
                 font-size: 10px;
+                font-weight: bold;
                 border: none;
                 background-color: white;
                 color: black;
-                font-weight: bold;
         
                 &:hover{
                     cursor: pointer;
@@ -139,8 +140,9 @@ header.experiencefragment {
                 li {
                     height: 64px;
                     font-family: "Secondary-Font-Bold","NotoSans-Bold",sans-serif ;
-                    font-size: 18px;
+                    font-size: 1.1rem;
                     font-weight: 700;
+                    text-transform: uppercase;
                     line-height: 40px;
                     padding: 12px 16px;
 
