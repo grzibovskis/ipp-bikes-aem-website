@@ -275,7 +275,7 @@
                 </policy_649128221558427>
                 <policy_1575040440977
                     jcr:description="Allows the template components and defines the component mapping (this configures what components should be automatically created when authors drop assets from the content finder to the page editor)."
-                    jcr:lastModified="{Date}2022-03-22T09:41:55.357+02:00"
+                    jcr:lastModified="{Date}2022-03-23T12:03:21.426+02:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="XF Root - Modified"
@@ -342,6 +342,66 @@
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                 </policy>
             </page>
+            <material-button jcr:primaryType="nt:unstructured">
+                <policy_1648199054898
+                    jcr:lastModified="{Date}2022-03-25T11:52:55.393+02:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Material Button - Policy 1"
+                    sling:resourceType="wcm/core/components/policy/policy">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                    <cq:styleGroups jcr:primaryType="nt:unstructured">
+                        <item0
+                            cq:styleGroupLabel="Alignment"
+                            jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                    cq:styleClasses="cmp-mat_btn-vertical"
+                                    cq:styleId="1648199058010"
+                                    cq:styleLabel="Vertical"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item1
+                                    cq:styleClasses="cmp-mat_btn-horizontal_left"
+                                    cq:styleId="1648199075579"
+                                    cq:styleLabel="Horizontal - Icon Left"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item2
+                                    cq:styleClasses="cmp-mat_btn-horizontal_right"
+                                    cq:styleId="1648200560538"
+                                    cq:styleLabel="Horizontal - Icon Right"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item0>
+                        <item1
+                            cq:styleGroupLabel="Size"
+                            jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                    cq:styleClasses="cmp-mat_btn-large"
+                                    cq:styleId="1648200519826"
+                                    cq:styleLabel="Large"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item1>
+                        <item2
+                            cq:styleGroupLabel="Content"
+                            jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                    cq:styleClasses="cmp-mat_btn-noText"
+                                    cq:styleId="1648201941031"
+                                    cq:styleLabel="No Text"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item1
+                                    cq:styleClasses="cmp-mat_btn-noIcon"
+                                    cq:styleId="1648201942567"
+                                    cq:styleLabel="No Icon"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item2>
+                    </cq:styleGroups>
+                </policy_1648199054898>
+            </material-button>
         </components>
     </ipp-bikes>
 </jcr:root>

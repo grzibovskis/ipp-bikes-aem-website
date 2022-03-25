@@ -6,7 +6,7 @@
     
     jcr:primaryType="cq:Component"
     sling:resourceSuperType="core/wcm/components/button/v2/button"
-    jcr:title="Navigation Menu"
-    jcr:description="A Navigation Menu for the sites header."
-    componentGroup="IPP Bikes - Structure"
+    jcr:title="Button - Material Icon"
+    jcr:description="A standart button with support for Material Icons."
+    componentGroup="IPP Bikes - Content"
 />

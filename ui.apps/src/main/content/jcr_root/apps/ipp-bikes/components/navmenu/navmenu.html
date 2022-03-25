@@ -1,5 +1,19 @@
+<sly data-sly-use.tabs="com.adobe.aem.ipp.bikes.core.models.NavigationMenu" />
+<sly 
+    data-sly-test="${wcmmode.edit}" 
+    data-emptytext="Navigation Menu" 
+    class="cq-placeholder" 
+/>
 
-<div data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html">
-
+<h2>Tabs</h2>
+<div class="tab">
+    <sly data-sly-list.item="${tabs.tabItems}">
+    <button class="tablinks" onclick="openCity(event, '${item.title @ context=html}')">${item.title}</button>
+    </sly>
 </div>
-<sly data-sly-call="${placeholderTemplate.placeholder @ isEmpty = true}"></sly>
+
+<sly data-sly-list.item="${tabs.tabItems}">
+    <div id="${item.title}" class="tabcontent">
+        <sly data-sly-resource="${item.tabId @ resourceType='wcm/foundation/components/responsivegrid'}"/>
+    </div>
+</sly>

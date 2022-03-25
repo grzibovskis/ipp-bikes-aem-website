@@ -1,0 +1,5 @@
+
+/* == hiding tab-id input field in the dialog menu */
+input.tab-id {
+	display:none !important;
+}

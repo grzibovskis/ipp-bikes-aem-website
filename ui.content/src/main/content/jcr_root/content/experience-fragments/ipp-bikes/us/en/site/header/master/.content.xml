@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2022-03-22T13:30:06.959+02:00"
+        cq:lastModified="{Date}2022-03-25T12:08:33.255+02:00"
         cq:lastModifiedBy="admin"
         cq:template="/conf/ipp-bikes/settings/wcm/templates/xf-web-variation"
         cq:xfMasterVariation="{Boolean}true"
@@ -11,67 +11,44 @@
         jcr:title="Header - IPP Bikes"
         sling:resourceType="ipp-bikes/components/xfpage">
         <root
-            jcr:lastModified="{Date}2022-03-21T11:17:10.685+02:00"
+            jcr:lastModified="{Date}2022-03-24T14:41:27.791+02:00"
             jcr:lastModifiedBy="admin"
             jcr:primaryType="nt:unstructured"
-            sling:resourceType="ipp-bikes/components/container"
-            layout="responsiveGrid">
+            sling:resourceType="ipp-bikes/components/container">
             <_1_copy jcr:primaryType="nt:unstructured"/>
             <logo/>
             <container
                 jcr:created="{Date}2022-03-21T11:53:06.473+02:00"
                 jcr:createdBy="admin"
-                jcr:lastModified="{Date}2022-03-21T12:03:07.472+02:00"
+                jcr:lastModified="{Date}2022-03-22T15:18:02.120+02:00"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="ipp-bikes/components/container"
                 id="header-container-top"
                 layout="responsiveGrid">
-                <button
-                    jcr:created="{Date}2022-03-21T12:01:10.759+02:00"
+                <list
+                    jcr:created="{Date}2022-03-25T09:20:14.305+02:00"
                     jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2022-03-21T12:01:30.289+02:00"
+                    jcr:lastModified="{Date}2022-03-25T09:25:39.049+02:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    jcr:title="Dealer Locator"
-                    sling:resourceType="ipp-bikes/components/button">
+                    sling:resourceType="ipp-bikes/components/list"
+                    childDepth="1"
+                    id="header-top-linklist"
+                    linkItems="true"
+                    listFrom="static"
+                    pages="[/content/ipp-bikes/language-masters/en/dealer-locator,/content/ipp-bikes/language-masters/en/test-ride,/content/ipp-bikes/language-masters/en/track-order]"
+                    showDescription="false"
+                    showModificationDate="false"
+                    sortOrder="asc"
+                    tagsMatch="any">
                     <cq:responsive jcr:primaryType="nt:unstructured">
                         <default
                             jcr:primaryType="nt:unstructured"
                             offset="5"
-                            width="2"/>
+                            width="5"/>
                     </cq:responsive>
-                </button>
-                <button_1810052484
-                    jcr:created="{Date}2022-03-21T12:01:12.544+02:00"
-                    jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2022-03-21T12:01:39.092+02:00"
-                    jcr:lastModifiedBy="admin"
-                    jcr:primaryType="nt:unstructured"
-                    jcr:title="Test Ride"
-                    sling:resourceType="ipp-bikes/components/button">
-                    <cq:responsive jcr:primaryType="nt:unstructured">
-                        <default
-                            jcr:primaryType="nt:unstructured"
-                            offset="0"
-                            width="2"/>
-                    </cq:responsive>
-                </button_1810052484>
-                <button_872109480
-                    jcr:created="{Date}2022-03-21T12:01:13.915+02:00"
-                    jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2022-03-21T12:01:46.919+02:00"
-                    jcr:lastModifiedBy="admin"
-                    jcr:primaryType="nt:unstructured"
-                    jcr:title="Track Order"
-                    sling:resourceType="ipp-bikes/components/button">
-                    <cq:responsive jcr:primaryType="nt:unstructured">
-                        <default
-                            jcr:primaryType="nt:unstructured"
-                            offset="0"
-                            width="1"/>
-                    </cq:responsive>
-                </button_872109480>
+                </list>
                 <languagenavigation
                     jcr:created="{Date}2022-03-21T11:58:14.729+02:00"
                     jcr:createdBy="admin"
@@ -92,7 +69,7 @@
             <container_1348204993
                 jcr:created="{Date}2022-03-18T12:07:21.057+02:00"
                 jcr:createdBy="admin"
-                jcr:lastModified="{Date}2022-03-21T11:16:31.124+02:00"
+                jcr:lastModified="{Date}2022-03-22T15:17:42.629+02:00"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="ipp-bikes/components/container"
@@ -229,38 +206,57 @@
                             width="1"/>
                     </cq:responsive>
                 </search>
-                <button
-                    jcr:created="{Date}2022-03-18T13:50:45.304+02:00"
+                <container
+                    jcr:created="{Date}2022-03-24T14:42:31.475+02:00"
                     jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2022-03-22T09:12:59.703+02:00"
+                    jcr:lastModified="{Date}2022-03-24T14:43:14.462+02:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    jcr:title="Sign In"
-                    sling:resourceType="ipp-bikes/components/button"
-                    icon="sign-in-icon">
+                    sling:resourceType="ipp-bikes/components/container"
+                    layout="responsiveGrid">
+                    <material_button
+                        jcr:created="{Date}2022-03-24T10:28:57.620+02:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-03-24T11:47:32.590+02:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Sign In"
+                        sling:resourceType="ipp-bikes/components/material-button"
+                        icon="person"
+                        id="header-btn-login"
+                        linkTarget="_self">
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="0"
+                                width="1"/>
+                        </cq:responsive>
+                    </material_button>
+                    <material_button_9739
+                        jcr:created="{Date}2022-03-24T11:25:57.767+02:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-03-24T11:26:29.931+02:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Cart (--)"
+                        sling:resourceType="ipp-bikes/components/material-button"
+                        icon="shopping_cart"
+                        id="header-btn-cart"
+                        linkTarget="_self">
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="0"
+                                width="1"/>
+                        </cq:responsive>
+                    </material_button_9739>
                     <cq:responsive jcr:primaryType="nt:unstructured">
                         <default
                             jcr:primaryType="nt:unstructured"
                             offset="1"
-                            width="1"/>
+                            width="2"/>
                     </cq:responsive>
-                </button>
-                <button_44914121
-                    jcr:created="{Date}2022-03-18T13:50:47.487+02:00"
-                    jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2022-03-21T11:14:28.124+02:00"
-                    jcr:lastModifiedBy="admin"
-                    jcr:primaryType="nt:unstructured"
-                    jcr:title="Cart  (--)"
-                    sling:resourceType="ipp-bikes/components/button"
-                    icon="cart">
-                    <cq:responsive jcr:primaryType="nt:unstructured">
-                        <default
-                            jcr:primaryType="nt:unstructured"
-                            offset="0"
-                            width="1"/>
-                    </cq:responsive>
-                </button_44914121>
+                </container>
             </container_1348204993>
         </root>
         <cq:metadata jcr:primaryType="nt:unstructured"/>
