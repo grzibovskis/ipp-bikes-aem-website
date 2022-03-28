@@ -9,6 +9,6 @@ buildNumber.properties
 .mvn/timing.properties
 .mvn/wrapper/maven-wrapper.jar
 
-/ui.frontend/node_modules
+node_modules
 /ui.frontend/src/main/webpack/static/index.html
 /.vscode

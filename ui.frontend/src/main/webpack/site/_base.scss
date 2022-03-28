@@ -7,7 +7,8 @@ body {
     font-family: $font-family;
     line-height: $font-height;
     color:       $color-foreground;
-    background:  $color-background;
+    background:  $color-background url("/content/dam/ipp-bikes/page-background.png")  repeat-y; 
+    //=IK= the src is found by making the image an asset, putting it on a page, and finding the "file:Reference" of the image component in CRXDE 
 /*
     @media (prefers-color-scheme: dark) {
         color:       $color-foreground-dark;
