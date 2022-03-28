@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2022-03-25T12:08:33.255+02:00"
+        cq:lastModified="{Date}2022-03-25T14:31:17.408+02:00"
         cq:lastModifiedBy="admin"
         cq:template="/conf/ipp-bikes/settings/wcm/templates/xf-web-variation"
         cq:xfMasterVariation="{Boolean}true"
@@ -11,16 +11,17 @@
         jcr:title="Header - IPP Bikes"
         sling:resourceType="ipp-bikes/components/xfpage">
         <root
-            jcr:lastModified="{Date}2022-03-24T14:41:27.791+02:00"
+            jcr:lastModified="{Date}2022-03-21T11:17:10.685+02:00"
             jcr:lastModifiedBy="admin"
             jcr:primaryType="nt:unstructured"
-            sling:resourceType="ipp-bikes/components/container">
+            sling:resourceType="ipp-bikes/components/container"
+            layout="responsiveGrid">
             <_1_copy jcr:primaryType="nt:unstructured"/>
             <logo/>
             <container
                 jcr:created="{Date}2022-03-21T11:53:06.473+02:00"
                 jcr:createdBy="admin"
-                jcr:lastModified="{Date}2022-03-22T15:18:02.120+02:00"
+                jcr:lastModified="{Date}2022-03-21T12:03:07.472+02:00"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="ipp-bikes/components/container"
@@ -69,7 +70,7 @@
             <container_1348204993
                 jcr:created="{Date}2022-03-18T12:07:21.057+02:00"
                 jcr:createdBy="admin"
-                jcr:lastModified="{Date}2022-03-22T15:17:42.629+02:00"
+                jcr:lastModified="{Date}2022-03-21T11:16:31.124+02:00"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="ipp-bikes/components/container"

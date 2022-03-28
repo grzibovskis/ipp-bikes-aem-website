@@ -275,7 +275,7 @@
                 </policy_649128221558427>
                 <policy_1575040440977
                     jcr:description="Allows the template components and defines the component mapping (this configures what components should be automatically created when authors drop assets from the content finder to the page editor)."
-                    jcr:lastModified="{Date}2022-03-23T12:03:21.426+02:00"
+                    jcr:lastModified="{Date}2022-03-22T09:41:55.357+02:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="XF Root - Modified"
@@ -306,8 +306,8 @@
                         </assetToComponentMapping>
                     </cq:authoring>
                 </policy_1575040440977>
-                <policy_8789948583199
-                    jcr:lastModified="{Date}2022-03-28T09:56:43.852+03:00"
+                <policy_606330209028100
+                    jcr:lastModified="{Date}2022-03-28T10:34:37.291+03:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Container - Custom Policy"
@@ -321,34 +321,34 @@
                             <cq:styles jcr:primaryType="nt:unstructured">
                                 <item0
                                     cq:styleClasses="cmp-container-color_white"
-                                    cq:styleId="1648450175572"
+                                    cq:styleId="1648452712668"
                                     cq:styleLabel="White"
                                     jcr:primaryType="nt:unstructured"/>
                                 <item1
                                     cq:styleClasses="cmp-container-color_black"
-                                    cq:styleId="1648450191527"
+                                    cq:styleId="1648452733906"
                                     cq:styleLabel="Black"
                                     jcr:primaryType="nt:unstructured"/>
                             </cq:styles>
                         </item0>
                         <item1
-                            cq:styleGroupLabel="Padding"
+                            cq:styleGroupLabel="Padding - Vertical"
                             jcr:primaryType="nt:unstructured">
                             <cq:styles jcr:primaryType="nt:unstructured">
                                 <item0
                                     cq:styleClasses="cmp-container-pad_vert_small"
-                                    cq:styleId="1648450574404"
-                                    cq:styleLabel="Vertical - Small"
+                                    cq:styleId="1648452753739"
+                                    cq:styleLabel=" Small"
                                     jcr:primaryType="nt:unstructured"/>
                                 <item1
                                     cq:styleClasses="cmp-container-pad_vert_large"
-                                    cq:styleId="1648450587959"
-                                    cq:styleLabel="Vertical - Large"
+                                    cq:styleId="1648452867778"
+                                    cq:styleLabel="Large"
                                     jcr:primaryType="nt:unstructured"/>
                             </cq:styles>
                         </item1>
                     </cq:styleGroups>
-                </policy_8789948583199>
+                </policy_606330209028100>
             </container>
             <teaser jcr:primaryType="nt:unstructured">
                 <policy_1575031387650
@@ -387,7 +387,7 @@
             </page>
             <material-button jcr:primaryType="nt:unstructured">
                 <policy_1648199054898
-                    jcr:lastModified="{Date}2022-03-25T11:52:55.393+02:00"
+                    jcr:lastModified="{Date}2022-03-25T13:44:48.850+02:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Material Button - Policy 1"
