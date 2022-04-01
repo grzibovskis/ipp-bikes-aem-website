@@ -2,7 +2,7 @@
 //== XF Header style, used on page template
 
 header.experiencefragment {
-    border-bottom: 1px solid $color-foreground;
+    //border-bottom: 1px solid $color-foreground;
 
     a {
         color: $color-foreground;
@@ -214,7 +214,7 @@ header.experiencefragment {
                 text-transform: uppercase;
                 color: #000;
                 
-                ol li{
+                li.cmp-tabs__tab{
                     //display: inline-block;
                     height: 64px;
                     line-height: 220%;
@@ -255,7 +255,7 @@ header.experiencefragment {
                         width: 20%;  
                         margin-bottom: 20px;
 
-                        ul li {                            
+                        li.cmp-navigation__item {                            
                             list-style: none;
                             background-color: white;   
 
@@ -266,6 +266,7 @@ header.experiencefragment {
                                 align-items: center;
                                 width: 100%;
                                 padding: 16px 0px;
+                                color: #000;
 
                                 &:hover {
                                     background-color: darkgray;
