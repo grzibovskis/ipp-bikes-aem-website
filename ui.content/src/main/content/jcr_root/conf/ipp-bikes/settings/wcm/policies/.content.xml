@@ -207,10 +207,13 @@
             <container jcr:primaryType="nt:unstructured">
                 <policy_1574694950110
                     jcr:description="Allows the template components and defines the component mapping (this configures what components should be automatically created when authors drop assets from the content finder to the page editor)."
+                    jcr:lastModified="{Date}2022-03-30T13:42:34.697+03:00"
+                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Page Root"
                     sling:resourceType="wcm/core/components/policy/policy"
-                    components="[group:IPP Bikes - Content,/apps/ipp-bikes/components/form/container,group:IPP Bikes - Structure]">
+                    components="[/libs/wcm/foundation/components/responsivegrid,group:IPP Bikes - Content,/apps/ipp-bikes/components/form/container,group:IPP Bikes - Structure]"
+                    layoutDisabled="false">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                     <cq:authoring jcr:primaryType="nt:unstructured">
                         <assetToComponentMapping jcr:primaryType="nt:unstructured">
