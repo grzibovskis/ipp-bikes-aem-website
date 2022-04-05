@@ -19,7 +19,6 @@ import static org.apache.sling.api.resource.ResourceResolver.PROPERTY_RESOURCE_T
 
 import javax.annotation.PostConstruct;
 
-import org.apache.commons.lang3.StringUtils;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.api.resource.ResourceResolver;
 import org.apache.sling.models.annotations.Default;
@@ -29,8 +28,8 @@ import org.apache.sling.models.annotations.injectorspecific.InjectionStrategy;
 import org.apache.sling.models.annotations.injectorspecific.OSGiService;
 import org.apache.sling.models.annotations.injectorspecific.SlingObject;
 import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
-import org.apache.sling.settings.SlingSettingsService;
 
+import com.adobe.xfa.ut.StringUtils;
 import com.day.cq.wcm.api.Page;
 import com.day.cq.wcm.api.PageManager;
 
@@ -46,20 +45,17 @@ public class HelloWorldModel {
     @Default(values="No resourceType")
     protected String resourceType;
 
-    @OSGiService
-    private SlingSettingsService settings;
-
     @SlingObject
     private Resource currentResource;
     @SlingObject
     private ResourceResolver resourceResolver;
 
-    private String message;
-
     @ValueMapValue
     private String title;
     @ValueMapValue
     private String text;
+
+    private String message;
 
     @PostConstruct
     protected void init() {
@@ -68,8 +64,8 @@ public class HelloWorldModel {
                 .map(pm -> pm.getContainingPage(currentResource))
                 .map(Page::getPath).orElse("");
 
-        message = "Helloooooooooo World!\n"
-            + "[HW] Resource type is : " + resourceType + "\n"
+        message = "Hello World!\n"
+            + "[HW] Resource type is: " + resourceType + "\n"
             + "[HW] Current page is:  " + currentPagePath + "\n";
     }
 
@@ -77,7 +73,7 @@ public class HelloWorldModel {
         return message;
     }
     public String getTitle() {
-        return StringUtils.isEmpty(title) ? "Hello, this is the default value!" : title;
+        return StringUtils.isEmpty(title) ? "Default title text!" : title;
     }
     public String getText() {
         return StringUtils.isEmpty(text) ? null : text.toUpperCase();
