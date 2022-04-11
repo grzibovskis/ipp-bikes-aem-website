@@ -1,0 +1,120 @@
+$main_background_color: #FFF;
+$inactive_background_color: #CCC;
+
+.cmp-navigationmenu {
+    background-color: $main_background_color;
+    width: 100%;
+    padding: 0;
+    font-family: "Secondary-Font-Bold","NotoSans-Bold",sans-serif ;
+
+    &__item-label {
+        font-weight: 700;
+        font-size: large;
+    }
+
+    ol li a {
+        text-transform: uppercase;
+        font-weight: 700;
+        text-decoration: none; 
+        color: black;
+
+        //the next three are to fill parent of anchro tag
+        display: flex;
+        //justify-content: center;
+        //align-items: center;
+        
+        transition: color 300ms;        
+    }
+
+    ol.cmp-navigationmenu__main-list{
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 0;
+        margin: 0px;
+        list-style: none;
+
+        li.cmp-navigationmenu__mainlist_item a.cmp-navigationmenu__main-link {
+            display: inline-block;
+            height: 64px;
+            line-height: 48px;
+            padding: 8px 20px;
+            
+            box-sizing: border-box;
+            cursor: pointer;
+            vertical-align: middle;
+            justify-content: center;
+
+            background-color: white;
+            color: black;
+            transition: background-color 200ms, color 200ms;
+
+            &:hover{
+                background-color: black;
+                color: white;
+            }
+            &:active{
+                background-color: blue;
+            }
+        }
+        
+            
+        li.cmp-navigationmenu__main-icon a {
+            height: 64px;
+            width: 64px;
+            padding: 0;
+
+            &:hover{
+                background-color: #EEE;
+                a{ color: black; }
+            }
+
+            img{
+                height: 64px;
+                width: 64px;
+            }
+        }
+    }
+
+    div.cmp-navigationmenu__sublist-main-container {
+        display: block;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: auto;
+        padding-left: 3em;
+        font-size: medium;
+        font-weight: 750;
+        background-color: $inactive_background_color;
+        z-index: 9999;
+
+        display: none;
+        &.visable { display: block; }
+
+        ol.cmp-navigationmenu__sub-list {
+            display: none;
+            margin: 0;
+            padding: 0;
+            &.active {
+                display: inline-block;
+                height: 100%;
+                list-style: none;
+                padding-bottom: 3em;
+                background-color: $main_background_color;
+            
+                li.cmp-navigationmenu__sublist_item {                    
+                    a{ 
+                        display: flex;
+                        height: 100%;
+                        padding: 1.2em 2em;    
+                
+                        &:hover {
+                            background-color: #DDD;
+                            color: #000; 
+                        }
+                    }
+                }
+
+            }//[IK]end of [.active]
+        }//[IK]end of [.ol.cmp-navigationmenu__sub-list]
+    }//[IK]end of [.cmp-navigationmenu__sublist-main-container]
+}//[IK]end of [.cmp-navigationmenu]

@@ -8,10 +8,11 @@
     xmlns:granite="http://www.adobe.com/jcr/granite/1.0"
     
     jcr:primaryType="nt:unstructured"
-    jcr:title="Navigation Menu"
+    jcr:title="Navigation Menu v1"
     sling:resourceType="cq/gui/components/authoring/dialog"
     extraClientlibs="[core.wcm.components.commons.editor.dialog.childreneditor.v1,core.wcm.components.tabs.v1.editor]"
-    trackingFeature="core-components:tabs:v1">
+    trackingFeature="core-components:tabs:v1"
+>
     <content
         granite:class="cmp-tabs__editor"
         jcr:primaryType="nt:unstructured">

@@ -4,7 +4,7 @@
     <jcr:content
         cq:contextHubPath="/etc/cloudsettings/default/contexthub"
         cq:contextHubSegmentsPath="/etc/segmentation/contexthub"
-        cq:lastModified="{Date}2022-04-04T15:55:00.299+03:00"
+        cq:lastModified="{Date}2022-04-05T15:05:54.454+03:00"
         cq:lastModifiedBy="admin"
         cq:template="/conf/ipp-bikes/settings/wcm/templates/page-content"
         jcr:isCheckedOut="{Boolean}true"
@@ -39,18 +39,6 @@
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="ipp-bikes/components/container">
-                        <image
-                            jcr:created="{Date}2022-03-17T10:10:37.316+02:00"
-                            jcr:createdBy="admin"
-                            jcr:lastModified="{Date}2022-03-30T09:58:41.755+03:00"
-                            jcr:lastModifiedBy="admin"
-                            jcr:primaryType="nt:unstructured"
-                            sling:resourceType="ipp-bikes/components/image"
-                            altValueFromDAM="true"
-                            displayPopupTitle="true"
-                            fileReference="/content/dam/ipp-bikes/asset.jpg"
-                            isDecorative="false"
-                            titleValueFromDAM="true"/>
                         <_content
                             jcr:created="{Date}2022-04-04T10:29:39.066+03:00"
                             jcr:createdBy="admin"
@@ -135,25 +123,74 @@
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="ipp-bikes/components/container"/>
                         </_content_1754642491>
-                        <navigation_menu_927200341
-                            jcr:created="{Date}2022-04-04T14:38:29.861+03:00"
+                        <image
+                            jcr:created="{Date}2022-03-17T10:10:37.316+02:00"
                             jcr:createdBy="admin"
-                            jcr:lastModified="{Date}2022-04-04T15:48:10.449+03:00"
+                            jcr:lastModified="{Date}2022-03-30T09:58:41.755+03:00"
                             jcr:lastModifiedBy="admin"
                             jcr:primaryType="nt:unstructured"
-                            sling:resourceType="ipp-bikes/components/navigation-menu"
-                            text="This is the Frequently Asked Questions page, or FAQ for short =)"/>
-                        <dropdown
-                            jcr:created="{Date}2022-04-01T14:30:40.344+03:00"
+                            sling:resourceType="ipp-bikes/components/image"
+                            altValueFromDAM="true"
+                            displayPopupTitle="true"
+                            fileReference="/content/dam/ipp-bikes/asset.jpg"
+                            isDecorative="false"
+                            titleValueFromDAM="true"/>
+                        <tabs
+                            jcr:created="{Date}2022-04-05T13:38:49.123+03:00"
                             jcr:createdBy="admin"
-                            jcr:lastModified="{Date}2022-04-04T15:55:00.286+03:00"
+                            jcr:lastModified="{Date}2022-04-05T15:04:58.295+03:00"
                             jcr:lastModifiedBy="admin"
                             jcr:primaryType="nt:unstructured"
-                            jcr:title="The Dropdown Menu Title"
-                            sling:resourceSuperType="foundation/components/form/defaults/field"
-                            sling:resourceType="foundation/components/form/dropdown"
-                            name="Container"
-                            options="[A,B,C]"/>
+                            sling:resourceType="ipp-bikes/components/tabs">
+                            <item_1
+                                cq:panelTitle="NavMenu v2"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Tab 1"
+                                sling:resourceType="ipp-bikes/components/container"
+                                layout="responsiveGrid">
+                                <navigation_menu
+                                    jcr:created="{Date}2022-04-05T11:20:49.042+03:00"
+                                    jcr:createdBy="admin"
+                                    jcr:lastModified="{Date}2022-04-05T11:21:04.148+03:00"
+                                    jcr:lastModifiedBy="admin"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="ipp-bikes/components/navigation-menu"
+                                    text="Its the end of this container as we know it."
+                                    title="NavMenu title"/>
+                            </item_1>
+                            <item_2
+                                cq:panelTitle="helloworld"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Tab 2"
+                                sling:resourceType="ipp-bikes/components/container"
+                                layout="responsiveGrid">
+                                <helloworld
+                                    jcr:created="{Date}2022-04-05T11:20:06.290+03:00"
+                                    jcr:createdBy="admin"
+                                    jcr:lastModified="{Date}2022-04-05T11:20:32.567+03:00"
+                                    jcr:lastModifiedBy="admin"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="ipp-bikes/components/helloworld"
+                                    text="This is the Frequently Asked Questions page, or FAQ for short =)"
+                                    title="Hello World title"/>
+                            </item_2>
+                            <item_1649160292228
+                                cq:panelTitle="Dropdown"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="ipp-bikes/components/container">
+                                <dropdown
+                                    jcr:created="{Date}2022-04-01T14:30:40.344+03:00"
+                                    jcr:createdBy="admin"
+                                    jcr:lastModified="{Date}2022-04-04T15:55:00.286+03:00"
+                                    jcr:lastModifiedBy="admin"
+                                    jcr:primaryType="nt:unstructured"
+                                    jcr:title="The Dropdown Menu Title"
+                                    sling:resourceSuperType="foundation/components/form/defaults/field"
+                                    sling:resourceType="foundation/components/form/dropdown"
+                                    name="Container"
+                                    options="[A,B,C]"/>
+                            </item_1649160292228>
+                        </tabs>
                     </container_431250027>
                     <container_1417719157
                         cq:styleIds="[1648452712668]"
@@ -275,99 +312,6 @@
                             text="&lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p>&#xa;"
                             textIsRich="true"/>
                     </container>
-                    <list
-                        jcr:created="{Date}2022-03-25T14:40:09.925+02:00"
-                        jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2022-03-25T14:42:08.045+02:00"
-                        jcr:lastModifiedBy="admin"
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="ipp-bikes/components/list"
-                        childDepth="1"
-                        linkItems="true"
-                        listFrom="static"
-                        pages="[/content/ipp-bikes/language-masters/en/dealer-locator,/content/ipp-bikes/language-masters/en]"
-                        showDescription="false"
-                        showModificationDate="false"
-                        sortOrder="asc"
-                        tagsMatch="any"/>
-                    <image
-                        jcr:created="{Date}2022-03-17T10:10:37.316+02:00"
-                        jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2022-03-17T10:10:57.398+02:00"
-                        jcr:lastModifiedBy="admin"
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="ipp-bikes/components/image"
-                        altValueFromDAM="true"
-                        displayPopupTitle="true"
-                        fileReference="/content/dam/ipp-bikes/asset.jpg"
-                        isDecorative="false"
-                        titleValueFromDAM="true"/>
-                    <teaser
-                        jcr:description="&lt;p>Don't stop half way, go for the top!&lt;/p>&#xd;&#xa;"
-                        jcr:lastModified="{Date}2022-03-17T10:09:26.806+02:00"
-                        jcr:lastModifiedBy="admin"
-                        jcr:primaryType="nt:unstructured"
-                        jcr:title="Epic Journey"
-                        sling:resourceType="ipp-bikes/components/teaser"
-                        actionsEnabled="false"
-                        descriptionFromPage="false"
-                        fileReference="/content/dam/wknd/asset.jpg"
-                        textIsRich="true"
-                        titleFromPage="false">
-                        <cq:responsive jcr:primaryType="nt:unstructured">
-                            <default
-                                jcr:primaryType="nt:unstructured"
-                                offset="0"
-                                width="4"/>
-                        </cq:responsive>
-                    </teaser>
-                    <teaser_copy
-                        jcr:description="&lt;p>Don't stop half way, go for the top!&lt;/p>&#xd;&#xa;"
-                        jcr:lastModified="{Date}2022-03-17T10:09:31.529+02:00"
-                        jcr:lastModifiedBy="admin"
-                        jcr:primaryType="nt:unstructured"
-                        jcr:title="Epic Journey"
-                        sling:resourceType="ipp-bikes/components/teaser"
-                        actionsEnabled="false"
-                        descriptionFromPage="false"
-                        fileReference="/content/dam/wknd/asset.jpg"
-                        textIsRich="true"
-                        titleFromPage="false">
-                        <cq:responsive jcr:primaryType="nt:unstructured">
-                            <default
-                                jcr:primaryType="nt:unstructured"
-                                offset="0"
-                                width="4"/>
-                        </cq:responsive>
-                    </teaser_copy>
-                    <teaser_copy_1579324932
-                        jcr:description="&lt;p>Don't stop half way, go for the top!&lt;/p>&#xd;&#xa;"
-                        jcr:lastModified="{Date}2022-03-17T10:09:35.984+02:00"
-                        jcr:lastModifiedBy="admin"
-                        jcr:primaryType="nt:unstructured"
-                        jcr:title="Epic Journey"
-                        sling:resourceType="ipp-bikes/components/teaser"
-                        actionsEnabled="false"
-                        descriptionFromPage="false"
-                        fileReference="/content/dam/wknd/asset.jpg"
-                        textIsRich="true"
-                        titleFromPage="false">
-                        <cq:responsive jcr:primaryType="nt:unstructured">
-                            <default
-                                jcr:primaryType="nt:unstructured"
-                                offset="0"
-                                width="4"/>
-                        </cq:responsive>
-                    </teaser_copy_1579324932>
-                    <button
-                        jcr:created="{Date}2022-03-25T14:27:15.736+02:00"
-                        jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2022-03-25T14:27:25.075+02:00"
-                        jcr:lastModifiedBy="admin"
-                        jcr:primaryType="nt:unstructured"
-                        jcr:title="test"
-                        sling:resourceType="ipp-bikes/components/button"
-                        icon="person"/>
                 </container>
             </container>
         </root>

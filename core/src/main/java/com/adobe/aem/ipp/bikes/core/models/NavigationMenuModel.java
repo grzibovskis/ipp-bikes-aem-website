@@ -1,23 +1,11 @@
-/*
- *  Copyright 2015 Adobe Systems Incorporated
- *
- *  Licensed under the Apache License, Version 2.0 (the "License");
- *  you may not use this file except in compliance with the License.
- *  You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- *  Unless required by applicable law or agreed to in writing, software
- *  distributed under the License is distributed on an "AS IS" BASIS,
- *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- *  See the License for the specific language governing permissions and
- *  limitations under the License.
- */
+
 package com.adobe.aem.ipp.bikes.core.models;
 
 import static org.apache.sling.api.resource.ResourceResolver.PROPERTY_RESOURCE_TYPE;
 
 import javax.annotation.PostConstruct;
+import javax.inject.Inject;
+import javax.inject.Named;
 
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.api.resource.ResourceResolver;
@@ -33,6 +21,7 @@ import com.adobe.xfa.ut.StringUtils;
 import com.day.cq.wcm.api.Page;
 import com.day.cq.wcm.api.PageManager;
 
+import java.util.List;
 import java.util.Optional;
 
 @Model(
@@ -50,12 +39,23 @@ public class NavigationMenuModel {
     @SlingObject
     private ResourceResolver resourceResolver;
 
+    //--- Properties
     @ValueMapValue
     private String title;
     @ValueMapValue
     private String text;
+    @ValueMapValue
+    private String iconLink;
 
+    @ValueMapValue
+    private String fileReference; //[IK] the reference to the file of the "navicon" dialog element    
+    //--- Tab Iteems   
+    @Inject
+    @Named("navItemFirstList/.")
+    public List<ItemsLayerOneModel> navLayerOneList; //[IK] "navItemFirstList/." = "name" property of the "field" tag in "_cq_dialog"*/
+    //--- other
     private String message;
+
 
     @PostConstruct
     protected void init() {
@@ -65,8 +65,9 @@ public class NavigationMenuModel {
                 .map(Page::getPath).orElse("");
 
         message = "Hello from NavMenu V2!\n"
-            + "[NM] Resource type is: " + resourceType + "\n"
-            + "[NM] Current page is:  " + currentPagePath + "\n";
+            + "[NM] Resource type is : " + resourceType + "\n"
+            + "[NM] Current page is :  " + currentPagePath + "\n"            
+            + "[NM] fileReference :  " + fileReference + "\n";
     }
 
     public String getMessage() {
@@ -78,5 +79,19 @@ public class NavigationMenuModel {
     public String getText() {
         return StringUtils.isEmpty(text) ? null : text.toUpperCase();
     }
+    public String getIconLink() {
+        return StringUtils.isEmpty(iconLink) ? "#" : iconLink+".html";
+    }
+    public String getNavIcon() {
+        return fileReference;
+    }
 
+    
+    public boolean isConfigured() {
+        return navLayerOneList != null && !navLayerOneList.isEmpty();
+    }
+    
+    public List<ItemsLayerOneModel> getNavLayerOneList(){
+        return navLayerOneList;
+    }
 }

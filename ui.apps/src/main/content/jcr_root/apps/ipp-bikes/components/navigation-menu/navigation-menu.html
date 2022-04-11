@@ -1,39 +1,83 @@
-<!--/*
-    Copyright 2015 Adobe Systems Incorporated
-  
-    Licensed under the Apache License, Version 2.0 (the "License");
-    you may not use this file except in compliance with the License.
-    You may obtain a copy of the License at
-  
-        http://www.apache.org/licenses/LICENSE-2.0
-  
-    Unless required by applicable law or agreed to in writing, software
-    distributed under the License is distributed on an "AS IS" BASIS,
-    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-    See the License for the specific language governing permissions and
-    limitations under the License.
-*/-->
+
+<sly data-sly-use.model="${'com.adobe.aem.ipp.bikes.core.models.NavigationMenuModel'}"></sly>
+<sly data-sly-test.configured="${model.configured}"></sly>
+<sly data-sly-test="${wcmmode.edit && !configured}">
+    <div data-emptytext="${component.title}" class="cq-placeholder"></div>
+</sly>
 
 <div 
-    class="cmp-helloworld" 
-    data-cmp-is="helloworld"
-    data-sly-use.model="com.adobe.aem.ipp.bikes.core.models.NavigationMenuModel" 
+    class="cmp-navigationmenu" 
+    data-cmp-is="navigationmenu"
 >    
-    <h1 class="cmp-helloworld__title">${model.title}</h1>
+    <h1 class="cmp-navigationmenu__title hidden">${model.title}</h1>
 
-    <div class="cmp-helloworld__item" data-sly-test="${properties.text}">
-        <p class="cmp-helloworld__item-label">Text property:</p>
-        <pre class="cmp-helloworld__item-output" data-cmp-hook-helloworld="property">${properties.text}</pre>
+    <div class="cmp-navigationmenu__item hidden" data-sly-test="${properties.text}">
+        <p class="cmp-navigationmenu__item-label">Text property vs model text:</p>
+        <pre class="cmp-navigationmenu__item-output" data-cmp-hook-navigationmenu="text">${properties.text}</pre>
+        <pre class="cmp-navigationmenu__item-output" data-cmp-hook-navigationmenu="model_text">${model.text}</pre>
     </div>
 
-    <div class="cmp-helloworld__item" data-sly-test="${model.text}">
-        <p class="cmp-helloworld__item-label">Text model value:</p>
-        <pre class="cmp-helloworld__item-output" data-cmp-hook-helloworld="property">${model.text}</pre>
+    <div class="cmp-navigationmenu__item hidden">
+        <p class="cmp-navigationmenu__item-label">Link test:</p>
+        <a  class="cmp-navigationmenu__item-link" href="${model.link}" data-sly-test="${properties.link}">
+            <button class="cmp-navigationmenu__item-link-btn">link = ${model.link}</button>
+        </a>
     </div>
 
-    <div class="cmp-helloworld__item"  data-sly-test="${model.message}">
-        <p class="cmp-helloworld__item-label">Sling Model message:</p>
-        <pre class="cmp-helloworld__item-output"data-cmp-hook-helloworld="model">${model.message}</pre>
+    <div class="cmp-navigationmenu__item hidden"  data-sly-test="${model.message}">
+        <p class="cmp-navigationmenu__item-label">Sling Model message:</p>
+        <pre class="cmp-navigationmenu__item-output"data-cmp-hook-navigationmenu="model_message">${model.message}</pre>
+    </div>
+
+    <div class="cmp-navigationmenu__item cmp-navigationmenu__nav-container">
+        
+            <ol class="cmp-navigationmenu__main-list" >
+                <li id="mainNavIcon" class="cmp-navigationmenu__mainlist_item cmp-navigationmenu__main-icon">
+                    <a  class="cmp-navigationmenu__item-link" href="${model.iconLink}" >
+                        <img src="${model.navIcon}"  alt="Home"/>
+                    </a>
+                </li>
+                <sly data-sly-list.layerOneList="${model.navLayerOneList}">
+                    <li id="${layerOneList.titleAsClass}" class="cmp-navigationmenu__mainlist_item">
+                        <a  class="cmp-navigationmenu__item-link cmp-navigationmenu__main-link" href="${layerOneList.link}" >${layerOneList.title}</a>
+                    </li>
+                </sly>
+            </ol>
+
+            <div class="cmp-navigationmenu__sublist-main-container" >    
+                <sly data-sly-list.layerOneList="${model.navLayerOneList}">         
+
+                    <ol 
+                        id="l2_childof__${layerOneList.titleAsClass}"          
+                        class="cmp-navigationmenu__sub-list cmp-navigationmenu__list-layer-2"                   
+                        data-sly-list.layerTwoList="${layerOneList.navLayerTwoList}"
+                    >
+                        <li 
+                            id="${layerTwoList.titleAsClass}"
+                            class="cmp-navigationmenu__sublist_item cmp-navigationmenu__layer-2-item"
+                        >
+                            <a  class="cmp-navigationmenu__item-link" href="${layerTwoList.link}" >${layerTwoList.title}</a>                            
+                        </li> 
+                    </ol>
+
+                    <sly data-sly-list.layerTwoList="${layerOneList.navLayerTwoList}" >
+                        <ol 
+                            id="l3_childof__${layerTwoList.titleAsClass}"      
+                            class="cmp-navigationmenu__sub-list  cmp-navigationmenu__list-layer-3"                       
+                            data-sly-list.layerThreeList="${layerTwoList.navLayerThreeList}"
+                        >
+                            <li 
+                                id="${layerThreeList.titleAsClass}"
+                                class="cmp-navigationmenu__sublist_item cmp-navigationmenu__layer-3-item"
+                            >
+                                <a  class="cmp-navigationmenu__item-link" href="${layerThreeList.link}" >${layerThreeList.title}</a>
+                            </li>
+                        </ol> 
+                    </sly>
+
+                </sly>
+
+            </div>
     </div>
 
 </div>
