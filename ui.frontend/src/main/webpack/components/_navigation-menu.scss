@@ -128,6 +128,7 @@ $text_color: #000;
     
 
                 hr {
+                    margin: 10px 16px;
                     border: none;
                     height: 1px;
                     /* Set the hr color */
@@ -144,9 +145,13 @@ $text_color: #000;
 
 
 
-@media  ( min-width: 1440px ){
-    div.cmp-navigationmenu__sublist-main-container ol.cmp-navigationmenu__sub-list li.cmp-navigationmenu__sublist_item a {
-        font-size: small;
-        color: green;
+@media  ( max-width: 1440px ){
+    div.cmp-navigationmenu a {
+        font-size: .7rem !important;
+    }
+}
+@media  ( max-width: 1240px ){
+    div.cmp-navigationmenu a {
+        font-size: .5rem !important;
     }
 }

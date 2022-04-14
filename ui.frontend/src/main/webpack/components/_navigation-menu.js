@@ -119,12 +119,6 @@
         $(".cmp-navigationmenu__sub-list").removeClass("active"); //[IK] remove visability from all submenus
         $(".cmp-navigationmenu__sublist-main-container").removeClass("visable");
     });
-
     
-
-    //[IK] a random onClick function
-    $(".cmp-navigationmenu__mainlist_item").click(function() {
-        console.log("Y are u Cliking on ["+ $(this).text() +"] ?");
-    });
 
 }());
