@@ -1,0 +1,13 @@
+TO-DO:
+
+    --- maintain main list highlight
+    --- cart / search button pop-out sidebar functionality
+
+    --- display as a list for product categories of parts/mens/womens/kids/goods&gifts
+    --- make it resize based on screen width
+    --- MOBILE VIEW
+    --- populate nav menu content based on pages & child pages, insted of manual input
+
+    --- consider further renameing
+
+

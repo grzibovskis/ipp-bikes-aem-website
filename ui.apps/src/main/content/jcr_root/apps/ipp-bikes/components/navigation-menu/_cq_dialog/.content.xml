@@ -46,15 +46,15 @@
                               
 
 
-                            <navItemFirstList
+                            <navItemsMainList
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
                                 composite="{Boolean}true"
-                                fieldLabel="Nav - firt layer">
+                                fieldLabel="Nav - main layer">
                                 <field
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="granite/ui/components/coral/foundation/container"
-                                    name="./navItemFirstList">
+                                    name="./navItemsMainList">
                                     <items jcr:primaryType="nt:unstructured">
                                         <title
                                             jcr:primaryType="nt:unstructured"
@@ -70,15 +70,15 @@
                                             name="./link"
                                         /> 
 
-                                        <navItemSecondList
+                                        <navItemsFirstList
                                             jcr:primaryType="nt:unstructured"
                                             sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
                                             composite="{Boolean}true"
-                                            fieldLabel="Nav - secound layer">
+                                            fieldLabel="Nav - first layer">
                                             <field
                                                 jcr:primaryType="nt:unstructured"
                                                 sling:resourceType="granite/ui/components/coral/foundation/container"
-                                                name="./navItemSecondList">
+                                                name="./navItemsFirstList">
                                                 <items jcr:primaryType="nt:unstructured">
                                                 
                                                     <title
@@ -96,15 +96,15 @@
                                                     /> 
 
 
-                                                     <navItemThirdList
+                                                     <navItemsSecondList
                                                         jcr:primaryType="nt:unstructured"
                                                         sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
                                                         composite="{Boolean}true"
-                                                        fieldLabel="Nav - third layer">
+                                                        fieldLabel="Nav - second layer">
                                                         <field
                                                             jcr:primaryType="nt:unstructured"
                                                             sling:resourceType="granite/ui/components/coral/foundation/container"
-                                                            name="./navItemThirdList">
+                                                            name="./navItemsSecondList">
                                                             <items jcr:primaryType="nt:unstructured">
                                                             
                                                                 <title
@@ -124,15 +124,15 @@
 
                                                             </items>
                                                         </field>
-                                                    </navItemThirdList>
+                                                    </navItemsSecondList>
 
 
                                                 </items>
                                             </field>
-                                        </navItemSecondList>
+                                        </navItemsFirstList>
                                     </items>
                                 </field>
-                            </navItemFirstList>
+                            </navItemsMainList>
 
                                         </items>
                                     </column>

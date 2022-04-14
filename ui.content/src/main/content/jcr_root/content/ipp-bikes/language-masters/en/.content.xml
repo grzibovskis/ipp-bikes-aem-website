@@ -4,7 +4,7 @@
     <jcr:content
         cq:contextHubPath="/etc/cloudsettings/default/contexthub"
         cq:contextHubSegmentsPath="/etc/segmentation/contexthub"
-        cq:lastModified="{Date}2022-04-05T15:05:54.454+03:00"
+        cq:lastModified="{Date}2022-04-12T11:13:03.030+03:00"
         cq:lastModifiedBy="admin"
         cq:template="/conf/ipp-bikes/settings/wcm/templates/page-content"
         jcr:isCheckedOut="{Boolean}true"
@@ -126,54 +126,24 @@
                         <image
                             jcr:created="{Date}2022-03-17T10:10:37.316+02:00"
                             jcr:createdBy="admin"
-                            jcr:lastModified="{Date}2022-03-30T09:58:41.755+03:00"
+                            jcr:lastModified="{Date}2022-04-06T11:06:28.212+03:00"
                             jcr:lastModifiedBy="admin"
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="ipp-bikes/components/image"
-                            altValueFromDAM="true"
+                            alt="alttext"
+                            altValueFromDAM="false"
                             displayPopupTitle="true"
                             fileReference="/content/dam/ipp-bikes/asset.jpg"
                             isDecorative="false"
+                            linkURL="/content/ipp-bikes/language-masters"
                             titleValueFromDAM="true"/>
                         <tabs
                             jcr:created="{Date}2022-04-05T13:38:49.123+03:00"
                             jcr:createdBy="admin"
-                            jcr:lastModified="{Date}2022-04-05T15:04:58.295+03:00"
+                            jcr:lastModified="{Date}2022-04-12T11:11:43.600+03:00"
                             jcr:lastModifiedBy="admin"
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="ipp-bikes/components/tabs">
-                            <item_1
-                                cq:panelTitle="NavMenu v2"
-                                jcr:primaryType="nt:unstructured"
-                                jcr:title="Tab 1"
-                                sling:resourceType="ipp-bikes/components/container"
-                                layout="responsiveGrid">
-                                <navigation_menu
-                                    jcr:created="{Date}2022-04-05T11:20:49.042+03:00"
-                                    jcr:createdBy="admin"
-                                    jcr:lastModified="{Date}2022-04-05T11:21:04.148+03:00"
-                                    jcr:lastModifiedBy="admin"
-                                    jcr:primaryType="nt:unstructured"
-                                    sling:resourceType="ipp-bikes/components/navigation-menu"
-                                    text="Its the end of this container as we know it."
-                                    title="NavMenu title"/>
-                            </item_1>
-                            <item_2
-                                cq:panelTitle="helloworld"
-                                jcr:primaryType="nt:unstructured"
-                                jcr:title="Tab 2"
-                                sling:resourceType="ipp-bikes/components/container"
-                                layout="responsiveGrid">
-                                <helloworld
-                                    jcr:created="{Date}2022-04-05T11:20:06.290+03:00"
-                                    jcr:createdBy="admin"
-                                    jcr:lastModified="{Date}2022-04-05T11:20:32.567+03:00"
-                                    jcr:lastModifiedBy="admin"
-                                    jcr:primaryType="nt:unstructured"
-                                    sling:resourceType="ipp-bikes/components/helloworld"
-                                    text="This is the Frequently Asked Questions page, or FAQ for short =)"
-                                    title="Hello World title"/>
-                            </item_2>
                             <item_1649160292228
                                 cq:panelTitle="Dropdown"
                                 jcr:primaryType="nt:unstructured"
@@ -190,6 +160,23 @@
                                     name="Container"
                                     options="[A,B,C]"/>
                             </item_1649160292228>
+                            <item_2
+                                cq:panelTitle="helloworld"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Tab 2"
+                                sling:resourceType="ipp-bikes/components/container"
+                                layout="responsiveGrid">
+                                <helloworld
+                                    jcr:created="{Date}2022-04-05T11:20:06.290+03:00"
+                                    jcr:createdBy="admin"
+                                    jcr:lastModified="{Date}2022-04-05T11:20:32.567+03:00"
+                                    jcr:lastModifiedBy="admin"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="ipp-bikes/components/helloworld"
+                                    text="This is the Frequently Asked Questions page, or FAQ for short =)"
+                                    title="Hello World title"/>
+                            </item_2>
+                            <item_1 jcr:primaryType="nt:unstructured"/>
                         </tabs>
                     </container_431250027>
                     <container_1417719157

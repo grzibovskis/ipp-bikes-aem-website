@@ -17,3 +17,6 @@ $brand-color:           #fa6600;
 $color-foreground-dark: invert($color-foreground);
 $color-background-dark: invert($color-background);
 $color-link-dark:       invert($color-link);
+
+//[IK] transitions
+    $transition_time: 300ms;

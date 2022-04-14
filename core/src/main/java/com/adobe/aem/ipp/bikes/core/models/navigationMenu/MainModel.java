@@ -1,5 +1,5 @@
 
-package com.adobe.aem.ipp.bikes.core.models;
+package com.adobe.aem.ipp.bikes.core.models.navigationMenu;
 
 import static org.apache.sling.api.resource.ResourceResolver.PROPERTY_RESOURCE_TYPE;
 
@@ -28,11 +28,13 @@ import java.util.Optional;
     adaptables = Resource.class,
     defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL
 )
-public class NavigationMenuModel {
+public class MainModel {
 
     @ValueMapValue(name=PROPERTY_RESOURCE_TYPE, injectionStrategy=InjectionStrategy.OPTIONAL)
     @Default(values="No resourceType")
     protected String resourceType;
+    
+    //NavMenuFunctions passFunction = new NavMenuFunctions();
 
     @SlingObject
     private Resource currentResource;
@@ -51,8 +53,8 @@ public class NavigationMenuModel {
     private String fileReference; //[IK] the reference to the file of the "navicon" dialog element    
     //--- Tab Iteems   
     @Inject
-    @Named("navItemFirstList/.")
-    public List<ItemsLayerOneModel> navLayerOneList; //[IK] "navItemFirstList/." = "name" property of the "field" tag in "_cq_dialog"*/
+    @Named("navItemsMainList/.")
+    public List<LayerZeroModel> navLayerZeroList; //[IK] "navItemsMainList/." = "name" property of the "field" tag in "_cq_dialog"*/
     //--- other
     private String message;
 
@@ -88,10 +90,9 @@ public class NavigationMenuModel {
 
     
     public boolean isConfigured() {
-        return navLayerOneList != null && !navLayerOneList.isEmpty();
-    }
-    
-    public List<ItemsLayerOneModel> getNavLayerOneList(){
-        return navLayerOneList;
+        return navLayerZeroList != null && !navLayerZeroList.isEmpty();
+    }     
+    public List<LayerZeroModel> getNavLayerZeroList(){
+        return navLayerZeroList;
     }
 }

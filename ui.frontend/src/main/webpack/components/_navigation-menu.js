@@ -11,7 +11,7 @@
     // interact with.
     var selectors = {
         self:      '[data-cmp-is="navigationmenu"]',
-        property:  '[data-cmp-hook-navigationmenu="text"]',
+        property:  '[data-cmp-hook-navigationmenu="model_text"]',
         message:   '[data-cmp-hook-navigationmenu="model_message"]'
     };
 
@@ -85,32 +85,44 @@
     }
 
 
+
+    //[IK] variables
     var activeMenu_layer1 ;   
     var activeMenu_layer2 ; 
 
+    //[IK] hide all submenus and set the submenu of the currenly mouseoverd main-list-item as active
     $(".cmp-navigationmenu__mainlist_item").mouseenter(function() {
-        activeMenu_layer1 = $(this).attr("id");
-        
-        $(".cmp-navigationmenu__sub-list").removeClass("active"); //[IK] remove visability from all submenus
-        $("#l2_childof__"+ activeMenu_layer1 ).addClass("active");
-        console.log("U entered the teritory of ["+ activeMenu_layer1 +"] ?");
-    });
+        activeMenu_layer1 = $(this).attr("id");     
 
+        $(".cmp-navigationmenu__item-link").removeClass("highlighted");
+        $("#mainlink_"+ activeMenu_layer1 ).addClass("highlighted");
+
+        $(".cmp-navigationmenu__sub-list").removeClass("active"); //[IK] remove visability from all submenus
+        $("#l1_childof__"+ activeMenu_layer1 ).addClass("active");
+    }); 
+    
+    //[IK] hide layer-3 submenus and show the layer-3 submenu of the currently mouseovered layer-2 item
     $(".cmp-navigationmenu__layer-2-item").mouseenter(function() {
         activeMenu_layer2 = $(this).attr("id");
-
         $(".cmp-navigationmenu__list-layer-3").removeClass("active");//[IK] remove visability from only layer 3 submenus
-        $("#l3_childof__"+ activeMenu_layer2 ).addClass("active");
-        console.log("l2 hover over ["+ activeMenu_layer2 +"] ?");
-    });
-
+        $("#l2_childof__"+ activeMenu_layer2 ).addClass("active");
+    }); 
+    
+    //[IK] as long as the cursor is within the nav element, the menus will be visable
     $(".cmp-navigationmenu__nav-container").hover(function() {
         $(".cmp-navigationmenu__sublist-main-container").toggleClass("visable");
-        console.log("Show/hide submenu.");
+    }); 
+    
+    //[IK] when the cursor leaves, hide and diactivate all menus
+    $(".cmp-navigationmenu").mouseleave(function(){
+        $(".cmp-navigationmenu__mainlist_item").children(".cmp-navigationmenu__item-link").removeClass("highlighted");
+        $(".cmp-navigationmenu__sub-list").removeClass("active"); //[IK] remove visability from all submenus
+        $(".cmp-navigationmenu__sublist-main-container").removeClass("visable");
     });
 
     
 
+    //[IK] a random onClick function
     $(".cmp-navigationmenu__mainlist_item").click(function() {
         console.log("Y are u Cliking on ["+ $(this).text() +"] ?");
     });
