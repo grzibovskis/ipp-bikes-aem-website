@@ -11,8 +11,8 @@
     // interact with.
     var selectors = {
         self:      '[data-cmp-is="navigationmenu"]',
-        property:  '[data-cmp-hook-navigationmenu="model_text"]',
-        message:   '[data-cmp-hook-navigationmenu="model_message"]'
+        value_text:  '[data-cmp-hook-navigationmenu="model_text"]',
+        value_message:   '[data-cmp-hook-navigationmenu="model_message"]'
     };
 
     function NavigationMenu(config) {
@@ -23,10 +23,10 @@
             // identified the component.
             config.element.removeAttribute("data-cmp-is");
 
-            var property = config.element.querySelectorAll(selectors.property);
+            var property = config.element.querySelectorAll(selectors.value_text);
             property = property.length == 1 ? property[0].textContent : null;
 
-            var model = config.element.querySelectorAll(selectors.message);
+            var model = config.element.querySelectorAll(selectors.value_message);
             model = model.length == 1 ? model[0].textContent : null;
 
             if (console && console.log) {

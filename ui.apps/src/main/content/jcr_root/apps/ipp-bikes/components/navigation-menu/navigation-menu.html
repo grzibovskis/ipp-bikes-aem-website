@@ -9,6 +9,10 @@
     class="cmp-navigationmenu" 
     data-cmp-is="navigationmenu"
 >    
+    <div class="cmp-navigationmenu__item hidden"  data-sly-test="${model.message}">
+        <p class="cmp-navigationmenu__item-label">Sling Model message:</p>
+        <pre class="cmp-navigationmenu__item-output"data-cmp-hook-navigationmenu="model_message">${model.message}</pre>
+    </div>
     <div class="cmp-navigationmenu__item cmp-navigationmenu__nav-container">
         
             <ol class="cmp-navigationmenu__main-list" >

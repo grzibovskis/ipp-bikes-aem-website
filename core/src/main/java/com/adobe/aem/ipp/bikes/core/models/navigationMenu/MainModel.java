@@ -69,7 +69,7 @@ public class MainModel {
         message = "Hello from NavMenu V2!\n"
             + "[NM] Resource type is : " + resourceType + "\n"
             + "[NM] Current page is :  " + currentPagePath + "\n"            
-            + "[NM] fileReference :  " + fileReference + "\n";
+            + "[NM] isConfigured(navLayerZeroList) :  " + isConfigured() + "\n";
     }
 
     public String getMessage() {
