@@ -49,12 +49,20 @@ public class MainModel {
     @ValueMapValue
     private String iconLink;
 
+    //--- Categories
+    @Inject
+    @Named("categoryList/.")
+    public List<CategoryModel> listOfCategoryLists;
+    
+
+    //--- navIconSelect
     @ValueMapValue
     private String fileReference; //[IK] the reference to the file of the "navicon" dialog element    
+
     //--- Tab Iteems   
     @Inject
     @Named("navItemsMainList/.")
-    public List<LayerZeroModel> navLayerZeroList; //[IK] "navItemsMainList/." = "name" property of the "field" tag in "_cq_dialog"*/
+    public List<LayerZeroModel> listOfLayerZero; //[IK] "navItemsMainList/." = "name" property of the "field" tag in "_cq_dialog"*/
     //--- other
     private String message;
 
@@ -69,9 +77,11 @@ public class MainModel {
         message = "Hello from NavMenu V2!\n"
             + "[NM] Resource type is : " + resourceType + "\n"
             + "[NM] Current page is :  " + currentPagePath + "\n"            
-            + "[NM] isConfigured(navLayerZeroList) :  " + isConfigured() + "\n";
+            + "[NM] isTabConfigured() :  " + isTabConfigured() + "\n";
     }
 
+  
+    
     public String getMessage() {
         return message;
     }
@@ -89,10 +99,17 @@ public class MainModel {
     }
 
     
-    public boolean isConfigured() {
-        return navLayerZeroList != null && !navLayerZeroList.isEmpty();
-    }     
-    public List<LayerZeroModel> getNavLayerZeroList(){
-        return navLayerZeroList;
-    }
+    public boolean isTabConfigured() {
+        return listOfLayerZero != null && !listOfLayerZero.isEmpty();
+    }    
+    public List<LayerZeroModel> getNavigationLayerZeroList(){
+        return listOfLayerZero;
+    }  
+
+    public boolean isCategoryConfigured() {
+        return listOfCategoryLists != null && !listOfCategoryLists.isEmpty();
+    }    
+    public List<CategoryModel> getCategoryList(){
+        return listOfCategoryLists;
+    } 
 }

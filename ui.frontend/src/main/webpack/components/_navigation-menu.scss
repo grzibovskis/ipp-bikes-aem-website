@@ -1,6 +1,6 @@
 $main_background_color: #FFF;
-$inactive_background_color: #CCC;
-$item_highlight_color: #DDD;
+$inactive_background_color: #EEE;
+$item_highlight_color: #EEE;
 $text_color: #000;
 
 .cmp-navigationmenu {
@@ -12,7 +12,6 @@ $text_color: #000;
     
 
     ol li a {
-        text-transform: uppercase;
         font-weight: 700;
         font-size: .9rem;   
         text-decoration: none; 
@@ -46,6 +45,7 @@ $text_color: #000;
             height: 64px;
             line-height: 48px;
             padding: 8px 20px;
+            text-transform: uppercase;
             
             box-sizing: border-box;
             cursor: pointer;
@@ -57,7 +57,7 @@ $text_color: #000;
             transition: background-color $transition_time, color $transition_time;
             
             //[IK] a standin for [:hover], to enable the possibility of implamenting [:hover] via JS
-            &.highlighted{ //&:hover{
+            &.highlighted_main{
                 background-color: invert($main_background_color);
                 color: invert($text_color);
             }
@@ -87,58 +87,88 @@ $text_color: #000;
         width: 100%;
         height: auto;
         font-weight: 750;
-        background-color: $inactive_background_color;
+        background-color: $main_background_color;
         box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 10px -2px;
         z-index: 9999;
 
         display: none;
         &.visable { display: flex; }
 
-        .cmp-navigationmenu__sublist-spacer{
-            width: 5%;
-            background-color: $main_background_color;
-        }
+        .cmp-navigationmenu_sublist-inner-container{
+            //[IK] the inner container is needed for the white bars on either side; 
+            //  bg-color from [main-container], width from this left-right margin;
+            margin: 0 5%; 
 
-        ol.cmp-navigationmenu__sub-list {
-            display: none;
-            margin: 0;
-            padding: 0;
-            &.active {
-                display: inline-block;
-                min-height: 100%;
-                list-style: none;
-                padding-bottom: 3em;
-                background-color: $main_background_color;
-            
-                li.cmp-navigationmenu__sublist_item a{                    
-                    display: flex;
+            display: flex;
+            width: 100%;
+            height: 100%;
+            background-color: $inactive_background_color;        
+
+            ol.cmp-navigationmenu__sub-list {
+                display: none;
+                margin: 0;
+                padding: 0;
+                &.active {
+                    display: inline-block;
                     height: 100%;
-                    padding: 1.2em 2.4em;   
+                    list-style: none;
+                    padding-bottom: 3em;
+                    background-color: $main_background_color;
+                
+                    li.cmp-navigationmenu__sublist_item a{         
+                        text-transform: uppercase;           
+                        display: flex;
+                        height: 100%;
+                        padding: 1.2em 2.4em; 
 
-                    &.hasSublist:hover {
-                        background-color: $item_highlight_color;
-                        color: $text_color; 
+                        &.hasSublist:hover, &.highlighted_sub {
+                            background-color: $item_highlight_color;
+                            color: $text_color; 
+                        }
+
+                        &.asLinks:hover {
+                            color: $brand-color; 
+                        }                    
+                        
+                    }
+        
+
+                    hr.cmp-navigationmenu__separator {
+                        margin: 10px 16px;
+                        border: none;
+                        height: 1px;
+                        /* Set the hr color */
+                        $horizontal_row_color: rgba(0,0,0,0.2);
+                        color: $horizontal_row_color; /* old IE */
+                        background-color: $horizontal_row_color; /* Modern Browsers */
                     }
 
-                    &.asLinks:hover {
-                        color: $brand-color; 
-                    }                    
-                    
-                }
-    
 
-                hr {
-                    margin: 10px 16px;
-                    border: none;
-                    height: 1px;
-                    /* Set the hr color */
-                    $horizontal_row_color: rgba(0,0,0,0.2);
-                    color: $horizontal_row_color; /* old IE */
-                    background-color: $horizontal_row_color; /* Modern Browsers */
-                }
+                    &.cmp-navigationmenu__categoryList {
+                        background-color: $inactive_background_color;
+                        padding: 20px 16px 16px;
+                        column-count: 3;
 
-            }//[IK]end of [.active]
-        }//[IK]end of [.ol.cmp-navigationmenu__sub-list]
+                        li.cmp-navigationmenu__catItem a{
+                            padding: 10px;
+                            text-transform: capitalize;
+                            font-weight: 500;
+
+                            &.thick_cat_link {
+                                font-weight: bold;
+                            }
+
+                            &:hover {
+                                color: $brand-color; 
+                            }    
+                        }
+                    }
+
+
+                }//[IK]end of [.active]
+            }//[IK]end of [.ol.cmp-navigationmenu__sub-list]
+            
+        }//[IK]end of [.cmp-navigationmenu__sublist-inner-container]
     }//[IK]end of [.cmp-navigationmenu__sublist-main-container]
 }//[IK]end of [.cmp-navigationmenu]
 

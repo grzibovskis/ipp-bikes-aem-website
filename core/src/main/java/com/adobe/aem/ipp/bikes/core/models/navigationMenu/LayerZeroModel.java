@@ -22,6 +22,9 @@ public class LayerZeroModel {
     private String title;
     @Inject
     private String link;
+    @Inject
+    private String listConnect;
+    
     
     @Inject
     @Named("navItemsFirstList/.")
@@ -31,6 +34,7 @@ public class LayerZeroModel {
     public String getTitle(){ return passFunction.ProcessTitle(title); }
     public String getTitleAsClass(){ return passFunction.ProcessTitleAsClass(title); }
     public String getLink(){ return passFunction.ProcessLink(link); }
+    public String getListConnect(){ return passFunction.ProcessListConnect(listConnect); }
 
 
     public boolean isLayerOneConfigured() {
@@ -42,10 +46,9 @@ public class LayerZeroModel {
         } else {            
             return "asLinks";
         }
-    }  
-    public List<LayerOneModel> getNavLayerOneList(){
-        return navLayerOneList;
     }
 
-    
+    public List<LayerOneModel> getNavigationLayerOneList(){
+        return navLayerOneList;
+    }
 }

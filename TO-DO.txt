@@ -1,9 +1,20 @@
 TO-DO:
 
-    --- maintain main list highlight
-    --- cart / search button pop-out sidebar functionality
+    -- LAST TIME: 
+        removed the getNextLayerList equivilent from layer1.java and layer2.java; 
+        change variable name to have a "_java"; 
+        was trying to break the large .html file into a modular collection of .html files;
+            category-list.html worked, menu-list.html hgasent yet worked;
 
-    --- display as a list for product categories of parts/mens/womens/kids/goods&gifts
+    --- display as a list for product categories where needed
+        ++ dialog
+        ++ ditect if a tab item has a list-ID specified
+        -- return list item name and link
+        -- display list
+
+
+    --- nav -> layer-1 highlight one moving mouse to layer-2
+    --- cart / search button pop-out sidebar functionality   
     --- make it resize based on screen width
     --- MOBILE VIEW
     --- populate nav menu content based on pages & child pages, insted of manual input

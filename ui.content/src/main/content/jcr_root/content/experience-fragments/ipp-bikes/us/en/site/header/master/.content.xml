@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2022-04-14T09:23:57.724+03:00"
+        cq:lastModified="{Date}2022-04-19T12:09:40.194+03:00"
         cq:lastModifiedBy="admin"
         cq:template="/conf/ipp-bikes/settings/wcm/templates/xf-web-variation"
         cq:xfMasterVariation="{Boolean}true"
@@ -85,7 +85,7 @@
                 <navigation_menu_611810526
                     jcr:created="{Date}2022-04-11T15:44:15.851+03:00"
                     jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2022-04-14T09:23:57.602+03:00"
+                    jcr:lastModified="{Date}2022-04-19T12:09:39.922+03:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="ipp-bikes/components/navigation-menu"

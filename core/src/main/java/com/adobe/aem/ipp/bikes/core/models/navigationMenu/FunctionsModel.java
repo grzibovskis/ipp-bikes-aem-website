@@ -19,6 +19,10 @@ public class FunctionsModel {
         return StringUtils.isEmpty(inputLink) ? "#" : inputLink+".html";
     }
     
-
+    //[IK] process "link" value
+    public String ProcessListConnect(String inputList) {
+        return StringUtils.isEmpty(inputList) ? null : inputList;
+    }
+    
     
 }

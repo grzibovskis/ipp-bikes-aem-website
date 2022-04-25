@@ -22,31 +22,35 @@ public class LayerOneModel {
     private String title;
     @Inject
     private String link;
+    @Inject
+    private String listConnect;
  
     
     public String getTitle(){ return passFunction.ProcessTitle(title); }
     public String getTitleAsClass(){ return passFunction.ProcessTitleAsClass(title); }
     public String getLink(){ return passFunction.ProcessLink(link); }
+    public String getListConnect(){ return passFunction.ProcessListConnect(listConnect); }
 
     
     
     @Inject
     @Named("navItemsSecondList/.")
-    private List<LayerTwoModel> navLayerTwoList;
+    private List<LayerTwoModel> navLayerTwoList_java;
     
     public boolean isLayerTwoConfigured() {
-        return navLayerTwoList != null && !navLayerTwoList.isEmpty();
+        return navLayerTwoList_java != null && !navLayerTwoList_java.isEmpty();
     } 
     public String isLayerTwoConfiguredToClass() {
-        if( navLayerTwoList != null && !navLayerTwoList.isEmpty() ){
+        if( navLayerTwoList_java != null && !navLayerTwoList_java.isEmpty() ){
             return "hasSublist";
         } else {            
             return "asLinks";
         }
     }  
-    public List<LayerTwoModel> getNavLayerTwoList(){
-        return navLayerTwoList;
-    }
 
-        
+    public List<LayerTwoModel> getNavigationLayerTwoList(){
+        return navLayerTwoList_java;
+    }  
+
+    
 }

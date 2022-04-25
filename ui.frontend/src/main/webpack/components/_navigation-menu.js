@@ -12,9 +12,10 @@
     var selectors = {
         self:      '[data-cmp-is="navigationmenu"]',
         value_text:  '[data-cmp-hook-navigationmenu="model_text"]',
-        value_message:   '[data-cmp-hook-navigationmenu="model_message"]'
+        value_message:   '[data-cmp-hook-navigationmenu="model_message"]',
+        value_cat:   '[data-cmp-hook-navigationmenu="model_category"]'
     };
-
+    
     function NavigationMenu(config) {
 
         function init(config) {
@@ -29,11 +30,15 @@
             var model = config.element.querySelectorAll(selectors.value_message);
             model = model.length == 1 ? model[0].textContent : null;
 
+            var cat = config.element.querySelectorAll(selectors.value_cat);
+            cat = cat.length == 1 ? cat[0].textContent : null;
+
             if (console && console.log) {
                 console.log(
                     "NavigationMenu component JavaScript example",
                     "\nText property:\n", property,
-                    "\nModel message:\n", model
+                    "\nModel message:\n", model,
+                    "\nCat message:\n", cat
                 );
             }
         }
@@ -92,20 +97,27 @@
 
     //[IK] hide all submenus and set the submenu of the currenly mouseoverd main-list-item as active
     $(".cmp-navigationmenu__mainlist_item").mouseenter(function() {
-        activeMenu_layer1 = $(this).attr("id");     
-
-        $(".cmp-navigationmenu__item-link").removeClass("highlighted");
-        $("#mainlink_"+ activeMenu_layer1 ).addClass("highlighted");
+        activeMenu_layer1 = $(this).attr("id");  
 
         $(".cmp-navigationmenu__sub-list").removeClass("active"); //[IK] remove visability from all submenus
-        $("#l1_childof__"+ activeMenu_layer1 ).addClass("active");
+        $("#layer_1_childof__"+ activeMenu_layer1 ).addClass("active");   
+
+        $(".cmp-navigationmenu__item-link").removeClass("highlighted_main");
+        $("#mainlink_"+ activeMenu_layer1 ).addClass("highlighted_main");
     }); 
     
-    //[IK] hide layer-3 submenus and show the layer-3 submenu of the currently mouseovered layer-2 item
-    $(".cmp-navigationmenu__layer-2-item").mouseenter(function() {
+    //[IK] hide layer_2 submenus and show the layer_2 submenu of the currently mouseovered layer_1 item
+    $(".cmp-navigationmenu__layer_1-item").mouseenter(function() {
         activeMenu_layer2 = $(this).attr("id");
-        $(".cmp-navigationmenu__list-layer-3").removeClass("active");//[IK] remove visability from only layer 3 submenus
-        $("#l2_childof__"+ activeMenu_layer2 ).addClass("active");
+
+        //[IK] remove visability from only layer_2 submenus, and then add vis. to the specified one
+        $(".cmp-navigationmenu__list-layer_2").removeClass("active");
+        $("#layer_2_childof__"+ activeMenu_layer2 ).addClass("active");
+
+        //[IK] remove highlights only from layer_1 submenus, and then add highl. to the specified one
+        $(".cmp-navigationmenu__item-link.layer_1_link").removeClass("highlighted_sub");
+        $(this).children("a.hasSublist").addClass("highlighted_sub");
+        
     }); 
     
     //[IK] as long as the cursor is within the nav element, the menus will be visable
@@ -115,10 +127,16 @@
     
     //[IK] when the cursor leaves, hide and diactivate all menus
     $(".cmp-navigationmenu").mouseleave(function(){
-        $(".cmp-navigationmenu__mainlist_item").children(".cmp-navigationmenu__item-link").removeClass("highlighted");
-        $(".cmp-navigationmenu__sub-list").removeClass("active"); //[IK] remove visability from all submenus
+        //[IK] remove highlights from main menu
+        $(".cmp-navigationmenu__mainlist_item").children(".cmp-navigationmenu__item-link").removeClass("highlighted_main"); 
+
+        //[IK] remove highlights from all submenus
+        $(".cmp-navigationmenu__item-link").removeClass("highlighted_sub");
+        
+        //[IK] remove visability from all submenus
+        $(".cmp-navigationmenu__sub-list").removeClass("active"); 
+
         $(".cmp-navigationmenu__sublist-main-container").removeClass("visable");
     });
     
-
 }());

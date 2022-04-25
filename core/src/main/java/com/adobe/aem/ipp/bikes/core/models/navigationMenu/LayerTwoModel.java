@@ -19,10 +19,13 @@ public class LayerTwoModel {
     private String title;
     @Inject
     private String link;
+    @Inject
+    private String listConnect;
  
     public String getTitle(){ return passFunction.ProcessTitle(title); }
     public String getTitleAsClass(){ return passFunction.ProcessTitleAsClass(title); }
     public String getLink(){ return passFunction.ProcessLink(link); }
+    public String getListConnect(){ return passFunction.ProcessListConnect(listConnect); }
 
         
 }

@@ -1,0 +1,72 @@
+<sly data-sly-test="${!layerZeroList.nextLayerConfigured && layerZeroList.listConnect }">
+    <sly data-sly-list.listOfCategories="${model.categoryList}">                     
+        <sly data-sly-test="${listOfCategories.categoryListID == layerZeroList.listConnect }">
+
+            <ol 
+                id="l1_childof__${layerZeroList.titleAsClass}"
+                class="cmp-navigationmenu__sub-list cmp-navigationmenu__categoryList cmp-navigationmenu__list-layer_1"
+            >   
+                <sly 
+                    data-sly-test="${listOfCategories.categoryItemsConfigured}"
+                    data-sly-list.categoryListItems="${listOfCategories.catListItems}"
+                >
+                    <li class="cmp-navigationmenu__catItem ">
+                        <a  
+                            class="cmp-navigationmenu__item-link cmp-navigationmenu__category-link" 
+                            href="${categoryListItems.catLink}" 
+                        >${categoryListItems.catName}</a>
+                    </li>                                            
+                </sly>
+                <hr class="cmp-navigationmenu__separator" />         
+                <li class="cmp-navigationmenu__catItem ">
+                    <a  
+                        class="cmp-navigationmenu__item-link cmp-navigationmenu__category-link thick_cat_link" 
+                        href="${layerZeroList.link}" 
+                    >Shop All ${layerZeroList.title} &rarr; </a>
+                </li> 
+
+            </ol>
+
+        </sly>
+    </sly>
+        
+
+
+
+</sly>  
+
+
+
+
+
+
+
+
+
+
+
+
+<ol 
+    id="l2_childof__${layerOneList.titleAsClass}"      
+    class="cmp-navigationmenu__sub-list  cmp-navigationmenu__list-layer-2"
+    data-sly-test="${layerOneList.nextLayerConfigured}"
+    >
+    <sly data-sly-list.layerTwoList="${layerOneList.navLayerTwoList_java}" >
+        <li 
+            id="${layerTwoList.titleAsClass}"
+            class="cmp-navigationmenu__sublist_item cmp-navigationmenu__layer-2-item"
+        >
+            <a  class="cmp-navigationmenu__item-link layer_2_link asLinks" href="${layerTwoList.link}" >${layerTwoList.title}</a>
+        </li>
+    </sly>
+    <hr class="cmp-navigationmenu__separator" />                
+    <li 
+        id="all_${layerOneList.titleAsClass}" 
+        class="cmp-navigationmenu__sublist_item cmp-navigationmenu__layer-2-item"
+    >
+        <a  
+            class="cmp-navigationmenu__item-link asLinks" 
+            href="${layerOneList.link}" 
+        >Shop all ${layerOneList.title}</a>
+    </li>
+</ol> 

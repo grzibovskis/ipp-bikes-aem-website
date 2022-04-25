@@ -62,12 +62,12 @@
                                             sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
                                             emptyText="Title"
                                             name="./title"/>
-                                        <listconnect
+                                        <listConnect
                                             jcr:primaryType="nt:unstructured"
                                             fieldLabel="Connected List ID"
                                             sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
                                             emptyText="Connected List ID"
-                                            name="./listconnect"/>
+                                            name="./listConnect"/>
                                         <link
                                             jcr:primaryType="nt:unstructured"
                                             sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
@@ -93,12 +93,12 @@
                                                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
                                                         emptyText="Title"
                                                         name="./title"/>
-                                                    <listconnect
+                                                    <listConnect
                                                         jcr:primaryType="nt:unstructured"
                                                         fieldLabel="Connected List ID"
                                                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
                                                         emptyText="Connected List ID"
-                                                        name="./listconnect"/>
+                                                        name="./listConnect"/>
                                                     <link
                                                         jcr:primaryType="nt:unstructured"
                                                         sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
@@ -125,12 +125,12 @@
                                                                     sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
                                                                     emptyText="Title"
                                                                     name="./title"/>
-                                                                <listconnect
+                                                                <listConnect
                                                                     jcr:primaryType="nt:unstructured"
                                                                     fieldLabel="Connected List ID"
                                                                     sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
                                                                     emptyText="Connected List ID"
-                                                                    name="./listconnect"/>
+                                                                    name="./listConnect"/>
                                                                 <link
                                                                     jcr:primaryType="nt:unstructured"
                                                                     sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
@@ -188,7 +188,7 @@
                                 <field
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="granite/ui/components/coral/foundation/container"
-                                    name="./listOfLists">
+                                    name="./categoryList">
                                     <items jcr:primaryType="nt:unstructured">
 
 
@@ -199,16 +199,25 @@
                                             name="./catListID"
                                         />
 
-                                        <category
+                                        <categoryItems
                                             jcr:primaryType="nt:unstructured"
-                                            sling:resourceType="granite/ui/components/coral/foundation/form/multifield">                                                        
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                            composite="{Boolean}true"
+                                            fieldLabel="Items">
                                             <field
                                                 jcr:primaryType="nt:unstructured"
-                                                sling:resourceType = "granite/ui/components/coral/foundation/container"
-                                                name="./category">
+                                                sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                name="./categoryItems">
                                                 <items jcr:primaryType="nt:unstructured">
 
-                                                    <catName
+                                                    <heading
+                                                        granite:class="coral-Heading coral-Heading--4"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/heading"
+                                                        level="{Long}4"
+                                                        text="Category"/>
+
+                                                     <catName
                                                         jcr:primaryType="nt:unstructured"
                                                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
                                                         fieldLabel="Item Name"
@@ -222,15 +231,18 @@
                                                         name="./catLink"
                                                     /> 
 
+
+
+
+                                                
                                                 </items>
                                             </field>
-                                        </listHolder>
-
+                                        </categoryItems>
 
                                     
                                     </items>
                                 </field>
-                            </listOfLists>
+                            </categoryList>
 
                                         </items>
                                     </column>

@@ -1,100 +1,104 @@
 
 <sly data-sly-use.model="${'com.adobe.aem.ipp.bikes.core.models.navigationMenu.MainModel'}"></sly>
-<sly data-sly-test.configured="${model.configured}"></sly>
-<sly data-sly-test="${wcmmode.edit && !configured}">
+<sly data-sly-use.categoryTemplate="category-list.html"></sly>
+<sly data-sly-use.menuTemplate="menu-list.html"></sly>
+        
+<sly data-sly-test.tabsTest="${model.tabConfigured}"></sly>
+
+<sly data-sly-test="${wcmmode.edit && !tabsTest}">
     <div data-emptytext="${component.title}" class="cq-placeholder"></div>
 </sly>
 
-<div 
-    class="cmp-navigationmenu" 
-    data-cmp-is="navigationmenu"
+<div class="cmp-navigationmenu" data-cmp-is="navigationmenu"
 >    
-    <div class="cmp-navigationmenu__item hidden"  data-sly-test="${model.message}">
-        <p class="cmp-navigationmenu__item-label">Sling Model message:</p>
+    <div class="hidden"  data-sly-test="${model.message}">
         <pre class="cmp-navigationmenu__item-output"data-cmp-hook-navigationmenu="model_message">${model.message}</pre>
     </div>
+
     <div class="cmp-navigationmenu__item cmp-navigationmenu__nav-container">
+
         
-            <ol class="cmp-navigationmenu__main-list" >
-                <li id="mainNavIcon" class="cmp-navigationmenu__mainlist_item cmp-navigationmenu__main-icon">
-                    <a  class="cmp-navigationmenu__item-link" href="${model.iconLink}" >
-                        <img src="${model.navIcon}"  alt="Home"/>
-                    </a>
+        <ol class="cmp-navigationmenu__main-list" >
+            <li id="mainNavIcon" class="cmp-navigationmenu__mainlist_item cmp-navigationmenu__main-icon">
+                <a  class="cmp-navigationmenu__item-link" href="${model.iconLink}" >
+                    <img src="${model.navIcon}"  alt="Home"/>
+                </a>
+            </li>
+            <sly data-sly-list.layerZeroList="${model.navigationLayerZeroList}">
+                <li id="${layerZeroList.titleAsClass}" class="cmp-navigationmenu__mainlist_item">
+                    <a  
+                        id="mainlink_${layerZeroList.titleAsClass}"
+                        class="cmp-navigationmenu__item-link cmp-navigationmenu__main-link" 
+                        href="${layerZeroList.link}" 
+                    >${layerZeroList.title}</a>
                 </li>
-                <sly data-sly-list.layerZeroList="${model.navLayerZeroList}">
-                    <li id="${layerZeroList.titleAsClass}" class="cmp-navigationmenu__mainlist_item">
-                        <a  
-                            id="mainlink_${layerZeroList.titleAsClass}"
-                            class="cmp-navigationmenu__item-link cmp-navigationmenu__main-link" 
-                            href="${layerZeroList.link}" 
-                        >${layerZeroList.title}</a>
-                    </li>
-                </sly>
-            </ol>
+            </sly>
+        </ol>
 
-            <div class="cmp-navigationmenu__sublist-main-container" >    
-                <div class="cmp-navigationmenu__sublist-spacer left" ></div>
-                <sly data-sly-list.layerZeroList="${model.navLayerZeroList}">         
 
-                    <ol 
-                        id="l1_childof__${layerZeroList.titleAsClass}"          
-                        class="cmp-navigationmenu__sub-list cmp-navigationmenu__list-layer-2"
-                           
-                    >
-                        <sly data-sly-list.layerOneList="${layerZeroList.navLayerOneList}"
-                            data-sly-test="${layerZeroList.layerOneConfigured}">
-                            <li 
-                                id="${layerOneList.titleAsClass}"
-                                class="cmp-navigationmenu__sublist_item cmp-navigationmenu__layer-2-item"
-                            >
-                                <a  
-                                    class="cmp-navigationmenu__item-link ${layerOneList.layerTwoConfiguredToClass}" 
-                                    href="${layerOneList.link}" 
-                                >${layerOneList.title}</a>                            
-                            </li> 
-                        </sly>
-                        <hr>                
-                        <li 
-                            id="all_${layerZeroList.titleAsClass}" 
-                            class="cmp-navigationmenu__sublist_item cmp-navigationmenu__layer-2-item"
-                        >
-                            <a  
-                                class="cmp-navigationmenu__item-link asLinks" 
-                                href="${layerZeroList.link}" 
-                            >Shop all ${layerZeroList.title}</a>
-                        </li>
-                    </ol>
+        <div class="cmp-navigationmenu__sublist-main-container" > 
+            <div class="cmp-navigationmenu_sublist-inner-container">
 
-                    <sly data-sly-list.layerOneList="${layerZeroList.navLayerOneList}" >
+                <sly data-sly-list.layerZeroList="${model.navigationLayerZeroList}"> 
+                    <sly data-sly-test="${layerZeroList.layerOneConfigured && !layerZeroList.listConnect}">
+
                         <ol 
-                            id="l2_childof__${layerOneList.titleAsClass}"      
-                            class="cmp-navigationmenu__sub-list  cmp-navigationmenu__list-layer-3"
-                            data-sly-test="${layerOneList.layerTwoConfigured}"
+                            id="layer_1_childof__${layerZeroList.titleAsClass}"          
+                            class="cmp-navigationmenu__sub-list cmp-navigationmenu__list-layer_1"                           
                         >
-                            <sly data-sly-list.layerTwoList="${layerOneList.navLayerTwoList}" >
+
+                            <sly data-sly-list.layerOneList="${layerZeroList.navigationLayerOneList}"> 
                                 <li 
-                                    id="${layerTwoList.titleAsClass}"
-                                    class="cmp-navigationmenu__sublist_item cmp-navigationmenu__layer-3-item"
+                                    id="${layerOneList.titleAsClass}"
+                                    class="cmp-navigationmenu__sublist_item cmp-navigationmenu__layer_1-item"
                                 >
-                                    <a  class="cmp-navigationmenu__item-link asLinks" href="${layerTwoList.link}" >${layerTwoList.title}</a>
-                                </li>
+                                    <a  
+                                        class="cmp-navigationmenu__item-link layer_1_link ${layerOneList.layerTwoConfiguredToClass}" 
+                                        href="${layerOneList.link}" 
+                                    >${layerOneList.title}</a>                            
+                                </li> 
                             </sly>
-                            <hr>                
+                            <hr class="cmp-navigationmenu__separator"/>                
                             <li 
-                                id="all_${layerOneList.titleAsClass}" 
-                                class="cmp-navigationmenu__sublist_item cmp-navigationmenu__layer-3-item"
+                                id="all_${layerZeroList.titleAsClass}" 
+                                class="cmp-navigationmenu__sublist_item cmp-navigationmenu__layer_1-item"
                             >
                                 <a  
                                     class="cmp-navigationmenu__item-link asLinks" 
-                                    href="${layerOneList.link}" 
-                                >Shop all ${layerOneList.title}</a>
+                                    href="${layerZeroList.link}" 
+                                >Shop all ${layerZeroList.title}</a>
                             </li>
-                        </ol> 
-                    </sly>
+                        
+                        </ol>
+
+                        
+
+                        <sly data-sly-list.layerOneList="${layerZeroList.navigationLayerOneList}" >
+                            
+                            
+                            <sly data-sly-test="${layerOneList.layerTwoConfigured && !layerOneList.listConnect}">
+                                <sly data-sly-call="${menuTemplate.my_menuList @ pass_container=layerOneList, pass_checker=layerOneList.layerTwoConfigured, pass_looper=layerOneList.navigationLayerTwoList, pass_layer='layer_2'}" ></sly>
+                            </sly>
+
+                            <sly data-sly-test="${!layerOneList.layerTwoConfigured && layerOneList.listConnect}">
+                                <sly data-sly-call="${categoryTemplate.my_catList @ pass_container=layerOneList, pass_layer='layer_2',pass_categories=model.categoryList}"></sly>
+                            </sly>
+                            
+
+                        </sly>
+                        
+
+                    </sly>  
+
+                    <sly data-sly-test="${!layerZeroList.layerOneConfigured && layerZeroList.listConnect }">
+                        <sly data-sly-call="${categoryTemplate.my_catList @ pass_container=layerZeroList, pass_layer='layer_1', pass_categories=model.categoryList}"></sly>
+                    </sly>  
 
                 </sly>
 
             </div>
-    </div>
+        </div>
 
+
+    </div>
 </div>
