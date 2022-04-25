@@ -70,3 +70,41 @@
         >Shop all ${layerOneList.title}</a>
     </li>
 </ol> 
+
+
+
+
+
+
+
+
+
+<ol 
+id="layer_1_childof__${layerZeroList.titleAsClass}"          
+class="cmp-navigationmenu__sub-list cmp-navigationmenu__list-layer_1"                           
+>
+
+<sly data-sly-list.layerOneList="${layerZeroList.navigationLayerOneList}"> 
+    <li 
+        id="${layerOneList.titleAsClass}"
+        class="cmp-navigationmenu__sublist_item cmp-navigationmenu__layer_1-item"
+    >
+        <a  
+            class="cmp-navigationmenu__item-link layer_1_link ${layerOneList.layerTwoConfiguredToClass}" 
+            href="${layerOneList.link}" 
+        >${layerOneList.title}</a>                            
+    </li> 
+</sly>
+<hr class="cmp-navigationmenu__separator"/>                
+<li 
+    id="all_${layerZeroList.titleAsClass}" 
+    class="cmp-navigationmenu__sublist_item cmp-navigationmenu__layer_1-item"
+>
+    <a  
+        class="cmp-navigationmenu__item-link asLinks" 
+        href="${layerZeroList.link}" 
+    >Shop all ${layerZeroList.title}</a>
+</li>
+
+</ol>
+

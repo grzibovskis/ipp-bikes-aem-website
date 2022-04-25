@@ -40,13 +40,17 @@ public class LayerOneModel {
     public boolean isLayerTwoConfigured() {
         return navLayerTwoList_java != null && !navLayerTwoList_java.isEmpty();
     } 
-    public String isLayerTwoConfiguredToClass() {
-        if( navLayerTwoList_java != null && !navLayerTwoList_java.isEmpty() ){
+    /*
+    public String isNextLayerConfiguredToClass() { //isLayerTwoConfiguredToClass() {
+        if( isLayerTwoConfigured() || getListConnect() != null ){
             return "hasSublist";
         } else {            
             return "asLinks";
         }
-    }  
+    }  */
+    public String isNextLayerConfiguredToClass() {
+        return passFunction.isNextLayerConfiguredToClass( isLayerTwoConfigured(), listConnect);
+    }
 
     public List<LayerTwoModel> getNavigationLayerTwoList(){
         return navLayerTwoList_java;

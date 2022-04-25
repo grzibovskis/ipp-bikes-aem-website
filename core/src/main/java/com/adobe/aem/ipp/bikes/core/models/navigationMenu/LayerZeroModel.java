@@ -40,12 +40,16 @@ public class LayerZeroModel {
     public boolean isLayerOneConfigured() {
         return navLayerOneList != null && !navLayerOneList.isEmpty();
     } 
-    public String isLayerOneConfiguredToClass() {
-        if( navLayerOneList != null && !navLayerOneList.isEmpty() ){
+    /*
+    public String isNextLayerConfiguredToClass() { //isLayerOneConfiguredToClass() {
+        if( isLayerOneConfigured() || getListConnect() != null ){
             return "hasSublist";
         } else {            
             return "asLinks";
         }
+    }*/
+    public String isNextLayerConfiguredToClass() {
+        return passFunction.isNextLayerConfiguredToClass( isLayerOneConfigured(), listConnect);
     }
 
     public List<LayerOneModel> getNavigationLayerOneList(){

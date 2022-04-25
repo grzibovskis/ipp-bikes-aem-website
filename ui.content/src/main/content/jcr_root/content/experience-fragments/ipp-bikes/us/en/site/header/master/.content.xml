@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2022-04-19T12:09:40.194+03:00"
+        cq:lastModified="{Date}2022-04-25T15:43:16.224+03:00"
         cq:lastModifiedBy="admin"
         cq:template="/conf/ipp-bikes/settings/wcm/templates/xf-web-variation"
         cq:xfMasterVariation="{Boolean}true"
@@ -85,7 +85,7 @@
                 <navigation_menu_611810526
                     jcr:created="{Date}2022-04-11T15:44:15.851+03:00"
                     jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2022-04-19T12:09:39.922+03:00"
+                    jcr:lastModified="{Date}2022-04-25T15:43:16.099+03:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="ipp-bikes/components/navigation-menu"
@@ -274,18 +274,23 @@
                         </item1>
                         <item2
                             jcr:primaryType="nt:unstructured"
+                            listConnect="categories-parts"
                             title="Parts"/>
                         <item3
                             jcr:primaryType="nt:unstructured"
+                            listConnect="categories-mens"
                             title="Mens"/>
                         <item4
                             jcr:primaryType="nt:unstructured"
+                            listConnect="categories-womens"
                             title="Womens"/>
                         <item5
                             jcr:primaryType="nt:unstructured"
+                            listConnect="categories-kids"
                             title="Kids"/>
                         <item6
                             jcr:primaryType="nt:unstructured"
+                            listConnect="categories-gifts"
                             title="Goods &amp; Gifts"/>
                         <item7
                             jcr:primaryType="nt:unstructured"
@@ -324,6 +329,71 @@
                             </navItemsFirstList>
                         </item7>
                     </navItemsMainList>
+                    <categoryList jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            catListID="categories-parts">
+                            <categoryItems jcr:primaryType="nt:unstructured">
+                                <item0
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="Audio &amp; Electronics"/>
+                                <item1
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="Custom Accessories &amp; Trim"/>
+                                <item2
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="Handelbars &amp; Controls"/>
+                                <item3
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="maintenance"/>
+                                <item4
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="paint &amp; bodywork"/>
+                                <item5
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="security &amp; storage"/>
+                                <item6
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="windshields &amp; deflectors"/>
+                                <item7
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="bags, luggage &amp; racks"/>
+                                <item8
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="electrical &amp; batteries"/>
+                                <item9
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="instruments and gauges"/>
+                                <item10
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="mirrors"/>
+                                <item11
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="Screamin' Eagle Preformance"/>
+                                <item12
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="Tires &amp; wheels"/>
+                                <item13
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="breaks &amp; suspension"/>
+                                <item14
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="foot controls"/>
+                                <item15
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="lighting"/>
+                                <item16
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="oil change kits"/>
+                                <item17
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="seats &amp; backrests"/>
+                                <item18
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="vehicle protection"/>
+                            </categoryItems>
+                        </item0>
+                    </categoryList>
                 </navigation_menu_611810526>
                 <container
                     jcr:created="{Date}2022-03-24T14:42:31.475+02:00"

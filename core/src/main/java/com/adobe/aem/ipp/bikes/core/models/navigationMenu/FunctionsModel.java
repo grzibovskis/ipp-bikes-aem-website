@@ -23,6 +23,15 @@ public class FunctionsModel {
     public String ProcessListConnect(String inputList) {
         return StringUtils.isEmpty(inputList) ? null : inputList;
     }
+
+    
+    public String isNextLayerConfiguredToClass( boolean isListConfigured, String inputListConnect) { 
+        if( isListConfigured || !StringUtils.isEmpty(inputListConnect) ){
+            return "hasSublist";
+        } else {            
+            return "asLinks";
+        }
+    }  
     
     
 }

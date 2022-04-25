@@ -27,5 +27,16 @@ public class LayerTwoModel {
     public String getLink(){ return passFunction.ProcessLink(link); }
     public String getListConnect(){ return passFunction.ProcessListConnect(listConnect); }
 
+/*
+    public String isNextLayerConfiguredToClass() {
+        if( getListConnect() != null ){
+            return "hasSublist";
+        } else {
+            return "asLinks";
+        }
+    }  */
         
+    public String isNextLayerConfiguredToClass() { 
+        return passFunction.isNextLayerConfiguredToClass( false, listConnect);
+    }
 }

@@ -93,17 +93,23 @@
 
     //[IK] variables
     var activeMenu_layer1 ;   
-    var activeMenu_layer2 ; 
+    var activeMenu_layer2 ;
+    var activeMenu_layer3 ;  
 
     //[IK] hide all submenus and set the submenu of the currenly mouseoverd main-list-item as active
     $(".cmp-navigationmenu__mainlist_item").mouseenter(function() {
-        activeMenu_layer1 = $(this).attr("id");  
+        //[] set currnt ID
+        activeMenu_layer1 = $(this).attr("id");          
 
-        $(".cmp-navigationmenu__sub-list").removeClass("active"); //[IK] remove visability from all submenus
-        $("#layer_1_childof__"+ activeMenu_layer1 ).addClass("active");   
+        //[] set respective item as highlighted
+            $(".cmp-navigationmenu__item-link").removeClass("highlighted_main");
+            $("#mainlink_"+ activeMenu_layer1 ).addClass("highlighted_main");
 
-        $(".cmp-navigationmenu__item-link").removeClass("highlighted_main");
-        $("#mainlink_"+ activeMenu_layer1 ).addClass("highlighted_main");
+        //[] show child menu of respective item
+            $(".cmp-navigationmenu__sub-list").removeClass("active"); //[IK] remove visability from all submenus
+            $("#layer_1_childof__"+ activeMenu_layer1 ).addClass("active");   
+
+        AddColumClassToCategryList("#layer_1_childof__"+ activeMenu_layer1);
     }); 
     
     //[IK] hide layer_2 submenus and show the layer_2 submenu of the currently mouseovered layer_1 item
@@ -111,12 +117,29 @@
         activeMenu_layer2 = $(this).attr("id");
 
         //[IK] remove visability from only layer_2 submenus, and then add vis. to the specified one
-        $(".cmp-navigationmenu__list-layer_2").removeClass("active");
-        $("#layer_2_childof__"+ activeMenu_layer2 ).addClass("active");
+            $(".cmp-navigationmenu__list-layer_2").removeClass("active");
+            $("#layer_2_childof__"+ activeMenu_layer2 ).addClass("active");
 
         //[IK] remove highlights only from layer_1 submenus, and then add highl. to the specified one
-        $(".cmp-navigationmenu__item-link.layer_1_link").removeClass("highlighted_sub");
-        $(this).children("a.hasSublist").addClass("highlighted_sub");
+            $(".cmp-navigationmenu__item-link.layer_1_link").removeClass("highlighted_sub");
+            $(this).children("a.hasSublist").addClass("highlighted_sub");
+        
+        AddColumClassToCategryList("#layer_2_childof__"+ activeMenu_layer2);
+    }); 
+    
+    //[IK] hide layer_3 cat_lists and show the layer_3 cat_list of the currently mouseovered layer_2 item
+    $(".cmp-navigationmenu__layer_2-item").mouseenter(function() {
+        activeMenu_layer3 = $(this).attr("id");
+
+        //[IK] remove visability from only layer_3 submenus, and then add vis. to the specified one
+            $(".cmp-navigationmenu__list-layer_3").removeClass("active");
+            $("#layer_3_childof__"+ activeMenu_layer3 ).addClass("active");
+
+        //[IK] remove highlights only from layer_2 submenus, and then add highl. to the specified one
+            $(".cmp-navigationmenu__item-link.layer_2_link").removeClass("highlighted_sub");
+            $(this).children("a.hasSublist").addClass("highlighted_sub");
+
+        AddColumClassToCategryList("#layer_3_childof__"+ activeMenu_layer3);
         
     }); 
     
@@ -140,3 +163,20 @@
     });
     
 }());
+
+
+function AddColumClassToCategryList(pass_listID){
+
+    if( $( pass_listID ).is(".cmp-navigationmenu__categoryList") ){
+        var child_count = $( pass_listID ).children().length;
+       
+        if( child_count <= 6 ){ 
+            $( pass_listID ).addClass("col_count_one"); 
+        } else if( child_count > 6 && child_count <= 12 ){
+            $( pass_listID ).addClass("col_count_two"); 
+        } else {
+            $( pass_listID ).addClass("col_count_three"); 
+        }
+        
+    }
+}

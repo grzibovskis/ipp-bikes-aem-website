@@ -13,9 +13,9 @@
                     class="cmp-navigationmenu__sublist_item cmp-navigationmenu__${pass_layer}-item"
                 >
                     <a  
-                        class="cmp-navigationmenu__item-link ${pass_layer}_link asLinks" 
+                        class="cmp-navigationmenu__item-link ${pass_layer}_link ${innerLoop.nextLayerConfiguredToClass}" 
                         href="${innerLoop.link}" 
-                    >inner ${innerLoop.title}</a>
+                    >${innerLoop.title}</a>
                 </li>
             </sly>
             <hr class="cmp-navigationmenu__separator" />                

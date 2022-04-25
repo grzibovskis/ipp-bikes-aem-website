@@ -42,48 +42,26 @@
                 <sly data-sly-list.layerZeroList="${model.navigationLayerZeroList}"> 
                     <sly data-sly-test="${layerZeroList.layerOneConfigured && !layerZeroList.listConnect}">
 
-                        <ol 
-                            id="layer_1_childof__${layerZeroList.titleAsClass}"          
-                            class="cmp-navigationmenu__sub-list cmp-navigationmenu__list-layer_1"                           
-                        >
+                        <sly data-sly-call="${menuTemplate.my_menuList @ pass_container=layerZeroList, pass_checker=layerZeroList.layerOneConfigured, pass_looper=layerZeroList.navigationLayerOneList, pass_layer='layer_1'}" ></sly>
 
-                            <sly data-sly-list.layerOneList="${layerZeroList.navigationLayerOneList}"> 
-                                <li 
-                                    id="${layerOneList.titleAsClass}"
-                                    class="cmp-navigationmenu__sublist_item cmp-navigationmenu__layer_1-item"
-                                >
-                                    <a  
-                                        class="cmp-navigationmenu__item-link layer_1_link ${layerOneList.layerTwoConfiguredToClass}" 
-                                        href="${layerOneList.link}" 
-                                    >${layerOneList.title}</a>                            
-                                </li> 
-                            </sly>
-                            <hr class="cmp-navigationmenu__separator"/>                
-                            <li 
-                                id="all_${layerZeroList.titleAsClass}" 
-                                class="cmp-navigationmenu__sublist_item cmp-navigationmenu__layer_1-item"
-                            >
-                                <a  
-                                    class="cmp-navigationmenu__item-link asLinks" 
-                                    href="${layerZeroList.link}" 
-                                >Shop all ${layerZeroList.title}</a>
-                            </li>
-                        
-                        </ol>
 
-                        
-
-                        <sly data-sly-list.layerOneList="${layerZeroList.navigationLayerOneList}" >
-                            
+                        <sly data-sly-list.layerOneList="${layerZeroList.navigationLayerOneList}" > 
                             
                             <sly data-sly-test="${layerOneList.layerTwoConfigured && !layerOneList.listConnect}">
+
                                 <sly data-sly-call="${menuTemplate.my_menuList @ pass_container=layerOneList, pass_checker=layerOneList.layerTwoConfigured, pass_looper=layerOneList.navigationLayerTwoList, pass_layer='layer_2'}" ></sly>
+
+                                <sly data-sly-list.layerTwoList="${layerOneList.navigationLayerTwoList}" > 
+                                    <sly data-sly-test="${layerTwoList.listConnect}">
+                                        <sly data-sly-call="${categoryTemplate.my_catList @ pass_container=layerTwoList, pass_layer='layer_3',pass_categories=model.categoryList}"></sly>
+                                    </sly>
+                                </sly>
+
                             </sly>
 
                             <sly data-sly-test="${!layerOneList.layerTwoConfigured && layerOneList.listConnect}">
                                 <sly data-sly-call="${categoryTemplate.my_catList @ pass_container=layerOneList, pass_layer='layer_2',pass_categories=model.categoryList}"></sly>
-                            </sly>
-                            
+                            </sly>     
 
                         </sly>
                         
