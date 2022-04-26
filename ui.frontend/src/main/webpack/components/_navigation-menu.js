@@ -105,9 +105,9 @@
             $(".cmp-navigationmenu__item-link").removeClass("highlighted_main");
             $("#mainlink_"+ activeMenu_layer1 ).addClass("highlighted_main");
 
-        //[] show child menu of respective item
-            $(".cmp-navigationmenu__sub-list").removeClass("active"); //[IK] remove visability from all submenus
-            $("#layer_1_childof__"+ activeMenu_layer1 ).addClass("active");   
+        //[] hide all other menus and show child menu of respective item
+            $(".cmp-navigationmenu__sub-list-container").removeClass("active"); 
+            $("#layer_1_containerOf__"+ activeMenu_layer1 ).addClass("active");   
 
         AddColumClassToCategryList("#layer_1_childof__"+ activeMenu_layer1);
     }); 
@@ -117,8 +117,8 @@
         activeMenu_layer2 = $(this).attr("id");
 
         //[IK] remove visability from only layer_2 submenus, and then add vis. to the specified one
-            $(".cmp-navigationmenu__list-layer_2").removeClass("active");
-            $("#layer_2_childof__"+ activeMenu_layer2 ).addClass("active");
+            $(".cmp-navigationmenu__list_containerlayer_2").removeClass("active");
+            $("#layer_2_containerOf__"+ activeMenu_layer2 ).addClass("active");
 
         //[IK] remove highlights only from layer_1 submenus, and then add highl. to the specified one
             $(".cmp-navigationmenu__item-link.layer_1_link").removeClass("highlighted_sub");
@@ -132,8 +132,8 @@
         activeMenu_layer3 = $(this).attr("id");
 
         //[IK] remove visability from only layer_3 submenus, and then add vis. to the specified one
-            $(".cmp-navigationmenu__list-layer_3").removeClass("active");
-            $("#layer_3_childof__"+ activeMenu_layer3 ).addClass("active");
+            $(".cmp-navigationmenu__list_containerlayer_3").removeClass("active");
+            $("#layer_3_containerOf__"+ activeMenu_layer3 ).addClass("active");
 
         //[IK] remove highlights only from layer_2 submenus, and then add highl. to the specified one
             $(".cmp-navigationmenu__item-link.layer_2_link").removeClass("highlighted_sub");
@@ -157,7 +157,7 @@
         $(".cmp-navigationmenu__item-link").removeClass("highlighted_sub");
         
         //[IK] remove visability from all submenus
-        $(".cmp-navigationmenu__sub-list").removeClass("active"); 
+        $(".cmp-navigationmenu__sub-list-container").removeClass("active"); 
 
         $(".cmp-navigationmenu__sublist-main-container").removeClass("visable");
     });

@@ -16,6 +16,7 @@ $text_color: #000;
         font-size: .9rem;   
         text-decoration: none; 
         color: $text_color;
+        cursor: pointer;
 
         //the next three are to fill parent of anchro tag
         display: flex;
@@ -51,7 +52,6 @@ $text_color: #000;
             text-transform: uppercase;
             
             box-sizing: border-box;
-            cursor: pointer;
             vertical-align: middle;
             justify-content: center;
 
@@ -110,7 +110,110 @@ $text_color: #000;
             display: flex;
             width: 100%;
             height: 100%;
-            background-color: $inactive_background_color;        
+            background-color: $inactive_background_color; 
+            
+            hr.cmp-navigationmenu__separator {
+                margin: 10px 16px;
+                border: none;
+                height: 1px;
+                /* Set the hr color */
+                $horizontal_row_color: rgba(0,0,0,0.2);
+                color: $horizontal_row_color; /* old IE */
+                background-color: $horizontal_row_color; /* Modern Browsers */
+
+                
+            }
+
+
+            div.cmp-navigationmenu__sub-list-container{
+                display: none;
+                margin: 0;
+                padding: 0;
+
+                &.active {
+                    display: inline-block;
+                    height: auto;
+
+                    ol.cmp-navigationmenu__sub-list{
+                        margin: 0;
+                        padding: 0;                     
+                        list-style: none;
+
+                        height: auto;
+                        padding-bottom: 3em;
+                        border-left: 1px solid rgba(160, 160, 160, 0.24);   
+                        background-color: $main_background_color;
+
+                        li.cmp-navigationmenu__sublist_item a{         
+                            text-transform: uppercase;           
+                            display: flex;
+                            height: 100%;
+                            padding: 1.2em 2.4em; 
+    
+                            &.hasSublist:hover, &.highlighted_sub {
+                                background-color: $item_highlight_color;
+                                color: $text_color; 
+                            }
+    
+                            &.asLinks:hover {
+                                color: $brand-color; 
+                            }                    
+                            
+                        }
+    
+                        &.cmp-navigationmenu__categoryList {
+                            display: inline-block;
+                            background-color: $inactive_background_color;
+                            padding: 20px 16px 16px;
+                            border: none;
+                            top: 0;
+                            
+                            &.col_count_one{ column-count: 1; column-gap: 0px; }
+                            &.col_count_two{ column-count: 2; column-gap: 20px; }
+                            &.col_count_three{ column-count: 3; column-gap: 20px; }
+
+                            &.cmp-navigationmenu__catListOfExtras{
+                                float: right;
+                            }
+    
+                            li.cmp-navigationmenu__catItem a{
+                                padding: 16px 20px;
+                                text-transform: capitalize;
+                                font-weight: 500;
+    
+                                &.thick_cat_link {
+                                    font-weight: bold;
+                                }
+    
+                                &:hover {
+                                    color: $brand-color; 
+                                }    
+                            }
+                        }
+                    }//[IK]end --- [.ol.cmp-navigationmenu__sub-list]
+
+                }//[IK]end --- [.active]
+            }//[IK] end --- [div.cmp-navigationmenu__sub-list-container]
+            
+        }//[IK]end --- [.cmp-navigationmenu__sublist-inner-container]
+    }//[IK]end --- [.cmp-navigationmenu__sublist-main-container]
+}//[IK]end --- [.cmp-navigationmenu]
+
+
+
+
+@media  ( max-width: 1440px ){
+    div.cmp-navigationmenu a {
+        font-size: .7rem !important;
+    }
+}
+@media  ( max-width: 1240px ){
+    div.cmp-navigationmenu a {
+        font-size: .5rem !important;
+    }
+}
+
+/*
 
             ol.cmp-navigationmenu__sub-list {
                 display: none;
@@ -141,29 +244,17 @@ $text_color: #000;
                         }                    
                         
                     }
-        
-
-                    hr.cmp-navigationmenu__separator {
-                        margin: 10px 16px;
-                        border: none;
-                        height: 1px;
-                        /* Set the hr color */
-                        $horizontal_row_color: rgba(0,0,0,0.2);
-                        color: $horizontal_row_color; /* old IE */
-                        background-color: $horizontal_row_color; /* Modern Browsers */
-                    }
-
 
                     &.cmp-navigationmenu__categoryList {
                         background-color: $inactive_background_color;
                         padding: 20px 16px 16px;
                         
-                        &.col_count_one{ column-count: 1; }
-                        &.col_count_two{ column-count: 2; }
-                        &.col_count_three{ column-count: 3; }
+                        &.col_count_one{ column-count: 1; column-gap: 0px; }
+                        &.col_count_two{ column-count: 2; column-gap: 20px; }
+                        &.col_count_three{ column-count: 3; column-gap: 20px; }
 
                         li.cmp-navigationmenu__catItem a{
-                            padding: 10px;
+                            padding: 16px 20px;
                             text-transform: capitalize;
                             font-weight: 500;
 
@@ -179,22 +270,4 @@ $text_color: #000;
 
 
                 }//[IK]end of [.active]
-            }//[IK]end of [.ol.cmp-navigationmenu__sub-list]
-            
-        }//[IK]end of [.cmp-navigationmenu__sublist-inner-container]
-    }//[IK]end --- [.cmp-navigationmenu__sublist-main-container]
-}//[IK]end --- [.cmp-navigationmenu]
-
-
-
-
-@media  ( max-width: 1440px ){
-    div.cmp-navigationmenu a {
-        font-size: .7rem !important;
-    }
-}
-@media  ( max-width: 1240px ){
-    div.cmp-navigationmenu a {
-        font-size: .5rem !important;
-    }
-}
+            }//[IK]end of [.ol.cmp-navigationmenu__sub-list]*/

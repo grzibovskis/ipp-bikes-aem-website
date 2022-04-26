@@ -1,7 +1,6 @@
 TO-DO:
 
     --- categories
-        -- figure out layer_1 secondery list;
         -- play-around - cat-list-item - padding, letter-spacing, width
 
     --- cart / search button pop-out sidebar functionality   

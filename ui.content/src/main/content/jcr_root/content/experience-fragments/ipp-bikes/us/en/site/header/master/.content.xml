@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2022-04-25T15:43:16.224+03:00"
+        cq:lastModified="{Date}2022-04-26T13:51:18.092+03:00"
         cq:lastModifiedBy="admin"
         cq:template="/conf/ipp-bikes/settings/wcm/templates/xf-web-variation"
         cq:xfMasterVariation="{Boolean}true"
@@ -85,7 +85,7 @@
                 <navigation_menu_611810526
                     jcr:created="{Date}2022-04-11T15:44:15.851+03:00"
                     jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2022-04-25T15:43:16.099+03:00"
+                    jcr:lastModified="{Date}2022-04-26T13:51:17.800+03:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="ipp-bikes/components/navigation-menu"
@@ -286,7 +286,7 @@
                             title="Womens"/>
                         <item5
                             jcr:primaryType="nt:unstructured"
-                            listConnect="categories-kids"
+                            listConnect="kids-categories"
                             title="Kids"/>
                         <item6
                             jcr:primaryType="nt:unstructured"
@@ -393,6 +393,66 @@
                                     catName="vehicle protection"/>
                             </categoryItems>
                         </item0>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            catListID="Parts">
+                            <categoryItems jcr:primaryType="nt:unstructured">
+                                <item0
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="New Arrivals"/>
+                                <item1
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="Nighster New Arrivals"/>
+                                <item2
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="&quot;Bikes&quot; Audio Prowerd by Rockford Fosgate"/>
+                                <item3
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="See all Collections"/>
+                                <item4
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="Customize Bikes"/>
+                                <item5
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="Customize Packages"/>
+                            </categoryItems>
+                        </item1>
+                        <item2
+                            jcr:primaryType="nt:unstructured"
+                            catListID="Kids">
+                            <categoryItems jcr:primaryType="nt:unstructured">
+                                <item0
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="New arrivals"/>
+                            </categoryItems>
+                        </item2>
+                        <item3
+                            jcr:primaryType="nt:unstructured"
+                            catListID="kids-categories">
+                            <categoryItems jcr:primaryType="nt:unstructured">
+                                <item0
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="&quot;Bikes&quot; for boys"/>
+                                <item1
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="boy's riding gear"/>
+                                <item2
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="electric balance bikes"/>
+                                <item3
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="&quot;Bikes&quot; for girls"/>
+                                <item4
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="girls riding gear"/>
+                                <item5
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="baby &amp; toddler boys'"/>
+                                <item6
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="baby &amp; toddler girls'"/>
+                            </categoryItems>
+                        </item3>
                     </categoryList>
                 </navigation_menu_611810526>
                 <container
