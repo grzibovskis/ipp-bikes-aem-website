@@ -133,13 +133,14 @@ $text_color: #000;
                 &.active {
                     display: inline-block;
                     height: auto;
+                    overflow: hidden;
 
                     ol.cmp-navigationmenu__sub-list{
                         margin: 0;
                         padding: 0;                     
                         list-style: none;
 
-                        height: auto;
+                        height: 100%;
                         padding-bottom: 3em;
                         border-left: 1px solid rgba(160, 160, 160, 0.24);   
                         background-color: $main_background_color;

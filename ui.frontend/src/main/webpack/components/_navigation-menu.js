@@ -117,7 +117,7 @@
         activeMenu_layer2 = $(this).attr("id");
 
         //[IK] remove visability from only layer_2 submenus, and then add vis. to the specified one
-            $(".cmp-navigationmenu__list_containerlayer_2").removeClass("active");
+            $(".cmp-navigationmenu__list_container_layer_2").removeClass("active");
             $("#layer_2_containerOf__"+ activeMenu_layer2 ).addClass("active");
 
         //[IK] remove highlights only from layer_1 submenus, and then add highl. to the specified one
@@ -132,7 +132,7 @@
         activeMenu_layer3 = $(this).attr("id");
 
         //[IK] remove visability from only layer_3 submenus, and then add vis. to the specified one
-            $(".cmp-navigationmenu__list_containerlayer_3").removeClass("active");
+            $(".cmp-navigationmenu__list_container_layer_3").removeClass("active");
             $("#layer_3_containerOf__"+ activeMenu_layer3 ).addClass("active");
 
         //[IK] remove highlights only from layer_2 submenus, and then add highl. to the specified one

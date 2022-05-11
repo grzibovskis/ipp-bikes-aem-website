@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2022-04-26T13:51:18.092+03:00"
+        cq:lastModified="{Date}2022-05-11T13:41:06.466+03:00"
         cq:lastModifiedBy="admin"
         cq:template="/conf/ipp-bikes/settings/wcm/templates/xf-web-variation"
         cq:xfMasterVariation="{Boolean}true"
@@ -85,7 +85,7 @@
                 <navigation_menu_611810526
                     jcr:created="{Date}2022-04-11T15:44:15.851+03:00"
                     jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2022-04-26T13:51:17.800+03:00"
+                    jcr:lastModified="{Date}2022-05-11T13:41:06.157+03:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="ipp-bikes/components/navigation-menu"
@@ -291,7 +291,7 @@
                         <item6
                             jcr:primaryType="nt:unstructured"
                             listConnect="categories-gifts"
-                            title="Goods &amp; Gifts"/>
+                            title="Stuff"/>
                         <item7
                             jcr:primaryType="nt:unstructured"
                             title="Experiance IPP">
@@ -453,6 +453,222 @@
                                     catName="baby &amp; toddler girls'"/>
                             </categoryItems>
                         </item3>
+                        <item4
+                            jcr:primaryType="nt:unstructured"
+                            catListID="categories-mens">
+                            <categoryItems jcr:primaryType="nt:unstructured">
+                                <item0
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="Jackets &amp; vests"/>
+                                <item1
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="helmets"/>
+                                <item2
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="boots &amp; shoes"/>
+                                <item3
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="eyewear"/>
+                                <item4
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="gloves"/>
+                                <item5
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="riding pants &amp; chaps"/>
+                                <item6
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="vintage inspired"/>
+                                <item7
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="rain gear"/>
+                                <item8
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="heated gear"/>
+                                <item9
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="button downs"/>
+                                <item10
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="t-shirts &amp; polos"/>
+                                <item11
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="sweatshirts &amp; hodies"/>
+                                <item12
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="preformance apparel"/>
+                                <item13
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="jeans &amp; pants"/>
+                                <item14
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="accessories"/>
+                                <item15
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="watches"/>
+                                <item16
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="wallets"/>
+                                <item17
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="hats &amp; caps"/>
+                                <item18
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="face masks &amp; gaiters"/>
+                            </categoryItems>
+                        </item4>
+                        <item5
+                            jcr:primaryType="nt:unstructured"
+                            catListID="Mens">
+                            <categoryItems jcr:primaryType="nt:unstructured">
+                                <item0
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="New Arrivals"/>
+                                <item1
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="willie g skull collection"/>
+                                <item2
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="pan adventure touring"/>
+                                <item3
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="HD museum"/>
+                                <item4
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="Sale"/>
+                            </categoryItems>
+                        </item5>
+                        <item6
+                            jcr:primaryType="nt:unstructured"
+                            catListID="categories-womens">
+                            <categoryItems jcr:primaryType="nt:unstructured">
+                                <item0
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="jackets &amp; vests"/>
+                                <item1
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="helmets"/>
+                                <item2
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="boots &amp; shoes"/>
+                                <item3
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="eyewear"/>
+                                <item4
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="jeans &amp; pants"/>
+                                <item5
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="rain gear"/>
+                                <item6
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="heated gear"/>
+                                <item7
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="shirts &amp; t-shirts"/>
+                                <item8
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="sweatshirts &amp; hoodies"/>
+                                <item9
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="accessories"/>
+                                <item10
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="jewelry"/>
+                                <item11
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="watches"/>
+                                <item12
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="hats &amp; caps"/>
+                                <item13
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="gloves"/>
+                                <item14
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="riding pants &amp; chaps"/>
+                            </categoryItems>
+                        </item6>
+                        <item7
+                            jcr:primaryType="nt:unstructured"
+                            catListID="Womens">
+                            <categoryItems jcr:primaryType="nt:unstructured">
+                                <item0
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="New arrivals"/>
+                                <item1
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="billy g skull collection"/>
+                                <item2
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="top gifts for her"/>
+                                <item3
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="pan adventure tour"/>
+                                <item4
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="HD museum"/>
+                                <item5
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="Sale"/>
+                            </categoryItems>
+                        </item7>
+                        <item8
+                            jcr:primaryType="nt:unstructured"
+                            catListID="categories-gifts">
+                            <categoryItems jcr:primaryType="nt:unstructured">
+                                <item0
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="coffee mugs &amp; travel mugs"/>
+                                <item1
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="hog banks"/>
+                                <item2
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="garden gnomes"/>
+                                <item3
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="holiday collectibles"/>
+                                <item4
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="jewelry"/>
+                                <item5
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="home decor"/>
+                                <item6
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="electric balance bike"/>
+                                <item7
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="drinkware"/>
+                                <item8
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="ride bells"/>
+                                <item9
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="banners &amp; pennants"/>
+                            </categoryItems>
+                        </item8>
+                        <item9
+                            jcr:primaryType="nt:unstructured"
+                            catListID="Stuff">
+                            <categoryItems jcr:primaryType="nt:unstructured">
+                                <item0
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="New Arrivals"/>
+                                <item1
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="top gifts fro him"/>
+                                <item2
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="top gifts for her "/>
+                                <item3
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="top gifts for them"/>
+                                <item4
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="gifts 4 kids"/>
+                            </categoryItems>
+                        </item9>
                     </categoryList>
                 </navigation_menu_611810526>
                 <container
