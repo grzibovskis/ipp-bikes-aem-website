@@ -1,4 +1,6 @@
 target/
+node_modules
+
 pom.xml.tag
 pom.xml.releaseBackup
 pom.xml.versionsBackup
@@ -9,6 +11,6 @@ buildNumber.properties
 .mvn/timing.properties
 .mvn/wrapper/maven-wrapper.jar
 
-node_modules
 /ui.frontend/src/main/webpack/static/index.html
 /.vscode
+/ui.apps/src/main/content/jcr_root/apps/ipp-bikes/clientlibs/clientlib-site
