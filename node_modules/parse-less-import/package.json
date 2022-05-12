@@ -1,0 +1,33 @@
+{
+  "name": "parse-less-import",
+  "version": "0.0.1",
+  "description": "Parse import from less file",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_ENV=test ./node_modules/.bin/_mocha --require should --reporter spec",
+    "test-cov": "NODE_ENV=test node ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- --require should",
+    "test-travis": "NODE_ENV=test node ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha --report lcovonly -- --require should"
+  },
+  "author": "LingyuCoder",
+  "license": "MIT",
+  "devDependencies": {
+    "istanbul": "~0.4.0",
+    "mocha": "~2.3.3",
+    "should": "~7.1.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LingyuCoder/parse-less-import"
+  },
+  "keywords": [
+    "less",
+    "import",
+    "parse"
+  ],
+  "bugs": {
+    "url": "https://github.com/LingyuCoder/parse-less-import/issues"
+  },
+  "publishConfig": {
+    "registry": "http://registry.npmjs.org/"
+  }
+}

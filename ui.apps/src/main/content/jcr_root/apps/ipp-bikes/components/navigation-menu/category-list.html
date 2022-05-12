@@ -1,0 +1,75 @@
+
+<sly data-sly-template.my_catList="${@ pass_container, pass_layer, pass_categories}"> 
+    <sly data-sly-test="${pass_container && pass_layer && pass_categories }">
+
+        <div 
+            id="${pass_layer}_containerOf__${pass_container.titleAsClass}"
+            class="cmp-navigationmenu__sub-list-container cmp-navigationmenu__list_container_${pass_layer} cmp-navigationmenu__categoryList-container"
+        >
+
+
+            <sly data-sly-list.mainLoop="${pass_categories}">
+
+                <sly data-sly-test="${mainLoop.categoryListID == pass_container.listConnect }">
+
+                    <ol 
+                        id="${pass_layer}_childof__${pass_container.titleAsClass}"
+                        class="cmp-navigationmenu__sub-list cmp-navigationmenu__categoryList"
+                    >   
+                        <sly 
+                            data-sly-test="${mainLoop.categoryItemsConfigured}"
+                            data-sly-list.innerLoop="${mainLoop.catListItems}"
+                        >
+                            <li class="cmp-navigationmenu__catItem ">
+                                <a  
+                                    class="cmp-navigationmenu__item-link cmp-navigationmenu__category-link" 
+                                    href="${innerLoop.catLink}" 
+                                >${innerLoop.catName}</a>
+                            </li>                                            
+                        </sly>
+
+                        <hr class="cmp-navigationmenu__separator" />    
+
+                        <li 
+                            id="all_${pass_container.titleAsClass}" 
+                            class="cmp-navigationmenu__catItem "
+                        >
+                            <a  
+                                class="cmp-navigationmenu__item-link cmp-navigationmenu__category-link thick_cat_link" 
+                                href="${pass_container.link}" 
+                            >Shop All ${pass_container.title} &rarr; </a>
+                        </li> 
+
+                    </ol>
+
+                </sly>
+
+                <sly data-sly-test="${pass_layer == 'layer_1' && mainLoop.categoryListID == pass_container.titleAsClass}">
+
+                    <ol
+                        id="${pass_layer}_extraListFor__${pass_container.titleAsClass}"
+                        class="cmp-navigationmenu__sub-list cmp-navigationmenu__categoryList cmp-navigationmenu__catListOfExtras cmp-navigationmenu__list-${pass_layer}"
+                    >
+                        <sly data-sly-list.extraLoop="${mainLoop.catListItems}">
+                            <li 
+                                class="cmp-navigationmenu__catItem"
+                            >
+                                <a  
+                                    class="cmp-navigationmenu__item-link cmp-navigationmenu__category-link thick_cat_link" 
+                                    href="${extraLoop.catLink}" 
+                                >${extraLoop.catName}</a>
+                            </li>
+                        </sly>
+                    </ol>
+
+                </sly>
+
+
+
+
+            </sly>
+            
+        </div>
+
+    </sly>
+</sly>

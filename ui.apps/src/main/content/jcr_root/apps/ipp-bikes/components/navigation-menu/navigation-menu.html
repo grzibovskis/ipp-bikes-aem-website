@@ -1,0 +1,82 @@
+
+<sly data-sly-use.model="${'com.adobe.aem.ipp.bikes.core.models.navigationMenu.MainModel'}"></sly>
+<sly data-sly-use.categoryTemplate="category-list.html"></sly>
+<sly data-sly-use.menuTemplate="menu-list.html"></sly>
+        
+<sly data-sly-test.tabsTest="${model.tabConfigured}"></sly>
+
+<sly data-sly-test="${wcmmode.edit && !tabsTest}">
+    <div data-emptytext="${component.title}" class="cq-placeholder"></div>
+</sly>
+
+<div class="cmp-navigationmenu" data-cmp-is="navigationmenu"
+>    
+    <div class="hidden"  data-sly-test="${model.message}">
+        <pre class="cmp-navigationmenu__item-output"data-cmp-hook-navigationmenu="model_message">${model.message}</pre>
+    </div>
+
+    <div class="cmp-navigationmenu__item cmp-navigationmenu__nav-container">
+
+        
+        <ol class="cmp-navigationmenu__main-list" >
+            <li id="mainNavIcon" class="cmp-navigationmenu__mainlist_item cmp-navigationmenu__main-icon">
+                <a  class="cmp-navigationmenu__item-link" href="${model.iconLink}" >
+                    <img src="${model.navIcon}"  alt="Home"/>
+                </a>
+            </li>
+            <sly data-sly-list.layerZeroList="${model.navigationLayerZeroList}">
+                <li id="${layerZeroList.titleAsClass}" class="cmp-navigationmenu__mainlist_item">
+                    <a  
+                        id="mainlink_${layerZeroList.titleAsClass}"
+                        class="cmp-navigationmenu__item-link cmp-navigationmenu__main-link" 
+                        href="${layerZeroList.link}" 
+                    >${layerZeroList.title}</a>
+                </li>
+            </sly>
+        </ol>
+
+
+        <div class="cmp-navigationmenu__sublist-main-container" > 
+            <div class="cmp-navigationmenu_sublist-inner-container">
+
+                <sly data-sly-list.layerZeroList="${model.navigationLayerZeroList}"> 
+                    <sly data-sly-test="${layerZeroList.layerOneConfigured && !layerZeroList.listConnect}">
+
+                        <sly data-sly-call="${menuTemplate.my_menuList @ pass_container=layerZeroList, pass_checker=layerZeroList.layerOneConfigured, pass_looper=layerZeroList.navigationLayerOneList, pass_layer='layer_1'}" ></sly>
+
+
+                        <sly data-sly-list.layerOneList="${layerZeroList.navigationLayerOneList}" > 
+                            
+                            <sly data-sly-test="${layerOneList.layerTwoConfigured && !layerOneList.listConnect}">
+
+                                <sly data-sly-call="${menuTemplate.my_menuList @ pass_container=layerOneList, pass_checker=layerOneList.layerTwoConfigured, pass_looper=layerOneList.navigationLayerTwoList, pass_layer='layer_2'}" ></sly>
+
+                                <sly data-sly-list.layerTwoList="${layerOneList.navigationLayerTwoList}" > 
+                                    <sly data-sly-test="${layerTwoList.listConnect}">
+                                        <sly data-sly-call="${categoryTemplate.my_catList @ pass_container=layerTwoList, pass_layer='layer_3',pass_categories=model.categoryList}"></sly>
+                                    </sly>
+                                </sly>
+
+                            </sly>
+
+                            <sly data-sly-test="${!layerOneList.layerTwoConfigured && layerOneList.listConnect}">
+                                <sly data-sly-call="${categoryTemplate.my_catList @ pass_container=layerOneList, pass_layer='layer_2',pass_categories=model.categoryList}"></sly>
+                            </sly>     
+
+                        </sly>
+                        
+
+                    </sly>  
+
+                    <sly data-sly-test="${!layerZeroList.layerOneConfigured && layerZeroList.listConnect }">
+                        <sly data-sly-call="${categoryTemplate.my_catList @ pass_container=layerZeroList, pass_layer='layer_1', pass_categories=model.categoryList}"></sly>
+                    </sly>  
+
+                </sly>
+
+            </div>
+        </div>
+
+
+    </div>
+</div>

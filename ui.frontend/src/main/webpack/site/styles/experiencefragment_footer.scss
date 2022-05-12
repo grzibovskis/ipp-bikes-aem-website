@@ -4,14 +4,10 @@
 footer.experiencefragment {
     padding: .5em 1em;
     border-top: 1px solid $color-foreground;
-
+/*
     @media (prefers-color-scheme: dark) {
         border-color: $color-foreground-dark;
     }
-}
-
-
-//^ Error ?
 
     .cmp-separator__horizontal-rule {
         margin: 0;

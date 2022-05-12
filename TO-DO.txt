@@ -1,0 +1,13 @@
+TO-DO:
+
+    --- categories
+        -- play-around - cat-list-item - padding, letter-spacing, width
+
+    --- cart / search button pop-out sidebar functionality   
+    --- make it resize based on screen width
+    --- MOBILE VIEW
+    --- populate nav menu content based on pages & child pages, insted of manual input
+
+    --- consider further renameing
+
+
