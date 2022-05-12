@@ -1,6 +1,29 @@
-.cmp-tabs {}
-.cmp-tabs__tablist {}
-.cmp-tabs__tab {}
-.cmp-tabs__tab--active {}
-.cmp-tabs__tabpanel {}
+.cmp-tabs {
+    background-color: black, opacity 0.5;
+}
+.cmp-tabs__tablist {
+    color: gray;
+}
+.cmp-tabs__tab {
+    &::after {
+        padding-left: 5px;
+        content: '\FF1E';
+    }
+}
+.cmp-tabs__tab:hover {
+    color: #fa6600;
+}
+.cmp-tabs__tab--active {
+    color: #fa6600;
+    border: none;
+    &::after {
+        padding-left: 5px;
+        content: '\2335';
+    }
+
+}
+.cmp-tabs__tabpanel {
+    background-color: black;
+    
+}
 .cmp-tabs__tabpanel--active {}

@@ -1,442 +1,436 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:contextHubPath="/etc/cloudsettings/default/contexthub"
-        cq:contextHubSegmentsPath="/etc/segmentation/contexthub"
-        cq:lastModified="{Date}2022-04-26T12:32:40.153+03:00"
+
+        cq:lastModified="{Date}2022-05-12T11:30:03.817+03:00"
+
         cq:lastModifiedBy="admin"
-        cq:template="/conf/ipp-bikes/settings/wcm/templates/page-content"
-        jcr:isCheckedOut="{Boolean}true"
-        jcr:mixinTypes="[mix:versionable]"
+        cq:template="/conf/ipp-bikes/settings/wcm/templates/home_ippb"
         jcr:primaryType="cq:PageContent"
-        jcr:title="English Home"
-        jcr:uuid="175e7dfd-12c8-4443-afe5-8b9c130de3c4"
-        sling:resourceType="ipp-bikes/components/page"
-        pageTitle="IPP Bikes">
+        jcr:title="English"
+        sling:resourceType="ipp-bikes/components/page">
         <root
             jcr:primaryType="nt:unstructured"
             sling:resourceType="ipp-bikes/components/container"
             layout="responsiveGrid">
+            <container_187973350
+                jcr:created="{Date}2022-03-18T12:43:38.146+02:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2022-04-04T16:30:21.297+03:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="ipp-bikes/components/container"
+                layout="responsiveGrid">
+                <guideheader
+                    jcr:created="{Date}2022-03-23T08:29:51.844+02:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-03-23T08:29:51.844+02:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Adaptive Form Header"
+                    sling:resourceType="fd/af/components/guideheader"/>
+                <button
+                    cq:styleIds="[1649323866636]"
+                    jcr:created="{Date}2022-04-08T17:12:00.976+03:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-04-08T17:12:16.287+03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Sign up"
+                    sling:resourceType="ipp-bikes/components/button"
+                    linkTarget="_self"/>
+                <container
+                    jcr:created="{Date}2022-04-08T16:59:33.354+03:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-04-11T15:15:58.732+03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="cq/experience-fragments/editor/components/experiencefragment"
+                    fragmentPath="/content/experience-fragments/ipp-bikes/us/en/site/productcards/productcards"
+                    text="English STREET GLIDE™ ST Powered by the muscular Milwaukee-Eight™ 117, it’s a performance bagger for the rider who can never get enough ROAD GLIDE™ ST A performance bagger with West Coast styling and the road-ripping power of the Milwaukee-Eight™ 117 engine. PAN AMERICA™ 1250 SPECIAL Our premiere edition makes its follow-up debut in Fastback Blue/White Sand. LOW RIDER™ ST Legendary style in a new performance bagger package, with an all-new fairing design and a powerful Milwaukee Eight™ 117 engine. SPORTSTER™ S The second edition of our apex Sportster comes in even hotter, evoking even more excitement in Mineral Green Metallic and White Sand Pearl.">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="1"
+                            width="10"/>
+                    </cq:responsive>
+                </container>
+            </container_187973350>
+            <container_226184821
+                jcr:created="{Date}2022-03-18T12:46:34.476+02:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2022-04-22T09:37:17.602+03:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="ipp-bikes/components/container"
+                layout="responsiveGrid">
+                <heroimage
+                    jcr:created="{Date}2022-04-04T16:05:25.277+03:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-04-04T16:05:25.277+03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="ipp-bikes/components/heroimage"/>
+                <teaser
+                    cq:styleIds="[1649930086599]"
+                    jcr:created="{Date}2022-04-14T12:53:20.259+03:00"
+                    jcr:createdBy="admin"
+                    jcr:description="&lt;p>It's now or newer to get these styles before they are gone&lt;/p>&#xd;&#xa;"
+                    jcr:lastModified="{Date}2022-05-10T12:03:36.685+03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Last Chance Deals"
+                    sling:resourceType="ipp-bikes/components/teaser"
+                    actionsEnabled="true"
+                    descriptionFromPage="false"
+                    fileReference="/content/dam/ipp-bikes/raimond-klavins-CynwmwkNkio-unsplash.jpg"
+                    textIsRich="true"
+                    titleFromPage="false">
+                    <actions jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            link="/content/ipp-bikes/language-masters/en/sport_bikes"
+                            text="Save now"/>
+                    </actions>
+                </teaser>
+                <tabs
+                    jcr:created="{Date}2022-05-11T17:50:54.577+03:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-05-11T17:52:33.387+03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="ipp-bikes/components/tabs"
+                    activeItem="item_1">
+                    <item_1
+                        cq:panelTitle="Search By Cash Price"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Tab 1"
+                        sling:resourceType="ipp-bikes/components/container"
+                        layout="responsiveGrid">
+                        <text_copy_copy
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Postcode:"
+                            sling:resourceType="ipp-bikes/components/form/text"
+                            helpMessage="Enter your Postcode"
+                            name="Postcode:"
+                            required="true"
+                            rows="2"
+                            type="email"
+                            usePlaceholder="true">
+                            <cq:responsive jcr:primaryType="nt:unstructured">
+                                <default
+                                    jcr:primaryType="nt:unstructured"
+                                    offset="0"
+                                    width="2"/>
+                            </cq:responsive>
+                        </text_copy_copy>
+                        <options_copy_copy
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Distance:"
+                            sling:resourceType="ipp-bikes/components/form/options"
+                            name="Distance"
+                            source="local"
+                            type="drop-down">
+                            <cq:responsive jcr:primaryType="nt:unstructured">
+                                <default
+                                    jcr:primaryType="nt:unstructured"
+                                    offset="0"
+                                    width="2"/>
+                            </cq:responsive>
+                            <items jcr:primaryType="nt:unstructured">
+                                <item0
+                                    jcr:primaryType="nt:unstructured"
+                                    selected="true"
+                                    text="Any Distance"
+                                    value="Any Distance"/>
+                                <item1
+                                    jcr:primaryType="nt:unstructured"
+                                    selected="true"
+                                    text="Within 20 miles"
+                                    value="Within 20 miles"/>
+                                <item2
+                                    jcr:primaryType="nt:unstructured"
+                                    selected="true"
+                                    text="Within 40 miles"
+                                    value="Within 40 miles"/>
+                            </items>
+                        </options_copy_copy>
+                        <options_226412125_co
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Model Family"
+                            sling:resourceType="ipp-bikes/components/form/options"
+                            datasourceRT="search"
+                            name="Model Family"
+                            source="local"
+                            type="drop-down">
+                            <cq:responsive jcr:primaryType="nt:unstructured">
+                                <default
+                                    jcr:primaryType="nt:unstructured"
+                                    offset="0"
+                                    width="2"/>
+                            </cq:responsive>
+                            <items jcr:primaryType="nt:unstructured">
+                                <item0
+                                    jcr:primaryType="nt:unstructured"
+                                    selected="false"
+                                    text="Category (All)"
+                                    value="Category (All)"/>
+                                <item1
+                                    jcr:primaryType="nt:unstructured"
+                                    selected="false"
+                                    text="Dyna"
+                                    value="Dyna"/>
+                                <item2
+                                    jcr:primaryType="nt:unstructured"
+                                    selected="false"
+                                    text="Softail"
+                                    value="Softail"/>
+                            </items>
+                        </options_226412125_co>
+                        <slider
+                            jcr:lastModified="{Date}2022-05-12T11:30:03.791+03:00"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Max price"
+                            sling:resourceType="ipp-bikes/components/slider"
+                            btext="Search"
+                            maxValue="39999"
+                            minValue="0"
+                            searchRoot="/content/ipp-bikes/language-masters/en/trike_bikes">
+                            <cq:responsive jcr:primaryType="nt:unstructured">
+                                <default
+                                    jcr:primaryType="nt:unstructured"
+                                    offset="1"
+                                    width="4"/>
+                            </cq:responsive>
+                        </slider>
+                    </item_1>
+                    <item_1_copy
+                        cq:panelTitle="Search By Monthly Budget"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Tab 1"
+                        sling:resourceType="ipp-bikes/components/container"
+                        layout="responsiveGrid">
+                        <text_copy_copy
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Postcode:"
+                            sling:resourceType="ipp-bikes/components/form/text"
+                            helpMessage="Enter your Postcode"
+                            name="Postcode:"
+                            required="true"
+                            rows="2"
+                            type="email"
+                            usePlaceholder="true">
+                            <cq:responsive jcr:primaryType="nt:unstructured">
+                                <default
+                                    jcr:primaryType="nt:unstructured"
+                                    offset="0"
+                                    width="2"/>
+                            </cq:responsive>
+                        </text_copy_copy>
+                        <options_copy_copy
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Distance:"
+                            sling:resourceType="ipp-bikes/components/form/options"
+                            name="Distance"
+                            source="local"
+                            type="drop-down">
+                            <cq:responsive jcr:primaryType="nt:unstructured">
+                                <default
+                                    jcr:primaryType="nt:unstructured"
+                                    offset="0"
+                                    width="2"/>
+                            </cq:responsive>
+                            <items jcr:primaryType="nt:unstructured">
+                                <item0
+                                    jcr:primaryType="nt:unstructured"
+                                    selected="true"
+                                    text="Any Distance"
+                                    value="Any Distance"/>
+                                <item1
+                                    jcr:primaryType="nt:unstructured"
+                                    selected="true"
+                                    text="Within 20 miles"
+                                    value="Within 20 miles"/>
+                                <item2
+                                    jcr:primaryType="nt:unstructured"
+                                    selected="true"
+                                    text="Within 40 miles"
+                                    value="Within 40 miles"/>
+                            </items>
+                        </options_copy_copy>
+                        <options_226412125_co
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Model Family"
+                            sling:resourceType="ipp-bikes/components/form/options"
+                            datasourceRT="search"
+                            name="Model Family"
+                            source="local"
+                            type="drop-down">
+                            <cq:responsive jcr:primaryType="nt:unstructured">
+                                <default
+                                    jcr:primaryType="nt:unstructured"
+                                    offset="0"
+                                    width="2"/>
+                            </cq:responsive>
+                            <items jcr:primaryType="nt:unstructured">
+                                <item0
+                                    jcr:primaryType="nt:unstructured"
+                                    selected="false"
+                                    text="Category (All)"
+                                    value="Category (All)"/>
+                                <item1
+                                    jcr:primaryType="nt:unstructured"
+                                    selected="false"
+                                    text="Dyna"
+                                    value="Dyna"/>
+                                <item2
+                                    jcr:primaryType="nt:unstructured"
+                                    selected="false"
+                                    text="Softail"
+                                    value="Softail"/>
+                            </items>
+                        </options_226412125_co>
+                        <slider
+                            jcr:lastModified="{Date}2022-05-12T11:16:31.808+03:00"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Max monthly payment:"
+                            sling:resourceType="ipp-bikes/components/slider"
+                            btext="Search"
+                            maxValue="7500"
+                            minValue="0"
+                            searchRoot="/content/ipp-bikes/language-masters/en/trike_bikes">
+                            <cq:responsive jcr:primaryType="nt:unstructured">
+                                <default
+                                    jcr:primaryType="nt:unstructured"
+                                    offset="1"
+                                    width="4"/>
+                            </cq:responsive>
+                        </slider>
+                    </item_1_copy>
+                </tabs>
+            </container_226184821>
+            <container_250480922
+                jcr:created="{Date}2022-03-18T12:47:26.630+02:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2022-04-20T16:13:30.527+03:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="ipp-bikes/components/container"
+                layout="responsiveGrid">
+                <heroimage
+                    jcr:created="{Date}2022-04-04T16:05:45.716+03:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-04-21T08:40:23.781+03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="ipp-bikes/components/heroimage"
+                    fileReference="/content/dam/wknd/en/magazine/skitouring/Skitouring6Sjoeberg.JPG"
+                    name="Let's Travel"
+                    occupations="Hiking">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="0"
+                            width="6"/>
+                    </cq:responsive>
+                </heroimage>
+                <heroimage_430088673
+                    jcr:created="{Date}2022-04-20T16:08:49.399+03:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-04-21T08:39:14.770+03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="ipp-bikes/components/heroimage"
+                    fileReference="/content/dam/ipp-bikes/raimond-klavins-CynwmwkNkio-unsplash.jpg"
+                    name="Harley Davidson"
+                    occupations="Cruiser">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="0"
+                            width="6"/>
+                    </cq:responsive>
+                </heroimage_430088673>
+            </container_250480922>
             <container
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="ipp-bikes/components/container">
-                <title
-                    jcr:lastModified="{Date}2022-03-17T10:08:12.269+02:00"
-                    jcr:lastModifiedBy="admin"
-                    jcr:primaryType="nt:unstructured"
-                    jcr:title="Intern Practice Project - Bikes"
-                    sling:resourceType="ipp-bikes/components/title"/>
                 <container
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="ipp-bikes/components/container"
                     layout="responsiveGrid">
-                    <container_431250027
-                        cq:styleIds="[1648452712668]"
-                        jcr:created="{Date}2022-03-29T13:43:58.589+03:00"
+
+                    <teaser_1403908918
+                        cq:styleIds="[1649237980902]"
+                        jcr:created="{Date}2022-04-06T14:55:00.032+03:00"
                         jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2022-03-29T13:43:58.589+03:00"
+                        jcr:description="&lt;p>Join us in support of United Way's effort in providing life-saving relief to the people of Ukraine. United We Ride.&lt;/p>&#xd;&#xa;"
+                        jcr:lastModified="{Date}2022-04-06T15:13:26.244+03:00"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="ipp-bikes/components/container">
-                        <_content
-                            jcr:created="{Date}2022-04-04T10:29:39.066+03:00"
-                            jcr:createdBy="admin"
-                            jcr:lastModified="{Date}2022-04-04T10:30:35.184+03:00"
-                            jcr:lastModifiedBy="admin"
-                            jcr:primaryType="nt:unstructured"
-                            sling:resourceType="ipp-bikes/components/navigation_menu/_content">
-                            <item_1649057386039
-                                cq:panelTitle="Hone"
+                        jcr:title="H - D  For Ukraine"
+                        sling:resourceType="ipp-bikes/components/teaser"
+                        actionsEnabled="true"
+                        descriptionFromPage="false"
+                        fileReference="/content/dam/wknd/en/activities/climbing/climber-gear-rope.jpg"
+                        pretitle="12 APRIL 2022"
+                        textIsRich="true"
+                        titleFromPage="false">
+                        <actions jcr:primaryType="nt:unstructured">
+                            <item0
                                 jcr:primaryType="nt:unstructured"
-                                sling:resourceType="ipp-bikes/components/container">
-                                <dropdown
-                                    jcr:created="{Date}2022-04-01T14:30:40.344+03:00"
-                                    jcr:createdBy="admin"
-                                    jcr:lastModified="{Date}2022-04-01T14:42:43.622+03:00"
-                                    jcr:lastModifiedBy="admin"
-                                    jcr:primaryType="nt:unstructured"
-                                    jcr:title="The Title"
-                                    sling:resourceSuperType="foundation/components/form/defaults/field"
-                                    sling:resourceType="foundation/components/form/dropdown"
-                                    name="Container"
-                                    options="[A,B,C]"/>
-                            </item_1649057386039>
-                            <item_1649057394723
-                                cq:panelTitle="Towo"
-                                jcr:primaryType="nt:unstructured"
-                                sling:resourceType="ipp-bikes/components/container">
-                                <title
-                                    jcr:created="{Date}2022-04-04T10:32:12.753+03:00"
-                                    jcr:createdBy="admin"
-                                    jcr:lastModified="{Date}2022-04-04T10:32:25.221+03:00"
-                                    jcr:lastModifiedBy="admin"
-                                    jcr:primaryType="nt:unstructured"
-                                    jcr:title="Whats this thing?"
-                                    sling:resourceType="ipp-bikes/components/title"/>
-                            </item_1649057394723>
-                            <item_1649057402355
-                                cq:panelTitle="Tree"
-                                jcr:lastModified="{Date}2022-04-04T10:31:34.813+03:00"
-                                jcr:lastModifiedBy="admin"
-                                jcr:primaryType="nt:unstructured"
-                                sling:resourceType="ipp-bikes/components/container"
-                                layout="responsiveGrid">
-                                <image
-                                    jcr:created="{Date}2022-04-04T10:31:13.960+03:00"
-                                    jcr:createdBy="admin"
-                                    jcr:lastModified="{Date}2022-04-04T10:31:19.472+03:00"
-                                    jcr:lastModifiedBy="admin"
-                                    jcr:primaryType="nt:unstructured"
-                                    sling:resourceType="ipp-bikes/components/image"
-                                    fileReference="/content/dam/ipp-bikes/favicon.png">
-                                    <cq:responsive jcr:primaryType="nt:unstructured">
-                                        <default
-                                            jcr:primaryType="nt:unstructured"
-                                            offset="2"
-                                            width="8"/>
-                                    </cq:responsive>
-                                </image>
-                            </item_1649057402355>
-                            <item_1649057412756
-                                cq:panelTitle="Force"
-                                jcr:primaryType="nt:unstructured"
-                                sling:resourceType="ipp-bikes/components/container"/>
-                            <item_1649057422457
-                                cq:panelTitle="Clive"
-                                jcr:primaryType="nt:unstructured"
-                                sling:resourceType="ipp-bikes/components/container"/>
-                        </_content>
-                        <_content_1754642491
-                            jcr:created="{Date}2022-04-04T13:56:41.848+03:00"
-                            jcr:createdBy="admin"
-                            jcr:lastModified="{Date}2022-04-04T13:57:07.925+03:00"
-                            jcr:lastModifiedBy="admin"
-                            jcr:primaryType="nt:unstructured"
-                            sling:resourceType="ipp-bikes/components/navigation-menu/_content">
-                            <item_1649069816651
-                                cq:panelTitle="one #1"
-                                jcr:primaryType="nt:unstructured"
-                                sling:resourceType="ipp-bikes/components/container"/>
-                            <item_1649069823700
-                                cq:panelTitle="two #2"
-                                jcr:primaryType="nt:unstructured"
-                                sling:resourceType="ipp-bikes/components/container"/>
-                        </_content_1754642491>
-                        <tabs
-                            jcr:created="{Date}2022-04-05T13:38:49.123+03:00"
-                            jcr:createdBy="admin"
-                            jcr:lastModified="{Date}2022-04-12T11:11:43.600+03:00"
-                            jcr:lastModifiedBy="admin"
-                            jcr:primaryType="nt:unstructured"
-                            sling:resourceType="ipp-bikes/components/tabs">
-                            <item_1649160292228
-                                cq:panelTitle="Dropdown"
-                                jcr:primaryType="nt:unstructured"
-                                sling:resourceType="ipp-bikes/components/container">
-                                <dropdown
-                                    jcr:created="{Date}2022-04-01T14:30:40.344+03:00"
-                                    jcr:createdBy="admin"
-                                    jcr:lastModified="{Date}2022-04-04T15:55:00.286+03:00"
-                                    jcr:lastModifiedBy="admin"
-                                    jcr:primaryType="nt:unstructured"
-                                    jcr:title="The Dropdown Menu Title"
-                                    sling:resourceSuperType="foundation/components/form/defaults/field"
-                                    sling:resourceType="foundation/components/form/dropdown"
-                                    name="Container"
-                                    options="[A,B,C]"/>
-                            </item_1649160292228>
-                            <item_2
-                                cq:panelTitle="helloworld"
-                                jcr:primaryType="nt:unstructured"
-                                jcr:title="Tab 2"
-                                sling:resourceType="ipp-bikes/components/container"
-                                layout="responsiveGrid">
-                                <helloworld
-                                    jcr:created="{Date}2022-04-05T11:20:06.290+03:00"
-                                    jcr:createdBy="admin"
-                                    jcr:lastModified="{Date}2022-04-05T11:20:32.567+03:00"
-                                    jcr:lastModifiedBy="admin"
-                                    jcr:primaryType="nt:unstructured"
-                                    sling:resourceType="ipp-bikes/components/helloworld"
-                                    text="This is the Frequently Asked Questions page, or FAQ for short =)"
-                                    title="Hello World title"/>
-                            </item_2>
-                            <item_1 jcr:primaryType="nt:unstructured"/>
-                        </tabs>
-                        <image
-                            jcr:created="{Date}2022-03-17T10:10:37.316+02:00"
-                            jcr:createdBy="admin"
-                            jcr:lastModified="{Date}2022-04-06T11:06:28.212+03:00"
-                            jcr:lastModifiedBy="admin"
-                            jcr:primaryType="nt:unstructured"
-                            sling:resourceType="ipp-bikes/components/image"
-                            alt="alttext"
-                            altValueFromDAM="false"
-                            displayPopupTitle="true"
-                            fileReference="/content/dam/ipp-bikes/asset.jpg"
-                            isDecorative="false"
-                            linkURL="/content/ipp-bikes/language-masters"
-                            titleValueFromDAM="true"/>
-                        <navigation_menu
-                            jcr:created="{Date}2022-04-19T09:48:34.078+03:00"
-                            jcr:createdBy="admin"
-                            jcr:lastModified="{Date}2022-04-26T12:32:40.127+03:00"
-                            jcr:lastModifiedBy="admin"
-                            jcr:primaryType="nt:unstructured"
-                            sling:resourceType="ipp-bikes/components/navigation-menu"
-                            catLink="[,,]"
-                            catName="[Dave,Greg,Stebe]"
-                            fileReference="/content/dam/ipp-bikes/favicon.png"
-                            iconLink="/content/ipp-bikes/language-masters">
-                            <listOfLists jcr:primaryType="nt:unstructured">
-                                <item0
-                                    jcr:primaryType="nt:unstructured"
-                                    catLink="[,,,,,,,]"
-                                    catListID="name-list"
-                                    catName="[Bob,Dave,Greg,Steven,garnet,Pearl,Amythist,Perry]"/>
-                            </listOfLists>
-                            <navItemsMainList jcr:primaryType="nt:unstructured">
-                                <item0
-                                    jcr:primaryType="nt:unstructured"
-                                    title="Dave">
-                                    <navItemsFirstList jcr:primaryType="nt:unstructured">
-                                        <item0
-                                            jcr:primaryType="nt:unstructured"
-                                            listConnect="name-compilation"
-                                            title="Name"/>
-                                        <item1
-                                            jcr:primaryType="nt:unstructured"
-                                            title="Not names">
-                                            <navItemsSecondList jcr:primaryType="nt:unstructured">
-                                                <item0
-                                                    jcr:primaryType="nt:unstructured"
-                                                    title="Zentragonair"/>
-                                                <item1
-                                                    jcr:primaryType="nt:unstructured"
-                                                    listConnect="name-compilation"
-                                                    title="A-literal-spanner"/>
-                                                <item2
-                                                    jcr:primaryType="nt:unstructured"
-                                                    listConnect="big-cat-list"
-                                                    title="Dog-hugger"/>
-                                            </navItemsSecondList>
-                                        </item1>
-                                    </navItemsFirstList>
-                                </item0>
-                                <item1
-                                    jcr:primaryType="nt:unstructured"
-                                    listConnect="component-list"
-                                    title="Components"/>
-                            </navItemsMainList>
-                            <categoryList jcr:primaryType="nt:unstructured">
-                                <item0
-                                    jcr:primaryType="nt:unstructured"
-                                    catListID="name-compilation">
-                                    <categoryItems jcr:primaryType="nt:unstructured">
-                                        <item0
-                                            jcr:primaryType="nt:unstructured"
-                                            catName="Greg"/>
-                                        <item1
-                                            jcr:primaryType="nt:unstructured"
-                                            catName="Dave"/>
-                                        <item2
-                                            jcr:primaryType="nt:unstructured"
-                                            catName="Steve"/>
-                                    </categoryItems>
-                                </item0>
-                                <item1
-                                    jcr:primaryType="nt:unstructured"
-                                    catListID="component-list">
-                                    <categoryItems jcr:primaryType="nt:unstructured">
-                                        <item0
-                                            jcr:primaryType="nt:unstructured"
-                                            catName="sproket"/>
-                                        <item1
-                                            jcr:primaryType="nt:unstructured"
-                                            catName="nut"/>
-                                        <item2
-                                            jcr:primaryType="nt:unstructured"
-                                            catName="bolt"/>
-                                        <item3
-                                            jcr:primaryType="nt:unstructured"
-                                            catName="knob"/>
-                                        <item4
-                                            jcr:primaryType="nt:unstructured"
-                                            catName="Break"/>
-                                        <item5
-                                            jcr:primaryType="nt:unstructured"
-                                            catName="Screws"/>
-                                        <item6
-                                            jcr:primaryType="nt:unstructured"
-                                            catName="Mirrors"/>
-                                        <item7
-                                            jcr:primaryType="nt:unstructured"
-                                            catName="paint"/>
-                                        <item8
-                                            jcr:primaryType="nt:unstructured"
-                                            catName="covers, bags &amp; racks"/>
-                                        <item9
-                                            jcr:primaryType="nt:unstructured"
-                                            catName="electrical &amp; batteries"/>
-                                    </categoryItems>
-                                </item1>
-                                <item2
-                                    jcr:primaryType="nt:unstructured"
-                                    catListID="big-cat-list">
-                                    <categoryItems jcr:primaryType="nt:unstructured">
-                                        <item0
-                                            jcr:primaryType="nt:unstructured"
-                                            catName="one"/>
-                                        <item1
-                                            jcr:primaryType="nt:unstructured"
-                                            catName="two"/>
-                                        <item2
-                                            jcr:primaryType="nt:unstructured"
-                                            catName="three"/>
-                                        <item3
-                                            jcr:primaryType="nt:unstructured"
-                                            catName="four"/>
-                                        <item4
-                                            jcr:primaryType="nt:unstructured"
-                                            catName="five"/>
-                                        <item5
-                                            jcr:primaryType="nt:unstructured"
-                                            catName="six"/>
-                                        <item6
-                                            jcr:primaryType="nt:unstructured"
-                                            catName="seven"/>
-                                        <item7
-                                            jcr:primaryType="nt:unstructured"
-                                            catName="eight"/>
-                                        <item8
-                                            jcr:primaryType="nt:unstructured"
-                                            catName="nine"/>
-                                        <item9
-                                            jcr:primaryType="nt:unstructured"
-                                            catName="ten"/>
-                                        <item10
-                                            jcr:primaryType="nt:unstructured"
-                                            catName="eleven"/>
-                                        <item11
-                                            jcr:primaryType="nt:unstructured"
-                                            catName="twelve"/>
-                                        <item12
-                                            jcr:primaryType="nt:unstructured"
-                                            catName="thirteen"/>
-                                        <item13
-                                            jcr:primaryType="nt:unstructured"
-                                            catName="fourteen"/>
-                                        <item14
-                                            jcr:primaryType="nt:unstructured"
-                                            catName="fifteen"/>
-                                        <item15
-                                            jcr:primaryType="nt:unstructured"
-                                            catName="sixteen"/>
-                                        <item16
-                                            jcr:primaryType="nt:unstructured"
-                                            catName="seventeen"/>
-                                        <item17
-                                            jcr:primaryType="nt:unstructured"
-                                            catName="eighteen"/>
-                                        <item18
-                                            jcr:primaryType="nt:unstructured"
-                                            catName="ninteen"/>
-                                        <item19
-                                            jcr:primaryType="nt:unstructured"
-                                            catName="twnty"/>
-                                    </categoryItems>
-                                </item2>
-                                <item3
-                                    jcr:primaryType="nt:unstructured"
-                                    catListID="Components">
-                                    <categoryItems jcr:primaryType="nt:unstructured">
-                                        <item0
-                                            jcr:primaryType="nt:unstructured"
-                                            catName="test"/>
-                                        <item1
-                                            jcr:primaryType="nt:unstructured"
-                                            catName="one "/>
-                                        <item2
-                                            jcr:primaryType="nt:unstructured"
-                                            catName="two"/>
-                                    </categoryItems>
-                                </item3>
-                            </categoryList>
-                        </navigation_menu>
-                    </container_431250027>
-                    <container_1417719157
-                        cq:styleIds="[1648452712668]"
-                        jcr:created="{Date}2022-03-29T13:43:11.337+03:00"
+                                link="/content/ipp-bikes/language-masters/en/trike_bikes"
+                                text="Donate"/>
+                        </actions>
+                    </teaser_1403908918>
+                    <teaser
+                        cq:styleIds="[1647954889762]"
+                        jcr:created="{Date}2022-04-06T12:26:58.957+03:00"
                         jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2022-03-29T13:43:24.956+03:00"
+                        jcr:description="&lt;p>The road to Harley-Davidson Homecoming Challenge starts now. Learn how to track miles for the chance to win big prizes! Ready to ride?&lt;/p>&#xd;&#xa;"
+                        jcr:lastModified="{Date}2022-04-06T15:13:46.549+03:00"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="ipp-bikes/components/container"
-                        layout="responsiveGrid">
-                        <teaser
-                            jcr:description="&lt;p>Don't stop half way, go for the top!&lt;/p>&#xd;&#xa;"
-                            jcr:lastModified="{Date}2022-03-17T10:09:26.806+02:00"
-                            jcr:lastModifiedBy="admin"
-                            jcr:primaryType="nt:unstructured"
-                            jcr:title="Epic Journey"
-                            sling:resourceType="ipp-bikes/components/teaser"
-                            actionsEnabled="false"
-                            descriptionFromPage="false"
-                            fileReference="/content/dam/wknd/asset.jpg"
-                            textIsRich="true"
-                            titleFromPage="false">
-                            <cq:responsive jcr:primaryType="nt:unstructured">
-                                <default
-                                    jcr:primaryType="nt:unstructured"
-                                    offset="0"
-                                    width="4"/>
-                            </cq:responsive>
-                        </teaser>
-                        <teaser_copy
-                            jcr:description="&lt;p>Don't stop half way, go for the top!&lt;/p>&#xd;&#xa;"
-                            jcr:lastModified="{Date}2022-03-17T10:09:31.529+02:00"
-                            jcr:lastModifiedBy="admin"
-                            jcr:primaryType="nt:unstructured"
-                            jcr:title="Epic Journey"
-                            sling:resourceType="ipp-bikes/components/teaser"
-                            actionsEnabled="false"
-                            descriptionFromPage="false"
-                            fileReference="/content/dam/wknd/asset.jpg"
-                            textIsRich="true"
-                            titleFromPage="false">
-                            <cq:responsive jcr:primaryType="nt:unstructured">
-                                <default
-                                    jcr:primaryType="nt:unstructured"
-                                    offset="0"
-                                    width="4"/>
-                            </cq:responsive>
-                        </teaser_copy>
-                        <teaser_copy_15793249
-                            jcr:description="&lt;p>Don't stop half way, go for the top!&lt;/p>&#xd;&#xa;"
-                            jcr:lastModified="{Date}2022-03-17T10:09:35.984+02:00"
-                            jcr:lastModifiedBy="admin"
-                            jcr:primaryType="nt:unstructured"
-                            jcr:title="Epic Journey"
-                            sling:resourceType="ipp-bikes/components/teaser"
-                            actionsEnabled="false"
-                            descriptionFromPage="false"
-                            fileReference="/content/dam/wknd/asset.jpg"
-                            textIsRich="true"
-                            titleFromPage="false">
-                            <cq:responsive jcr:primaryType="nt:unstructured">
-                                <default
-                                    jcr:primaryType="nt:unstructured"
-                                    offset="0"
-                                    width="4"/>
-                            </cq:responsive>
-                        </teaser_copy_15793249>
-                    </container_1417719157>
-                    <material_button
-                        cq:styleIds="[1648199075579]"
-                        jcr:created="{Date}2022-03-25T13:37:13.775+02:00"
+                        jcr:title="Kickstart your passion"
+                        sling:resourceType="ipp-bikes/components/teaser"
+                        actionsEnabled="true"
+                        descriptionFromPage="false"
+                        fileReference="/content/dam/ipp-bikes/harley.jpg"
+                        pretitle="12 APRIL 2022"
+                        textIsRich="true"
+                        titleFromPage="false">
+                        <actions jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                link="/content/ipp-bikes/language-masters/en/cruiser_bikes"
+                                text="Sign up"/>
+                        </actions>
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="0"
+                                width="4"/>
+                        </cq:responsive>
+                    </teaser>
+                    <image
+                        jcr:created="{Date}2022-03-17T10:10:37.316+02:00"
                         jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2022-03-25T13:38:33.189+02:00"
+                        jcr:lastModified="{Date}2022-03-17T10:10:57.398+02:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="ipp-bikes/components/image"
+                        altValueFromDAM="true"
+                        displayPopupTitle="true"
+                        fileReference="/content/dam/ipp-bikes/asset.jpg"
+                        isDecorative="false"
+                        titleValueFromDAM="true"/>
+                    <teaser_copy
+                        jcr:description="&lt;p>Don't stop half way, go for the top!&lt;/p>&#xd;&#xa;"
+                        jcr:lastModified="{Date}2022-03-17T10:09:31.529+02:00"
+
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         jcr:title="Like"
@@ -486,10 +480,134 @@
                             textIsRich="true"/>
                     </container>
                 </container>
+                <title
+                    cq:styleIds="[1649223588847]"
+                    jcr:created="{Date}2022-04-06T08:30:28.559+03:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-04-06T10:07:14.724+03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="New for 2022"
+                    sling:resourceType="ipp-bikes/components/title"
+                    type="h2">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="2"
+                            width="10"/>
+                    </cq:responsive>
+                </title>
             </container>
+            <container_933290512
+                jcr:lastModified="{Date}2022-04-05T11:29:27.883+03:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="ipp-bikes/components/container"
+                layout="responsiveGrid">
+                <teaser
+                    jcr:createdBy="admin"
+                    jcr:description="&lt;p>Sign up for spechial content releases and updates leading up to this world premiere event.&lt;/p>&#xd;&#xa;"
+                    jcr:lastModified="{Date}2022-04-08T15:45:45.427+03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="The Next Chapter of the Sportster Legacy Begins"
+                    sling:resourceType="ipp-bikes/components/teaser"
+                    actionsEnabled="true"
+                    descriptionFromPage="false"
+                    fileReference="/content/dam/ipp-bikes/nagatoshi-shimamura-tUHHJTOzLKc-unsplash.jpg"
+                    pretitle="12 APRIL 2022"
+                    textIsRich="true"
+                    titleFromPage="false">
+                    <actions jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            link="/content/ipp-bikes/language-masters/en/sport_bikes"
+                            text="Sign up"/>
+                    </actions>
+                </teaser>
+            </container_933290512>
+            <container_301766595
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="ipp-bikes/components/container">
+                <teaser
+                    cq:styleIds="[1649248437633]"
+                    jcr:created="{Date}2022-04-06T15:36:33.789+03:00"
+                    jcr:createdBy="admin"
+                    jcr:description="&lt;p>Powered by the muscular Milwaukee-Eight 117, it's a performance bagger for the rider who can never get enough.&lt;/p>&#xd;&#xa;"
+                    jcr:lastModified="{Date}2022-04-06T16:55:38.357+03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Street Glide ST"
+                    sling:resourceType="ipp-bikes/components/teaser"
+                    actionsEnabled="false"
+                    descriptionFromPage="false"
+                    fileReference="/content/dam/wknd/en/activities/hiking/hiking-campaign.jpg"
+                    linkURL="/content/ipp-bikes/language-masters/en/trike_bikes"
+                    textIsRich="true"
+                    titleFromPage="false">
+                    <actions jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            link="/content/ipp-bikes/language-masters/en/trike_bikes"
+                            text="Trike"/>
+                    </actions>
+                </teaser>
+            </container_301766595>
+            <container_1350700615
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="ipp-bikes/components/container">
+                <teaser
+                    cq:styleIds="[1649237980902]"
+                    jcr:created="{Date}2022-04-08T14:55:19.147+03:00"
+                    jcr:createdBy="admin"
+                    jcr:description="&lt;p>Join us in support of United Way’s effort in providing life-saving relief to the people of Ukraine. United We Ride.&lt;/p>&#xd;&#xa;"
+                    jcr:lastModified="{Date}2022-04-08T17:10:08.550+03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="H-D™ FOR UKRAINE"
+                    sling:resourceType="ipp-bikes/components/teaser"
+                    actionsEnabled="true"
+                    descriptionFromPage="false"
+                    fileReference="/content/dam/ipp-bikes/engin-akyurt-inoaHM89CmQ-unsplash.jpg"
+                    textIsRich="true"
+                    titleFromPage="false">
+                    <actions jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            link="/content/ipp-bikes/language-masters/en/trike_bikes"
+                            text="Donate"/>
+                    </actions>
+                </teaser>
+                <teaser_1935143945
+                    cq:styleIds="[1647954889762]"
+                    jcr:created="{Date}2022-04-08T14:55:25.044+03:00"
+                    jcr:createdBy="admin"
+                    jcr:description="&lt;p>The Road to Harley-Davidson Homecoming Challenge starts now. Learn how to track miles for the chance to win big prizes! Ready to ride?&lt;/p>&#xd;&#xa;"
+                    jcr:lastModified="{Date}2022-04-08T15:31:12.691+03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Kickstart your passion"
+                    sling:resourceType="ipp-bikes/components/teaser"
+                    actionsEnabled="true"
+                    descriptionFromPage="false"
+                    fileReference="/content/dam/ipp-bikes/harley-davidson-LUWVMSyNsR4-unsplash.jpg"
+                    textIsRich="true"
+                    titleFromPage="false">
+                    <actions jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            link="/content/ipp-bikes/language-masters/en/AT_bikes"
+                            text="Sign up"/>
+                    </actions>
+                </teaser_1935143945>
+            </container_1350700615>
         </root>
     </jcr:content>
-    <dealer-locator/>
-    <test-ride/>
-    <track-order/>
+
+    <sport_bikes/>
+    <cruiser_bikes/>
+    <GAT_bikes/>
+    <AT_bikes/>
+    <trike_bikes/>
+
 </jcr:root>
