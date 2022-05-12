@@ -1,4 +1,69 @@
-.cmp-button {}
-.cmp-button__text {}
-.cmp-button__icon {}
+.cmp-button {
+
+}
+.cmp-button__text {
+    
+}
+.cmp-button__icon {
+
+}
 //.cmp-button__icon--myIcon {}
+
+
+
+.cmp-button {}
+
+#youtube-i {
+    display: block;
+    background-image: url("/content/dam/ipp-bikes/youtube.png");
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    color: white;
+    text-decoration: none;
+
+    position: relative;
+    
+    right: 180px;
+
+    margin-top: 2em;
+
+    .cmp-button__text {
+        display: none;
+    }
+}
+
+#facebook-i {
+
+    display: block;
+    background-image: url("/content/dam/ipp-bikes/facebook.png");
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    color: white;
+    text-decoration: none;
+    margin-top: 2em;
+
+    .cmp-button__text {
+        display: none;
+    }
+}
+
+#instagram-i {
+    display: block;
+    background-image: url("/content/dam/ipp-bikes/instagram.png");
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    bottom: 5px;
+    right: 100px;
+    margin-top: 2em;
+
+    .cmp-button__text {
+        display: none;
+    }
+}
+
