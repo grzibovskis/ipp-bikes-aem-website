@@ -9,9 +9,11 @@ $font-height:           1.5;
 
 // Normal mode
 
+
 $color-foreground:      #202020;
 $color-background:      #ECECEC;
 $color-link:            black;
+
 
 // Dark mode
 $color-foreground-dark: invert($color-foreground);

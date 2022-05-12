@@ -25,18 +25,4 @@
 }
 .cmp-navigation__item--active {}
 // .cmp-navigation__item--level-0 {}
-.cmp-navigation__item--level-0:hover > .cmp-navigation__group {
-  background: #ECECEC;
-}
-.cmp-navigation__item-link {
-  color: white;
-  text-decoration: none;
-}
-.cmp-navigation__item-link:hover {
-  color: #ff6600;
-}
-.cmp-navigation__item-link:before {
-  padding: 2pt;
-  color: white;
-  content: "";
-}
+
