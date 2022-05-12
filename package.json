@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "aemfed": "^0.0.7",
+    "aemsync": "^4.0.3"
+  }
+}
