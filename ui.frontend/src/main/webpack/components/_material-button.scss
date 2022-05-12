@@ -1,0 +1,81 @@
+
+// == DEFAULT
+    div.material-button>button.cmp-button{
+        .cmp-mat_btn-text, span.cmp-button__text { 
+            font-size: 1rem; 
+        }
+        .cmp-mat_btn-icon, span.cmp-button__icon { 
+            font-size: .9rem;
+            padding: .3rem .5rem; 
+        }
+    }
+
+
+// == Alignment
+    .cmp-mat_btn-vertical {
+        span.cmp-mat_btn-text, span.cmp-button__text {
+            &::before {
+                content: "\A";
+                white-space: pre;
+            }
+        }
+    }
+
+    .cmp-mat_btn-horizontal_left {
+        span.cmp-mat_btn-text, span.cmp-button__text {
+            display: inline-block;
+            text-align: right;
+        }
+        span.cmp-mat_btn-icon, span.cmp-button__icon {
+            display: inline-block;
+        }
+    }
+
+    .cmp-mat_btn-horizontal_right {
+        span.cmp-mat_btn-text, span.cmp-button__text {
+            padding-left: .5rem;
+            text-align: left;
+        }
+        span.cmp-mat_btn-icon, span.cmp-button__icon {
+            float: right;
+        }
+    }
+// !! Alignment
+
+
+// == Size
+    .cmp-mat_btn-small {
+        span.cmp-mat_btn-text, .cmp-button__text {
+            font-size: 1rem; 
+        }
+        span.cmp-mat_btn-icon, span.cmp-button__icon {
+            font-size: .9rem;
+            padding: .3rem .5rem;
+        }
+    }
+
+    .cmp-mat_btn-large {
+        span.cmp-mat_btn-text, .cmp-button__text {
+            font-size: 2rem !important;
+        }
+        span.cmp-mat_btn-icon, span.cmp-button__icon {
+            font-size: 1.6rem !important;
+            padding: .75rem 1rem !important;
+        }
+    }
+// !! Size
+
+
+// == Content     
+    .cmp-mat_btn-noIcon {
+        span.cmp-mat_btn-icon, span.cmp-button__icon {
+            display: none !important;
+        }
+    }
+
+    .cmp-mat_btn-noText {
+        span.cmp-mat_btn-text, .cmp-button__text {
+            display: none !important;
+        }
+    }
+// !! Content 
