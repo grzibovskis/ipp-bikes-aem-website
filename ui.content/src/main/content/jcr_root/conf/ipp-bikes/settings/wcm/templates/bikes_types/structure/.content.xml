@@ -3,9 +3,9 @@
     jcr:primaryType="cq:Page">
     <jcr:content
         cq:deviceGroups="[mobile/groups/responsive]"
-        cq:lastModified="{Date}2022-03-30T16:52:16.915+03:00"
+        cq:lastModified="{Date}2022-03-22T09:29:04.490+02:00"
         cq:lastModifiedBy="admin"
-        cq:template="/conf/ipp-bikes/settings/wcm/templates/page-content"
+        cq:template="/conf/ipp-bikes/settings/wcm/templates/bikes_types"
         jcr:primaryType="cq:PageContent"
         sling:resourceType="ipp-bikes/components/page">
         <root
@@ -19,35 +19,23 @@
             <container
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="ipp-bikes/components/container"
-                layout="responsiveGrid">
-                <title
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="ipp-bikes/components/title"
-                    editable="{Boolean}true">
-                    <cq:responsive jcr:primaryType="nt:unstructured">
-                        <default
-                            jcr:primaryType="nt:unstructured"
-                            offset="0"
-                            width="12"/>
-                    </cq:responsive>
-                </title>
-                <container
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="ipp-bikes/components/container"
-                    editable="{Boolean}true"
-                    layout="responsiveGrid">
-                    <cq:responsive jcr:primaryType="nt:unstructured">
-                        <default
-                            jcr:primaryType="nt:unstructured"
-                            offset="0"
-                            width="12"/>
-                    </cq:responsive>
-                </container>
-            </container>
-            <experiencefragment-footer
+                editable="{Boolean}true"
+                layout="responsiveGrid"/>
+            <container_1075967254
+                jcr:created="{Date}2022-03-22T09:27:30.091+02:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2022-03-22T09:27:30.091+02:00"
+                jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="ipp-bikes/components/experiencefragment"
-                fragmentVariationPath="/content/experience-fragments/ipp-bikes/us/en/site/footer/master"/>
+                sling:resourceType="ipp-bikes/components/container"
+                editable="{Boolean}true"/>
+            <experiencefragment
+                jcr:created="{Date}2022-03-22T09:28:59.092+02:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2022-03-22T09:28:59.092+02:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="ipp-bikes/components/experiencefragment"/>
         </root>
         <cq:responsive jcr:primaryType="nt:unstructured">
             <breakpoints jcr:primaryType="nt:unstructured">

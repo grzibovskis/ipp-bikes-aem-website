@@ -16,6 +16,40 @@
                         <jcr:content jcr:primaryType="nt:unstructured"/>
                     </form-container>
                 </container>
+                <options jcr:primaryType="nt:unstructured">
+                    <policy_1651125824615
+                        jcr:lastModified="{Date}2022-04-28T09:07:09.251+03:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="form-options-variations"
+                        sling:resourceType="wcm/core/components/policy/policy">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                        <cq:styleGroups jcr:primaryType="nt:unstructured">
+                            <item0 jcr:primaryType="nt:unstructured"/>
+                        </cq:styleGroups>
+                    </policy_1651125824615>
+                </options>
+                <text jcr:primaryType="nt:unstructured">
+                    <policy_1651126032790
+                        jcr:lastModified="{Date}2022-04-28T09:07:50.152+03:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="form-text-variations"
+                        sling:resourceType="wcm/core/components/policy/policy">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                        <cq:styleGroups jcr:primaryType="nt:unstructured">
+                            <item0 jcr:primaryType="nt:unstructured">
+                                <cq:styles jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        cq:styleClasses="cmp-Slider"
+                                        cq:styleId="1651126052582"
+                                        cq:styleLabel="Slider"
+                                        jcr:primaryType="nt:unstructured"/>
+                                </cq:styles>
+                            </item0>
+                        </cq:styleGroups>
+                    </policy_1651126032790>
+                </text>
             </form>
             <languagenavigation jcr:primaryType="nt:unstructured">
                 <policy_xfm
@@ -74,6 +108,64 @@
                             features="-"/>
                     </plugins>
                 </policy_651483963895698>
+                <policy_23099353302300
+                    jcr:description="IPP image styles"
+                    jcr:lastModified="{Date}2022-04-12T14:39:53.645+03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="IPP image"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    allowUpload="true"
+                    altValueFromDAM="true"
+                    disableLazyLoading="true"
+                    displayPopupTitle="true"
+                    isDecorative="false"
+                    jpegQuality="{Long}0"
+                    titleValueFromDAM="true"
+                    uuidDisabled="true">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                    <plugins jcr:primaryType="nt:unstructured">
+                        <crop
+                            jcr:primaryType="nt:unstructured"
+                            features="*">
+                            <aspectRatios jcr:primaryType="nt:unstructured">
+                                <item0
+                                    jcr:primaryType="nt:unstructured"
+                                    name="Wide Landscape"
+                                    ratio="0.6180"/>
+                                <item1
+                                    jcr:primaryType="nt:unstructured"
+                                    name="Landscape"
+                                    ratio="0.8284"/>
+                                <item2
+                                    jcr:primaryType="nt:unstructured"
+                                    name="Square"
+                                    ratio="1"/>
+                                <item3
+                                    jcr:primaryType="nt:unstructured"
+                                    name="Portrait"
+                                    ratio="1.6180"/>
+                            </aspectRatios>
+                        </crop>
+                        <rotate
+                            jcr:primaryType="nt:unstructured"
+                            features="right"/>
+                        <flip
+                            jcr:primaryType="nt:unstructured"
+                            features="-"/>
+                    </plugins>
+                    <cq:styleGroups jcr:primaryType="nt:unstructured">
+                        <item0 jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                    cq:styleClasses="cmp-image--ripped"
+                                    cq:styleId="1649763223126"
+                                    cq:styleLabel="rippedEdges"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item0>
+                    </cq:styleGroups>
+                </policy_23099353302300>
             </image>
             <text jcr:primaryType="nt:unstructured">
                 <policy_641562756958017
@@ -185,6 +277,28 @@
                     type="h2">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                 </policy_641528232375303>
+                <policy_2963697867800
+                    jcr:lastModified="{Date}2022-04-08T18:07:15.868+03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="IPP title"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    allowedTypes="[h1,h2,h3,h4,h5,h6]"
+                    linkDisabled="false"
+                    type="h1">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                    <cq:styleGroups jcr:primaryType="nt:unstructured">
+                        <item0 jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                    cq:styleClasses="cmp-title--decorline"
+                                    cq:styleId="1649223588847"
+                                    cq:styleLabel="decorline"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item0>
+                    </cq:styleGroups>
+                </policy_2963697867800>
             </title>
             <experiencefragment jcr:primaryType="nt:unstructured">
                 <policy_header
@@ -207,10 +321,15 @@
             <container jcr:primaryType="nt:unstructured">
                 <policy_1574694950110
                     jcr:description="Allows the template components and defines the component mapping (this configures what components should be automatically created when authors drop assets from the content finder to the page editor)."
+                    jcr:lastModified="{Date}2022-04-08T16:06:33.791+03:00"
+                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Page Root"
                     sling:resourceType="wcm/core/components/policy/policy"
-                    components="[group:IPP Bikes - Content,/apps/ipp-bikes/components/form/container,group:IPP Bikes - Structure]">
+                    backgroundImageEnabled="true"
+                    columns="6"
+                    components="[group:IPP Bikes - Content,/apps/ipp-bikes/components/form/container,group:IPP Bikes - Structure]"
+                    layoutDisabled="false">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                     <cq:authoring jcr:primaryType="nt:unstructured">
                         <assetToComponentMapping jcr:primaryType="nt:unstructured">
@@ -237,10 +356,13 @@
                 </policy_1574694950110>
                 <policy_1574695586800
                     jcr:description="Allows the page components and defines the component mapping (this configures what components should be automatically created when authors drop assets from the content finder to the page editor)."
+                    jcr:lastModified="{Date}2022-04-06T12:34:21.450+03:00"
+                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Page Content"
                     sling:resourceType="wcm/core/components/policy/policy"
-                    components="[group:IPP Bikes - Content,/apps/ipp-bikes/components/form/container]">
+                    components="[group:IPP Bikes - Content,/apps/ipp-bikes/components/form/container]"
+                    layoutDisabled="false">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                     <cq:authoring jcr:primaryType="nt:unstructured">
                         <assetToComponentMapping jcr:primaryType="nt:unstructured">
@@ -268,17 +390,27 @@
                 <policy_649128221558427
                     cq:styleDefaultElement="main"
                     jcr:description="Sets a &lt;main> element on the page content area."
+                    jcr:lastModified="{Date}2022-04-21T09:25:22.410+03:00"
+                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Page Main"
-                    sling:resourceType="wcm/core/components/policy/policy">
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    columns="12"
+                    components="[group:IPP Bikes - Content]"
+                    layout="responsiveGrid"
+                    layoutDisabled="false">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                 </policy_649128221558427>
                 <policy_1575040440977
                     jcr:description="Allows the template components and defines the component mapping (this configures what components should be automatically created when authors drop assets from the content finder to the page editor)."
+                    jcr:lastModified="{Date}2022-04-07T09:49:54.453+03:00"
+                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    jcr:title="XF Root"
+                    jcr:title="DividerTitle&amp;Button"
                     sling:resourceType="wcm/core/components/policy/policy"
-                    components="[group:IPP Bikes - Content,/apps/ipp-bikes/components/form/container]">
+                    backgroundImageEnabled="true"
+                    components="[/apps/ipp-bikes/components/button,/apps/ipp-bikes/components/text,/apps/ipp-bikes/components/title]"
+                    layoutDisabled="false">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                     <cq:authoring jcr:primaryType="nt:unstructured">
                         <assetToComponentMapping jcr:primaryType="nt:unstructured">
@@ -304,25 +436,122 @@
                     </cq:authoring>
                 </policy_1575040440977>
                 <policy_16557677044500
-                    jcr:lastModified="{Date}2022-03-18T12:47:49.763+02:00"
+                    jcr:description="To change button title in container with button"
+                    jcr:lastModified="{Date}2022-04-29T16:31:58.356+03:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    jcr:title="Container_image"
+                    jcr:title="Container-button"
                     sling:resourceType="wcm/core/components/policy/policy"
-                    components="[/libs/foundation/components/adaptiveimage,/libs/foundation/components/image,/libs/wcm/foundation/components/image,/libs/foundation/components/textimage,/libs/wcm/foundation/components/textimage]"
+                    components="[group:IPP Bikes - Content,group:IPP Bikes - Form,group:IPP Bikes - Structure]"
                     layoutDisabled="false">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                 </policy_16557677044500>
+                <policy_4732374089900
+                    jcr:lastModified="{Date}2022-04-08T14:41:37.910+03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Bikes_content"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    components="[/apps/ipp-bikes/components/teaser]"
+                    layoutDisabled="false">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                </policy_4732374089900>
+                <policy_27651474693800
+                    jcr:lastModified="{Date}2022-04-08T14:52:41.348+03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Content_Cards&amp;Experiences"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    columns="4"
+                    components="[/apps/ipp-bikes/components/experiencefragment,/apps/ipp-bikes/components/teaser,/apps/ipp-bikes/components/title]"
+                    layoutDisabled="false">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                    <cq:styleGroups jcr:primaryType="nt:unstructured">
+                        <item0 jcr:primaryType="nt:unstructured"/>
+                    </cq:styleGroups>
+                </policy_27651474693800>
             </container>
             <teaser jcr:primaryType="nt:unstructured">
                 <policy_1575031387650
-                    jcr:description="Sets the title size to H3."
+                    jcr:description="Hero image"
+                    jcr:lastModified="{Date}2022-04-08T14:47:06.898+03:00"
+                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    jcr:title="Content Teaser"
+                    jcr:title="Hero-Teaser"
                     sling:resourceType="wcm/core/components/policy/policy"
-                    titleType="h3">
+                    imageLinkHidden="true"
+                    showTitleType="false"
+                    titleLinkHidden="true"
+                    titleType="h1">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
+                    <cq:styleGroups jcr:primaryType="nt:unstructured">
+                        <item0 jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                    cq:styleClasses="cmp-LinkButton"
+                                    cq:styleId="1649418199736"
+                                    cq:styleLabel="Link Button"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item0>
+                    </cq:styleGroups>
                 </policy_1575031387650>
+                <policy_25373437732600
+                    cq:styleDefaultClasses="IPP-teaser"
+                    jcr:lastModified="{Date}2022-04-14T12:55:16.567+03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Teaser_IPP_default"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    imageLinkHidden="true"
+                    showTitleType="false"
+                    titleLinkHidden="true"
+                    titleType="h1">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                    <cq:styleGroups jcr:primaryType="nt:unstructured">
+                        <item0
+                            cq:styleGroupLabel="Image"
+                            jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                    cq:styleClasses="cmp-image--left"
+                                    cq:styleId="1647954889762"
+                                    cq:styleLabel="Left "
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item1
+                                    cq:styleClasses="cmp-image--right"
+                                    cq:styleId="1649237980902"
+                                    cq:styleLabel="Right"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item2
+                                    cq:styleClasses="cmp-teaser--ripped"
+                                    cq:styleId="1649930086599"
+                                    cq:styleLabel="Ripped"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item0>
+                    </cq:styleGroups>
+                </policy_25373437732600>
+                <policy_27868404692200
+                    jcr:lastModified="{Date}2022-04-08T18:06:43.680+03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Teaser_Card"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    showTitleType="false">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                    <cq:styleGroups jcr:primaryType="nt:unstructured">
+                        <item0 jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                    cq:styleClasses="cmp-teaser--card"
+                                    cq:styleId="1649248437633"
+                                    cq:styleLabel="Card"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item0>
+                    </cq:styleGroups>
+                </policy_27868404692200>
             </teaser>
             <download jcr:primaryType="nt:unstructured">
                 <policy_1575032193319
@@ -349,6 +578,53 @@
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                 </policy>
             </page>
+            <button jcr:primaryType="nt:unstructured">
+                <policy_1649323746874
+                    cq:styleDefaultClasses="cmp-button--solid"
+                    jcr:lastModified="{Date}2022-04-08T15:56:01.763+03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Button_Variations"
+                    sling:resourceType="wcm/core/components/policy/policy">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                    <cq:styleGroups jcr:primaryType="nt:unstructured">
+                        <item0 jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                    cq:styleClasses="cmp-button--ripped"
+                                    cq:styleId="1649323791996"
+                                    cq:styleLabel="ripped"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item1
+                                    cq:styleClasses="cmp-button--solid"
+                                    cq:styleId="1649323866636"
+                                    cq:styleLabel="solid"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item2
+                                    cq:styleClasses="cmp-button--transparent"
+                                    cq:styleId="1649323891718"
+                                    cq:styleLabel="transparent"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item3
+                                    cq:styleClasses="cmp-button--arrowup"
+                                    cq:styleId="1649324022702"
+                                    cq:styleLabel="arrowUp"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item4
+                                    cq:styleClasses="cmp-button--transparentarrowup"
+                                    cq:styleId="1649324197285"
+                                    cq:styleLabel="transparentArrowUp"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item5
+                                    cq:styleClasses="cmp-button--solidarrowup"
+                                    cq:styleId="1649331945339"
+                                    cq:styleLabel="solidArrowUp"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item0>
+                    </cq:styleGroups>
+                </policy_1649323746874>
+            </button>
         </components>
     </ipp-bikes>
 </jcr:root>
