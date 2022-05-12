@@ -2,7 +2,9 @@
 <jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
     jcr:primaryType="cq:Template">
     <jcr:content
+
         cq:lastModified="{Date}2022-03-30T16:52:16.915+03:00"
+
         cq:lastModifiedBy="admin"
         cq:templateType="/conf/ipp-bikes/settings/wcm/template-types/page"
         jcr:description="My Site Page Template"

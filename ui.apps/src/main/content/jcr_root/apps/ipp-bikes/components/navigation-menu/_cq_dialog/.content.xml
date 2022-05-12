@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root 
+    xmlns:sling="http://sling.apache.org/jcr/sling/1.0" 
+    xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    xmlns:nt="http://www.jcp.org/jcr/nt/1.0" 
+    xmlns:cq="http://www.day.com/jcr/cq/1.0"
+    xmlns:granite="http://www.adobe.com/jcr/granite/1.0"
+    
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Navigation Menu v2"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+>
+
+    <content
+        granite:class="cmp-navigationmenu__editor"
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container"
+    >
+        <items jcr:primaryType="nt:unstructured">            
+            <tabs 
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+            >
+                <items jcr:primaryType="nt:unstructured">
+
+
+                    <tablist
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        jcr:title="Tabs"
+                        jcr:description="Nested Coral Multifield"
+                    >
+                        <items
+                            jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                                <items
+                                    jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                                        margin="{Boolean}true">
+                                        <items
+                                            jcr:primaryType="nt:unstructured">
+                              
+
+
+                            <navItemsMainList
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                composite="{Boolean}true"
+                                fieldLabel="Navifation - Main Layer">
+                                <field
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                    name="./navItemsMainList">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <title
+                                            jcr:primaryType="nt:unstructured"
+                                            fieldLabel="Accordion Title"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            emptyText="Title"
+                                            name="./title"/>
+                                        <listConnect
+                                            jcr:primaryType="nt:unstructured"
+                                            fieldLabel="Connected List ID"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            emptyText="Connected List ID"
+                                            name="./listConnect"/>
+                                        <link
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                            rootPath="/content/ipp-bikes"
+                                            fieldLabel="Link"
+                                            name="./link"
+                                        /> 
+
+                                        <navItemsFirstList
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                            composite="{Boolean}true"
+                                            fieldLabel="NAV - Layer #1">
+                                            <field
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                name="./navItemsFirstList">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                
+                                                    <title
+                                                        jcr:primaryType="nt:unstructured"
+                                                        fieldLabel="Accordion Title"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        emptyText="Title"
+                                                        name="./title"/>
+                                                    <listConnect
+                                                        jcr:primaryType="nt:unstructured"
+                                                        fieldLabel="Connected List ID"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        emptyText="Connected List ID"
+                                                        name="./listConnect"/>
+                                                    <link
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                        rootPath="/content/ipp-bikes"
+                                                        fieldLabel="Link"
+                                                        name="./link"
+                                                    /> 
+
+
+                                                     <navItemsSecondList
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                        composite="{Boolean}true"
+                                                        fieldLabel="NAV - Layer #2">
+                                                        <field
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                            name="./navItemsSecondList">
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                            
+                                                                <title
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    fieldLabel="Accordion Title"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                    emptyText="Title"
+                                                                    name="./title"/>
+                                                                <listConnect
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    fieldLabel="Connected List ID"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                    emptyText="Connected List ID"
+                                                                    name="./listConnect"/>
+                                                                <link
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                                    rootPath="/content/ipp-bikes"
+                                                                    fieldLabel="Link"
+                                                                    name="./link"
+                                                                /> 
+
+
+                                                            </items>
+                                                        </field>
+                                                    </navItemsSecondList>
+
+
+                                                </items>
+                                            </field>
+                                        </navItemsFirstList>
+
+                                    </items>
+                                </field>
+                            </navItemsMainList>
+
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </tablist>
+
+
+                    <categories 
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Categories"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                    >
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true"
+                            >
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                                    >
+                                        <items jcr:primaryType="nt:unstructured">
+
+
+                            <categoryList
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                composite="{Boolean}true"
+                                fieldLabel="List of Category Lists">
+                                <field
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                    name="./categoryList">
+                                    <items jcr:primaryType="nt:unstructured">
+
+
+                                        <catListID
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldLabel="List ID"
+                                            name="./catListID"
+                                        />
+
+                                        <categoryItems
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                            composite="{Boolean}true"
+                                            fieldLabel="Items">
+                                            <field
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                name="./categoryItems">
+                                                <items jcr:primaryType="nt:unstructured">
+
+                                                    <heading
+                                                        granite:class="coral-Heading coral-Heading--4"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/heading"
+                                                        level="{Long}4"
+                                                        text="Category"/>
+
+                                                     <catName
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldLabel="Item Name"
+                                                        name="./catName"
+                                                    />
+                                                    <catLink
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                        rootPath="/content/ipp-bikes"
+                                                        fieldLabel="Item Link"
+                                                        name="./catLink"
+                                                    /> 
+
+
+
+
+                                                
+                                                </items>
+                                            </field>
+                                        </categoryItems>
+
+                                    
+                                    </items>
+                                </field>
+                            </categoryList>
+
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                        
+                    </categories>
+
+
+
+                    <navIconSelect
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Icon Select"
+                        sling:orderBefore="cq:styles"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                    >
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true"
+                            >
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                                    >
+                                        <items jcr:primaryType="nt:unstructured">
+
+                                            <navicon
+                                                granite:class="cmp-image__editor-file-upload"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                                class="cq-droptarget"
+                                                fileNameParameter="./fileName"
+                                                fileReferenceParameter="./fileReference"
+                                                mimeTypes="[image/gif,image/jpeg,image/png,image/tiff,image/svg+xml]"
+                                                name="./navicon"
+                                            />
+
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </navIconSelect>
+
+
+
+                    <properties
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Properties"
+                        sling:orderBefore="cq:styles"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                    >
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true"
+                            >
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                                    >
+                                        <items jcr:primaryType="nt:unstructured">
+
+
+                                    <iconLink
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                        rootPath="/content/ipp-bikes"
+                                        fieldLabel="Main Icon Link"
+                                        name="./iconLink"
+                                    /> 
+
+                                    <title
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="The Title"
+                                        name="./title"/>
+                                    <text
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="The Text"
+                                        name="./text"/>
+
+
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </properties>
+
+                    
+
+                </items>
+            </tabs>            
+        </items>
+    </content>
+
+</jcr:root>

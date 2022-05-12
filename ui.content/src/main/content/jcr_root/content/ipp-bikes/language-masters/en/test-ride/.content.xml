@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2022-03-28T15:03:16.774+03:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/ipp-bikes/settings/wcm/templates/page-content"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Test Ride"
+        sling:resourceType="ipp-bikes/components/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="ipp-bikes/components/container"
+            layout="responsiveGrid">
+            <container
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="ipp-bikes/components/container"
+                layout="responsiveGrid">
+                <title
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="ipp-bikes/components/title"/>
+                <container
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="ipp-bikes/components/container"
+                    layout="responsiveGrid">
+                    <teaser
+                        jcr:created="{Date}2022-03-28T15:01:26.576+03:00"
+                        jcr:createdBy="admin"
+                        jcr:description="&lt;p>EEEEEEEESADSADAWDADAWDWDDAdb rbba;esjufjsjusjnmbjdjtewaijEW&amp;quot;i ew[ IQJweo QEW QEW[ QEWU [weu [wEJU [JU[W [[tj[t [gj[gj[ '[.&lt;br />&#xd;&#xa;&lt;/p>&#xd;&#xa;"
+                        jcr:lastModified="{Date}2022-03-28T15:02:10.045+03:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Widescreen"
+                        sling:resourceType="ipp-bikes/components/teaser"
+                        actionsEnabled="false"
+                        descriptionFromPage="false"
+                        fileReference="/content/dam/core-components-examples/library/components/text.svg"
+                        textIsRich="true"
+                        titleFromPage="false">
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="0"
+                                width="12"/>
+                        </cq:responsive>
+                    </teaser>
+                    <teaser_1079805438
+                        jcr:created="{Date}2022-03-28T15:02:50.638+03:00"
+                        jcr:createdBy="admin"
+                        jcr:description="&lt;p>irdooodsdfuoa[fej nnlebp;3jekj [EU R[JHp[FJG[ijfjg;je [fdij [ jur[jg[u -04958=45y98i -9uu -8u -845ut -98uruj ij -vq45u -uu-T UFJG A &amp;nbsp;&amp;nbsp; &lt;br>&#xd;&#xa;&lt;/p>&#xd;&#xa;"
+                        jcr:lastModified="{Date}2022-03-28T15:03:16.772+03:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Dave"
+                        sling:resourceType="ipp-bikes/components/teaser"
+                        actionsEnabled="false"
+                        descriptionFromPage="false"
+                        fileReference="/content/dam/core-components-examples/library/components/carousel.svg"
+                        textIsRich="true"
+                        titleFromPage="false"/>
+                </container>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>

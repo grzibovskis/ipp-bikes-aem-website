@@ -7,21 +7,24 @@ body {
     font-family: $font-family;
     line-height: $font-height;
     color:       $color-foreground;
+
     background:  $color-background url("/content/dam/ipp-bikes/page-background.png") repeat-y;
+
 
     @media (prefers-color-scheme: dark) {
         color:       $color-foreground-dark;
         background:  $color-background-dark;
     }
+*/
 }
 
 
 a {
     color: $color-link;
 
-    @media (prefers-color-scheme: dark) {
+    /*@media (prefers-color-scheme: dark) {
         color: $color-link-dark;
-    }
+    }*/
 }
 
 button,
@@ -31,3 +34,5 @@ select,
 textarea {
     font: inherit;
 }
+
+.hidden { display: none; }

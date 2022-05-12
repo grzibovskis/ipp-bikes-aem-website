@@ -1,1 +1,9 @@
 .cmp-container {}
+
+
+//Color
+    .cmp-container-color_white { background-color: #FFF; color: #333; }
+    .cmp-container-color_black { background-color: #333; color: #FFF; }
+//Padding
+    .cmp-container-pad_vert_small { padding-top: 1rem; padding-bottom: 1rem; }
+    .cmp-container-pad_vert_large { padding-top: 2rem; padding-bottom: 2rem; }

@@ -1,0 +1,274 @@
+$main_background_color: #FFF;
+$inactive_background_color: #EEE;
+$item_highlight_color: #EEE;
+$text_color: #000;
+
+.cmp-navigationmenu {
+    background-color: $main_background_color;
+    width: 100%;
+    padding: 0;
+    font-family: Tahoma, Verdana, sans-serif ;
+
+    
+//[IK] overall styles
+    ol li a {
+        font-weight: 700;
+        font-size: .9rem;   
+        text-decoration: none; 
+        color: $text_color;
+        cursor: pointer;
+
+        //the next three are to fill parent of anchro tag
+        display: flex;
+        //justify-content: center;
+        //align-items: center;
+        
+        transition: color $transition_time;   
+        
+        &:hover{
+            text-decoration: none; 
+        }
+        &:active{
+            text-decoration: none;
+            color: $text_color; 
+        }
+    }
+//[IK] end --- overall styles
+
+
+//[IK] Main list styles
+    ol.cmp-navigationmenu__main-list{
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 0;
+        margin: 0px;
+        list-style: none;
+
+        li.cmp-navigationmenu__mainlist_item a.cmp-navigationmenu__main-link {
+            display: inline-block;
+            height: 64px;
+            line-height: 48px;
+            padding: 8px 20px;
+            text-transform: uppercase;
+            
+            box-sizing: border-box;
+            vertical-align: middle;
+            justify-content: center;
+
+            background-color: $main_background_color;
+            color: $text_color;
+            transition: background-color $transition_time, color $transition_time;
+            
+            //[IK] a standin for [:hover], to enable the possibility of implamenting [:hover] via JS
+            &.highlighted_main{
+                background-color: invert($main_background_color);
+                color: invert($text_color);
+            }
+        }
+        
+            
+        li.cmp-navigationmenu__main-icon a {
+            height: 64px;
+            width: 64px;
+            padding: 0px 16px;
+
+            &:hover{
+                background-color: $item_highlight_color;
+                a{ color: $text_color; }
+            }
+
+            img{
+                height: 64px;
+                width: 64px;
+            }
+        }
+    }
+//[IK] end --- Main list styles
+
+
+    div.cmp-navigationmenu__sublist-main-container {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: auto;
+        font-weight: 750;
+        z-index: 9999;
+
+        display: none;
+        &.visable { 
+            display: flex; 
+            border-top: 1px solid rgba(160, 160, 160, 0.24);
+            background-color: $main_background_color;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 10px -2px;
+        }
+
+        .cmp-navigationmenu_sublist-inner-container{
+            //[IK] the inner container is needed for the white bars on either side; 
+            //  bg-color from [main-container], width from this left-right margin;
+            margin: 0 5%; 
+
+            display: flex;
+            width: 100%;
+            height: 100%;
+            background-color: $inactive_background_color; 
+            
+            hr.cmp-navigationmenu__separator {
+                margin: 10px 16px;
+                border: none;
+                height: 1px;
+                /* Set the hr color */
+                $horizontal_row_color: rgba(0,0,0,0.2);
+                color: $horizontal_row_color; /* old IE */
+                background-color: $horizontal_row_color; /* Modern Browsers */
+
+                
+            }
+
+
+            div.cmp-navigationmenu__sub-list-container{
+                display: none;
+                margin: 0;
+                padding: 0;
+
+                &.active {
+                    display: inline-block;
+                    height: auto;
+                    overflow: hidden;
+
+                    ol.cmp-navigationmenu__sub-list{
+                        margin: 0;
+                        padding: 0;                     
+                        list-style: none;
+
+                        height: 100%;
+                        padding-bottom: 3em;
+                        border-left: 1px solid rgba(160, 160, 160, 0.24);   
+                        background-color: $main_background_color;
+
+                        li.cmp-navigationmenu__sublist_item a{         
+                            text-transform: uppercase;           
+                            display: flex;
+                            height: 100%;
+                            padding: 1.2em 2.4em; 
+    
+                            &.hasSublist:hover, &.highlighted_sub {
+                                background-color: $item_highlight_color;
+                                color: $text_color; 
+                            }
+    
+                            &.asLinks:hover {
+                                color: $brand-color; 
+                            }                    
+                            
+                        }
+    
+                        &.cmp-navigationmenu__categoryList {
+                            display: inline-block;
+                            background-color: $inactive_background_color;
+                            padding: 20px 16px 16px;
+                            border: none;
+                            top: 0;
+                            
+                            &.col_count_one{ column-count: 1; column-gap: 0px; }
+                            &.col_count_two{ column-count: 2; column-gap: 20px; }
+                            &.col_count_three{ column-count: 3; column-gap: 20px; }
+
+                            &.cmp-navigationmenu__catListOfExtras{
+                                float: right;
+                            }
+    
+                            li.cmp-navigationmenu__catItem a{
+                                padding: 16px 20px;
+                                text-transform: capitalize;
+                                font-weight: 500;
+    
+                                &.thick_cat_link {
+                                    font-weight: bold;
+                                }
+    
+                                &:hover {
+                                    color: $brand-color; 
+                                }    
+                            }
+                        }
+                    }//[IK]end --- [.ol.cmp-navigationmenu__sub-list]
+
+                }//[IK]end --- [.active]
+            }//[IK] end --- [div.cmp-navigationmenu__sub-list-container]
+            
+        }//[IK]end --- [.cmp-navigationmenu__sublist-inner-container]
+    }//[IK]end --- [.cmp-navigationmenu__sublist-main-container]
+}//[IK]end --- [.cmp-navigationmenu]
+
+
+
+
+@media  ( max-width: 1440px ){
+    div.cmp-navigationmenu a {
+        font-size: .7rem !important;
+    }
+}
+@media  ( max-width: 1240px ){
+    div.cmp-navigationmenu a {
+        font-size: .5rem !important;
+    }
+}
+
+/*
+
+            ol.cmp-navigationmenu__sub-list {
+                display: none;
+                margin: 0;
+                padding: 0;
+                &.active {
+                    display: inline-block;
+                    height: auto;
+                    border-left: 1px solid rgba(160, 160, 160, 0.24);
+                    
+                    list-style: none;
+                    padding-bottom: 3em;
+                    background-color: $main_background_color;
+                
+                    li.cmp-navigationmenu__sublist_item a{         
+                        text-transform: uppercase;           
+                        display: flex;
+                        height: 100%;
+                        padding: 1.2em 2.4em; 
+
+                        &.hasSublist:hover, &.highlighted_sub {
+                            background-color: $item_highlight_color;
+                            color: $text_color; 
+                        }
+
+                        &.asLinks:hover {
+                            color: $brand-color; 
+                        }                    
+                        
+                    }
+
+                    &.cmp-navigationmenu__categoryList {
+                        background-color: $inactive_background_color;
+                        padding: 20px 16px 16px;
+                        
+                        &.col_count_one{ column-count: 1; column-gap: 0px; }
+                        &.col_count_two{ column-count: 2; column-gap: 20px; }
+                        &.col_count_three{ column-count: 3; column-gap: 20px; }
+
+                        li.cmp-navigationmenu__catItem a{
+                            padding: 16px 20px;
+                            text-transform: capitalize;
+                            font-weight: 500;
+
+                            &.thick_cat_link {
+                                font-weight: bold;
+                            }
+
+                            &:hover {
+                                color: $brand-color; 
+                            }    
+                        }
+                    }
+
+
+                }//[IK]end of [.active]
+            }//[IK]end of [.ol.cmp-navigationmenu__sub-list]*/

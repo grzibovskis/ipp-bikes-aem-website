@@ -3,7 +3,9 @@
     jcr:primaryType="cq:Page">
     <jcr:content
         cq:deviceGroups="[mobile/groups/responsive]"
+
         cq:lastModified="{Date}2022-03-30T16:52:16.915+03:00"
+
         cq:lastModifiedBy="admin"
         cq:template="/conf/ipp-bikes/settings/wcm/templates/page-content"
         jcr:primaryType="cq:PageContent"
@@ -15,7 +17,14 @@
             <experiencefragment-header
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="ipp-bikes/components/experiencefragment"
-                fragmentVariationPath="/content/experience-fragments/ipp-bikes/us/en/site/header/master"/>
+                fragmentVariationPath="/content/experience-fragments/ipp-bikes/us/en/site/header/master">
+                <cq:responsive jcr:primaryType="nt:unstructured">
+                    <phone
+                        jcr:primaryType="nt:unstructured"
+                        offset="0"
+                        width="12"/>
+                </cq:responsive>
+            </experiencefragment-header>
             <container
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="ipp-bikes/components/container"
