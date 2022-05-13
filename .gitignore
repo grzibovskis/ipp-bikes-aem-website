@@ -1,5 +1,6 @@
 target/
-node_modules
+node_modules/
+package-lock.json
 
 pom.xml.tag
 pom.xml.releaseBackup
@@ -13,4 +14,3 @@ buildNumber.properties
 
 /ui.frontend/src/main/webpack/static/index.html
 /.vscode
-/ui.apps/src/main/content/jcr_root/apps/ipp-bikes/clientlibs/clientlib-site
