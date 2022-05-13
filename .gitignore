@@ -1,8 +1,10 @@
-target/
-node_modules
-/ui.frontend/src/main/webpack/static/index.html
-/ui.apps/src/main/content/jcr_root/apps/ipp-bikes/clientlibs/clientlib-site
+
+node_modules/
 package-lock.json
+target/
+ui.frontend/src/main/webpack/static/index.html
+site.css
+site.js
 TO-DO.txt
 aemsync
 
