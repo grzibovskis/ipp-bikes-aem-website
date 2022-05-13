@@ -20,3 +20,7 @@ buildNumber.properties
 .mvn/wrapper/maven-wrapper.jar
 
 /.vscode
+
+ui.apps/src/main/content/jcr_root/apps/ipp-bikes/clientlibs/clientlib-site/css/site.css
+ui.frontend/dist/clientlib-site/site.css
+ui.frontend/dist/clientlib-site/site.js
