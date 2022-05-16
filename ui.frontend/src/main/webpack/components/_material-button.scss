@@ -1,6 +1,7 @@
 
-// == DEFAULT
+//[IK] == DEFAULT
     div.material-button>button.cmp-button{
+        margin-top: 0;
         .cmp-mat_btn-text, span.cmp-button__text { 
             font-size: 1rem; 
         }
@@ -9,9 +10,10 @@
             padding: .3rem .5rem; 
         }
     }
+//[IK] !! DEFAULT
 
 
-// == Alignment
+//[IK] == Alignment
     .cmp-mat_btn-vertical {
         span.cmp-mat_btn-text, span.cmp-button__text {
             &::before {
@@ -40,10 +42,10 @@
             float: right;
         }
     }
-// !! Alignment
+//[IK] !! Alignment
 
 
-// == Size
+//[IK] == Size
     .cmp-mat_btn-small {
         span.cmp-mat_btn-text, .cmp-button__text {
             font-size: 1rem; 
@@ -63,10 +65,10 @@
             padding: .75rem 1rem !important;
         }
     }
-// !! Size
+//[IK] !! Size
 
 
-// == Content     
+//[IK] == Content     
     .cmp-mat_btn-noIcon {
         span.cmp-mat_btn-icon, span.cmp-button__icon {
             display: none !important;
@@ -78,4 +80,4 @@
             display: none !important;
         }
     }
-// !! Content 
+//[IK] !! Content 

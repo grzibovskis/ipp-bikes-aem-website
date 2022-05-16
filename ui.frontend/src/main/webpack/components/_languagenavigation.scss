@@ -1,85 +1,66 @@
-.cmp-languagenavigation {
-    margin-left: 2em;
-    margin-top: 2em;
-    color: white;
-    background-color: rgba(0, 0, 0, 0);
-    padding: 0.5em;
-    z-index: 100;
-    position: relative;
-    width: 255px;
-    height: 25px;
-    border: 2px solid rgb(255, 115, 0);
-    border-radius: 0.4em;
-    &::before {
+.cmp-languagenavigation {}
+.cmp-languagenavigation__group {}
+.cmp-languagenavigation__item {}
+.cmp-languagenavigation__item--active {}
+.cmp-languagenavigation__item-link {}
+.cmp-languagenavigation__item-title {}
 
-        content: 'European Markets - English';
-        display: inline-block;
+
+
+
+.cmp-languagenavigation-fotter-variant{
+
+    .cmp-languagenavigation {
+        margin-left: 2em;
+        margin-top: 2em;
+        color: white;
+        background-color: rgba(0, 0, 0, 0);
+        padding: 0.5em;
+        z-index: 100;
+        position: relative;
+        width: 255px;
+        height: 25px;
+        border: 2px solid rgb(255, 115, 0);
+        border-radius: 0.4em;
+        &::before {
+    
+            content: 'European Markets - English';
+            display: inline-block;
+            font-weight: bold;
+        }    
+    }
+
+    .cmp-languagenavigation__group {        
+        position: relative;
+        bottom: 255px;
+        right: 10px;
+        width: 200px;
+        height: 200px;
+        display: none;
+        overflow-y: scroll;
+        background-color: rgba(0, 0, 0, );
+        border: 1px solid rgb(255, 115, 0);
+        border-radius: 0.4em;
+        list-style: none;        
+    }
+
+    .cmp-languagenavigation__item {}
+    .cmp-languagenavigation__item--active {}
+
+    .cmp-languagenavigation__item-link {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: white;
+        font-size: 15px;
         font-weight: bold;
     }
-
-}
-
-/*
-#languagenavigation-9bc000742a {
-    text-align: center;
-    font-weight: bold;
-    color: white;
-    position: relative;
-
-    &::after {
-        border-style: solid;
-        border-width: 0.10em 0.10em 0 0;
-        content: '';
-        display: inline-block;
-        height: 0.45em;
-        left: 0.45em;
-        position: relative;
-        top: 0.35em;
-        transform: rotate(135deg); 
-      
-        vertical-align: top;
-        width: 0.45em;
-    }
-
-    &.open::after {
-        top: 0.65em;
-        transform: rotate(-45deg);
-    }
+    .cmp-languagenavigation__item-title {}
+    
+    
+    
+    
     
 }
-*/
 
 
-//.cmp-languagenavigation--countrycode-US
-//.cmp-languagenavigation--langcode-en-US
-.cmp-languagenavigation__group {
-    
-    position: relative;
-    bottom: 255px;
-    right: 10px;
-    width: 200px;
-    height: 200px;
-    display: none;
-    overflow-y: scroll;
-    background-color: rgba(0, 0, 0, );
-    border: 1px solid rgb(255, 115, 0);
-    border-radius: 0.4em;
-    list-style: none;
-    
-}
-.cmp-languagenavigation__item {
-
-}
-.cmp-languagenavigation__item--active {}
-//.cmp-languagenavigation__item--level-0 {}
-.cmp-languagenavigation__item-link {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: white;
-    font-size: 15px;
-    font-weight: bold;
-}
-.cmp-languagenavigation__item-title {
-
-}
 
