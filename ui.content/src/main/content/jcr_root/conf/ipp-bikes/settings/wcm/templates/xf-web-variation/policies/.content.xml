@@ -35,6 +35,18 @@
                         sling:resourceType="wcm/core/components/policies/mapping"/>
                 </components>
             </mysite>
+            <ipp-bikes jcr:primaryType="nt:unstructured">
+                <components jcr:primaryType="nt:unstructured">
+                    <teaser
+                        cq:policy="ipp-bikes/components/teaser/policy_27868404692200"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="wcm/core/components/policies/mapping"/>
+                    <title
+                        cq:policy="ipp-bikes/components/title/policy_2963697867800"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="wcm/core/components/policies/mapping"/>
+                </components>
+            </ipp-bikes>
         </root>
     </jcr:content>
 </jcr:root>

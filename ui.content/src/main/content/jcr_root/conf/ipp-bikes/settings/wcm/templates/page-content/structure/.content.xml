@@ -3,7 +3,7 @@
     jcr:primaryType="cq:Page">
     <jcr:content
         cq:deviceGroups="[mobile/groups/responsive]"
-        cq:lastModified="{Date}2022-03-30T13:41:13.175+03:00"
+        cq:lastModified="{Date}2022-05-16T09:58:22.352+03:00"
         cq:lastModifiedBy="admin"
         cq:template="/conf/ipp-bikes/settings/wcm/templates/page-content"
         jcr:primaryType="cq:PageContent"
