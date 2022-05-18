@@ -4,7 +4,98 @@
 .cmp-accordion__button {}
 .cmp-accordion__button--expanded {}
 .cmp-accordion__title {}
+.cmp-accordion__title:hover {}
 .cmp-accordion__icon {}
 .cmp-accordion__panel {}
 .cmp-accordion__panel--expanded {}
 .cmp-accordion__panel--hidden {}
+
+
+/* if there is some issues contact our support Verners */
+.cmp-footer-nav {
+
+    .cmp-accordion__title {
+        display: none;
+    }
+    .cmp-accordion__icon {
+        display: none;
+    }
+
+    .cmp-accordion__button {
+        display: none;
+  
+        
+        
+    }
+    .cmp-accordion__panel--expanded {
+        display: block;
+
+    }
+
+    .cmp-accordion__panel--hidden {
+        display: none;
+    }
+
+    .cmp-button {
+        text-decoration: none;
+        color: white;
+    }
+    .cmp-button:hover {
+        text-decoration: underline;
+    }
+    #button-3cb53b6f23:after {
+        content: "\2197";
+        color: white;
+        display: inline-block;
+        
+      }
+    #button-3cb53b6f23:hover:after {
+        transform: translateX(0.3rem) translateY(-0.3rem);
+      
+        color: #ffffff;
+        transition: 0.3s ease-in-out;
+        
+      }
+      #button-c174642775:after {
+        content: "\2197";
+        color: white;
+        display: inline-block;
+        
+      }
+    #button-c174642775:hover:after {
+        transform: translateX(0.3rem) translateY(-0.3rem);
+      
+        color: #ffffff;
+        transition: 0.3s ease-in-out;
+        
+      }
+    #button-12fda09e60:after {
+        content: "\2197";
+        color: white;
+        display: inline-block;
+        
+      }
+    #button-12fda09e60:hover:after {
+        transform: translateX(0.3rem) translateY(-0.3rem);
+      
+        color: #ffffff;
+        transition: 0.3s ease-in-out;
+        
+      }
+    #button-59f71cd1e7:after {
+        content: "\2197";
+        color: white;
+        display: inline-block;
+        
+      }
+    #button-59f71cd1e7:hover:after {
+        transform: translateX(0.3rem) translateY(-0.3rem);
+      
+        color: #ffffff;
+        transition: 0.3s ease-in-out;
+        
+      }
+      
+      
+}
+

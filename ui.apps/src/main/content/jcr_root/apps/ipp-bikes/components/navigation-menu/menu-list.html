@@ -1,0 +1,41 @@
+    
+ 
+<sly data-sly-template.my_menuList="${@ pass_container, pass_checker, pass_looper, pass_layer}">  
+    <sly data-sly-test="${pass_checker}">
+
+        <div
+            id="${pass_layer}_containerOf__${pass_container.titleAsClass}"
+            class="cmp-navigationmenu__sub-list-container cmp-navigationmenu__list_container_${pass_layer} cmp-navigationmenu__tabList-container"
+        >
+
+            <ol 
+                id="${pass_layer}_childof__${pass_container.titleAsClass}"      
+                class="cmp-navigationmenu__sub-list  cmp-navigationmenu__list-${pass_layer}"
+            >
+                <sly data-sly-list.innerLoop="${pass_looper}" >
+                    <li 
+                        id="${innerLoop.titleAsClass}"
+                        class="cmp-navigationmenu__sublist_item cmp-navigationmenu__${pass_layer}-item"
+                    >
+                        <a  
+                            class="cmp-navigationmenu__item-link ${pass_layer}_link ${innerLoop.nextLayerConfiguredToClass}" 
+                            href="${innerLoop.link}" 
+                        >${innerLoop.title}</a>
+                    </li>
+                </sly>
+                <hr class="cmp-navigationmenu__separator" />                
+                <li 
+                    id="all_${pass_container.titleAsClass}" 
+                    class="cmp-navigationmenu__sublist_item cmp-navigationmenu__${pass_layer}-item"
+                >
+                    <a  
+                        class="cmp-navigationmenu__item-link ${pass_layer}_link asLinks" 
+                        href="${pass_container.link}" 
+                    >Shop all ${pass_container.title} &rarr; </a>
+                </li>
+            </ol> 
+                
+        </div>
+
+    </sly>
+</sly>

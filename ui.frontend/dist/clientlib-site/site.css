@@ -1,3 +1,4 @@
+
 /*!****************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/src/index.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js!./node_modules/glob-import-loader/index.js??ruleSet[1].rules[1].use[4]!./src/main/webpack/site/main.scss ***!
   \****************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -36,51 +37,108 @@ textarea {
   font: inherit;
 }
 
-#youtube-i {
-  display: block;
-  background-image: url("/content/dam/ipp-bikes/youtube.png");
-  background-size: cover;
-  width: 40px;
-  height: 40px;
-  color: white;
-  text-decoration: none;
-  position: relative;
-  right: 180px;
-  margin-top: 2em;
-}
-#youtube-i .cmp-button__text {
+/* if there is some issues contact our support Verners */
+.cmp-footer-nav .cmp-accordion__title {
   display: none;
 }
-
-#facebook-i {
+.cmp-footer-nav .cmp-accordion__icon {
+  display: none;
+}
+.cmp-footer-nav .cmp-accordion__button {
+  display: none;
+}
+.cmp-footer-nav .cmp-accordion__panel--expanded {
   display: block;
+}
+.cmp-footer-nav .cmp-accordion__panel--hidden {
+  display: none;
+}
+.cmp-footer-nav .cmp-button {
+  text-decoration: none;
+  color: white;
+}
+.cmp-footer-nav .cmp-button:hover {
+  text-decoration: underline;
+}
+.cmp-footer-nav #button-3cb53b6f23:after {
+  content: "↗";
+  color: white;
+  display: inline-block;
+}
+.cmp-footer-nav #button-3cb53b6f23:hover:after {
+  -webkit-transform: translateX(0.3rem) translateY(-0.3rem);
+          transform: translateX(0.3rem) translateY(-0.3rem);
+  color: #ffffff;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.cmp-footer-nav #button-c174642775:after {
+  content: "↗";
+  color: white;
+  display: inline-block;
+}
+.cmp-footer-nav #button-c174642775:hover:after {
+  -webkit-transform: translateX(0.3rem) translateY(-0.3rem);
+          transform: translateX(0.3rem) translateY(-0.3rem);
+  color: #ffffff;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.cmp-footer-nav #button-12fda09e60:after {
+  content: "↗";
+  color: white;
+  display: inline-block;
+}
+.cmp-footer-nav #button-12fda09e60:hover:after {
+  -webkit-transform: translateX(0.3rem) translateY(-0.3rem);
+          transform: translateX(0.3rem) translateY(-0.3rem);
+  color: #ffffff;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.cmp-footer-nav #button-59f71cd1e7:after {
+  content: "↗";
+  color: white;
+  display: inline-block;
+}
+.cmp-footer-nav #button-59f71cd1e7:hover:after {
+  -webkit-transform: translateX(0.3rem) translateY(-0.3rem);
+          transform: translateX(0.3rem) translateY(-0.3rem);
+  color: #ffffff;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+/* if there is some issues contact our support Verners */
+.cmp-ippicons {
+  margin-top: 1em;
+  width: 20% !important;
+}
+.cmp-ippicons .cmp-button__text {
+  display: none;
+}
+.cmp-ippicons .cmp-button__icon--facebook {
   background-image: url("/content/dam/ipp-bikes/facebook.png");
-  background-size: cover;
+  background-size: 40px 40px;
+  display: inline-block;
   width: 40px;
   height: 40px;
-  color: white;
-  text-decoration: none;
-  margin-top: 2em;
+  content: "";
 }
-#facebook-i .cmp-button__text {
-  display: none;
+.cmp-ippicons .cmp-button__icon--youtube {
+  display: inline-block;
+  background-image: url("/content/dam/ipp-bikes/youtube.png");
+  background-size: 40px 40px;
+  width: 40px;
+  height: 40px;
 }
-
-#instagram-i {
-  display: block;
+.cmp-ippicons .cmp-button__icon--instagram:before {
   background-image: url("/content/dam/ipp-bikes/instagram.png");
-  background-size: cover;
-  width: 50px;
-  height: 50px;
-  color: white;
-  text-decoration: none;
-  position: relative;
-  bottom: 5px;
-  right: 100px;
-  margin-top: 2em;
-}
-#instagram-i .cmp-button__text {
-  display: none;
+  background-size: 40px 40px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  content: "";
 }
 
 .cmp-helloworld__item-label {
@@ -91,7 +149,8 @@ textarea {
   margin-top: 0;
 }
 
-.cmp-languagenavigation {
+/* if there is some issues contact our support Verners */
+.cmp-footer-lang-nav .cmp-languagenavigation {
   margin-left: 2em;
   margin-top: 2em;
   color: white;
@@ -104,42 +163,12 @@ textarea {
   border: 2px solid #ff7300;
   border-radius: 0.4em;
 }
-.cmp-languagenavigation::before {
+.cmp-footer-lang-nav .cmp-languagenavigation::before {
   content: "European Markets - English";
   display: inline-block;
   font-weight: bold;
 }
-
-/*
-#languagenavigation-9bc000742a {
-    text-align: center;
-    font-weight: bold;
-    color: white;
-    position: relative;
-
-    &::after {
-        border-style: solid;
-        border-width: 0.10em 0.10em 0 0;
-        content: '';
-        display: inline-block;
-        height: 0.45em;
-        left: 0.45em;
-        position: relative;
-        top: 0.35em;
-        transform: rotate(135deg); 
-
-        vertical-align: top;
-        width: 0.45em;
-    }
-
-    &.open::after {
-        top: 0.65em;
-        transform: rotate(-45deg);
-    }
-
-}
-*/
-.cmp-languagenavigation__group {
+.cmp-footer-lang-nav .cmp-languagenavigation__group {
   position: relative;
   bottom: 255px;
   right: 10px;
@@ -152,13 +181,35 @@ textarea {
   border-radius: 0.4em;
   list-style: none;
 }
-
-.cmp-languagenavigation__item-link {
+.cmp-footer-lang-nav .cmp-languagenavigation__item-link {
   text-decoration: none;
   text-transform: uppercase;
   color: white;
   font-size: 15px;
   font-weight: bold;
+}
+
+/* if there is some issues contact our support Verners */
+.cmp-footer-list .cmp-list__item-link {
+  text-decoration: none;
+  color: white;
+}
+.cmp-footer-list .cmp-list__item {
+  float: left;
+}
+.cmp-footer-list .cmp-list__item::marker {
+  content: "|";
+  color: white;
+}
+.cmp-footer-list .cmp-list__item:nth-child(1)::marker {
+  content: none;
+}
+.cmp-footer-list .cmp-list__item-title {
+  float: left;
+  margin: 0 1em;
+}
+.cmp-footer-list .cmp-list__item-title:hover {
+  text-decoration: underline;
 }
 
 main.container {
@@ -173,220 +224,6 @@ footer.experiencefragment {
   footer.experiencefragment {
     border-color: #131313;
   }
-}
-
-.cmp-separator__horizontal-rule {
-  margin: 0;
-  border: 0;
-  padding: 2em;
-  border-bottom: 1px solid #ececec;
-}
-
-#hd-logo {
-  padding-top: 2em;
-  font-size: 21px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-}
-
-#customer-support-nav .cmp-navigation__group {
-  list-style: none;
-  margin: 0;
-  -webkit-padding-start: 0;
-          padding-inline-start: 0;
-}
-#customer-support-nav .cmp-navigation__item-link {
-  text-decoration: none;
-  color: white;
-  padding: 0 0.25rem;
-  margin: 0 -0.25rem;
-}
-#customer-support-nav .cmp-navigation__item-link:hover {
-  text-decoration: underline;
-}
-
-#financing-nav .cmp-navigation__group {
-  list-style: none;
-  margin: 0;
-  -webkit-padding-start: 0;
-          padding-inline-start: 0;
-}
-#financing-nav .cmp-navigation__item-link {
-  text-decoration: none;
-  color: white;
-  padding: 0 0.25rem;
-  margin: 0 -0.25rem;
-}
-#financing-nav .cmp-navigation__item-link:hover {
-  text-decoration: underline;
-}
-
-#motorcycle-services-nav .cmp-navigation__group {
-  list-style: none;
-  margin: 0;
-  -webkit-padding-start: 0;
-          padding-inline-start: 0;
-}
-#motorcycle-services-nav .cmp-navigation__item--level-0:hover > .cmp-navigation__group {
-  background: #b93131;
-}
-#motorcycle-services-nav .cmp-navigation__item-link {
-  text-decoration: none;
-  color: white;
-  padding: 0 0.25rem;
-  margin: 0 -0.25rem;
-}
-#motorcycle-services-nav .cmp-navigation__item-link:hover {
-  text-decoration: underline;
-}
-#motorcycle-services-nav .cmp-navigation__item--level-0 {
-  padding: auto;
-}
-#motorcycle-services-nav .cmp-navigation__item--level-0::marker {
-  content: none;
-}
-#motorcycle-services-nav .cmp-navigation__item--level-0:nth-child(2)::after {
-  content: "↗";
-  color: white;
-  display: inline-block;
-}
-#motorcycle-services-nav .cmp-navigation__item--level-0:nth-child(2):hover:after {
-  -webkit-transform: translateX(0.3rem) translateY(-0.3rem);
-          transform: translateX(0.3rem) translateY(-0.3rem);
-  color: #ffffff;
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
-}
-#motorcycle-services-nav .cmp-navigation__item--level-0:nth-child(3)::after {
-  content: "↗";
-  color: white;
-  display: inline-block;
-}
-#motorcycle-services-nav .cmp-navigation__item--level-0:nth-child(3):hover:after {
-  -webkit-transform: translateX(0.3rem) translateY(-0.3rem);
-          transform: translateX(0.3rem) translateY(-0.3rem);
-  color: #ffffff;
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
-}
-#motorcycle-services-nav .cmp-navigation__item--level-0:nth-child(4)::after {
-  content: "↗";
-  color: white;
-  display: inline-block;
-}
-#motorcycle-services-nav .cmp-navigation__item--level-0:nth-child(4):hover:after {
-  -webkit-transform: translateX(0.3rem) translateY(-0.3rem);
-          transform: translateX(0.3rem) translateY(-0.3rem);
-  color: #ffffff;
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
-}
-
-#about-us-nav .cmp-navigation__group {
-  color: #b93131;
-  margin: 0;
-  -webkit-padding-start: 0;
-          padding-inline-start: 0;
-}
-#about-us-nav .cmp-navigation__item--level-0:hover > .cmp-navigation__group {
-  background: #b93131;
-}
-#about-us-nav .cmp-navigation__item-link {
-  text-decoration: none;
-  color: white;
-  padding: 0 0.25rem;
-  margin: 0 -0.25rem;
-}
-#about-us-nav .cmp-navigation__item-link:hover {
-  text-decoration: underline;
-}
-#about-us-nav .cmp-navigation__item--level-0::after {
-  padding: auto;
-}
-#about-us-nav .cmp-navigation__item--level-0::marker {
-  content: none;
-}
-#about-us-nav .cmp-navigation__item--level-0:nth-child(2)::after {
-  content: "↗";
-  color: white;
-  display: inline-block;
-}
-#about-us-nav .cmp-navigation__item--level-0:nth-child(2):hover:after {
-  -webkit-transform: translateX(0.3rem) translateY(-0.3rem);
-          transform: translateX(0.3rem) translateY(-0.3rem);
-  color: #ffffff;
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
-}
-
-#sitdis .cmp-navigation {
-  padding-top: 2em;
-  float: right;
-}
-#sitdis .cmp-navigation__group {
-  list-style: none;
-  margin-top: 2em;
-  -webkit-padding-start: 0;
-          padding-inline-start: 0;
-}
-#sitdis .cmp-navigation__item {
-  padding: 1em;
-  float: left;
-}
-#sitdis .cmp-navigation__item--level-0:hover > .cmp-navigation__group {
-  background: #b93131;
-}
-#sitdis .cmp-navigation__item-link {
-  text-decoration: none;
-  color: white;
-  padding: 0 0.25rem;
-  margin: 0 -0.25rem;
-}
-#sitdis .cmp-navigation__item-link:hover {
-  text-decoration: underline;
-}
-#sitdis .cmp-navigation__item--level-0 {
-  padding: auto;
-}
-#sitdis .cmp-navigation__item--level-0::marker {
-  content: "|";
-  color: white;
-}
-#sitdis .cmp-navigation__item--level-0:nth-child(1)::marker {
-  content: none;
-}
-
-#tpcpw .cmp-navigation {
-  padding-top: 15px;
-  float: right;
-}
-#tpcpw .cmp-navigation__group {
-  list-style: none;
-  margin-top: 2em;
-  -webkit-padding-start: 0;
-          padding-inline-start: 0;
-}
-#tpcpw .cmp-navigation__item {
-  padding: 1em;
-  float: left;
-}
-#tpcpw .cmp-navigation__item--level-0:hover > .cmp-navigation__group {
-  background: #b93131;
-}
-#tpcpw .cmp-navigation__item-link {
-  text-decoration: none;
-  color: white;
-  padding: 0 0.25rem;
-  margin: 0 -0.25rem;
-}
-#tpcpw .cmp-navigation__item-link:hover {
-  text-decoration: underline;
-}
-#tpcpw .cmp-navigation__item--level-0::marker {
-  content: "|";
-  color: white;
-}
-#tpcpw .cmp-navigation__item--level-0:nth-child(1)::marker {
-  content: none;
 }
 
 header.experiencefragment {
@@ -507,3 +344,4 @@ header.experiencefragment .cmp-search__field {
 header.experiencefragment .cmp-search__input {
   height: 26px;
 }
+

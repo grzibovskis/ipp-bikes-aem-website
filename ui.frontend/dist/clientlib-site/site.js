@@ -1,3 +1,4 @@
+
 /*
  * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
  * This devtool is neither made for production nor for readable output files.
@@ -263,7 +264,7 @@ eval("// Example of how a component should be initialized via JavaScript\r\n// T
   \************************************************************/
 /***/ (function() {
 
-eval("\r\nconst btn = document.querySelector('.cmp-languagenavigation')\r\nconst nav = document.querySelector('.cmp-languagenavigation__group')\r\n\r\n\r\nbtn.addEventListener('click', () => {\r\n    if (nav.style.display === 'none'){\r\n        nav.style.display = 'block';\r\n    } else {\r\n        nav.style.display = 'none'\r\n    }\r\n})\r\n\r\n\r\n/*\r\nvar div = document.querySelector('cmp-languagenavigation');\r\ndiv.innerHTML += 'European Markets - English'; */\r\n\r\n\n\n//# sourceURL=webpack://aem-maven-archetype/./src/main/webpack/components/_languagenavigation.js?");
+eval("/* if there is some issues contact our support Verners */\r\nconst btn = document.querySelector('.cmp-footer-lang-nav')\r\nconst nav = document.querySelectorAll('.cmp-languagenavigation__group')\r\n\r\n\r\nbtn.addEventListener('click', () => {\r\n    if (nav.style.display === 'none'){\r\n        nav.style.display = 'block';\r\n    } else {\r\n        nav.style.display = 'none'\r\n    }\r\n})\r\n\r\n\r\n\r\n\r\n\r\n/*\r\nvar div = document.querySelector('cmp-languagenavigation');\r\ndiv.innerHTML += 'European Markets - English'; */\r\n\r\n\n\n//# sourceURL=webpack://aem-maven-archetype/./src/main/webpack/components/_languagenavigation.js?");
 
 /***/ })
 
@@ -320,7 +321,7 @@ eval("\r\nconst btn = document.querySelector('.cmp-languagenavigation')\r\nconst
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	!function() {
-/******/ 		__webpack_require__.h = function() { return "642e52484e7ff90deb9a"; }
+/******/ 		__webpack_require__.h = function() { return "0fad969b49fd31072c4d"; }
 /******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
@@ -349,3 +350,4 @@ eval("\r\nconst btn = document.querySelector('.cmp-languagenavigation')\r\nconst
 /******/ 	
 /******/ })()
 ;
+
