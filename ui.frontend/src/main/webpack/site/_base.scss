@@ -9,14 +9,14 @@ body {
     color:       $color-foreground;
 
 
-    background:  $color-background url("/content/dam/ipp-bikes/page-background.png") repeat-y;
+    background:  $color-background url("/content/dam/ipp-bikes/page-background.png") repeat;
 
-
+    /*
     @media (prefers-color-scheme: dark) {
         color:       $color-foreground-dark;
         background:  $color-background-dark;
-    }
-*/
+    }*/
+
 }
 
 

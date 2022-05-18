@@ -1,0 +1,7 @@
+This directory "navigationMenu" contains [.java] files for the custom component "navigation-menu".
+Made by Ivars Knets.
+
+It starts at "MainModel.java", expands through layers "Zero", "One" & "Two".
+The "Category" models are for the category list functionality of the component.
+"FunctionsModel.java" contains functions that are repeatedly used across most files here.
+"package-info.java" is needed so these file could be in a separate directory within the "models" directory.

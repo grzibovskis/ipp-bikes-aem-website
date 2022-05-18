@@ -462,6 +462,8 @@
                     </cq:authoring>
                 </policy_1575040440977>
 
+               
+
                 <policy_16557677044500
                     jcr:description="To change button title in container with button"
                     jcr:lastModified="{Date}2022-04-29T16:31:58.356+03:00"
@@ -497,7 +499,7 @@
                         <item0 jcr:primaryType="nt:unstructured"/>
                     </cq:styleGroups>
                 </policy_27651474693800>
-
+                
             </container>
             <teaser jcr:primaryType="nt:unstructured">
                 <policy_1575031387650
@@ -607,6 +609,7 @@
                 </policy>
             </page>
 
+      
             <button jcr:primaryType="nt:unstructured">
                 <policy_1649323746874
                     cq:styleDefaultClasses="cmp-button--solid"
@@ -654,7 +657,7 @@
                     </cq:styleGroups>
                 </policy_1649323746874>
             </button>
-
+            
         </components>
     </ipp-bikes>
 </jcr:root>
