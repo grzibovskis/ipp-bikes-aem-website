@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
-    <en0/>
-    <lv/>
     <jcr:content
-        cq:lastModified="{Date}2022-03-23T13:46:08.721+02:00"
+        cq:lastModified="{Date}2022-04-11T16:10:34.914+03:00"
         cq:lastModifiedBy="admin"
         cq:template="/conf/ipp-bikes/settings/wcm/templates/page-content"
         jcr:primaryType="cq:PageContent"
-        jcr:title="Language-Masters"
+        jcr:title="test"
         sling:resourceType="ipp-bikes/components/page">
         <root
             jcr:primaryType="nt:unstructured"
@@ -19,10 +17,7 @@
                 sling:resourceType="ipp-bikes/components/container"
                 layout="responsiveGrid">
                 <title
-                    jcr:lastModified="{Date}2022-03-21T15:38:30.936+02:00"
-                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    jcr:title="Language-Masters"
                     sling:resourceType="ipp-bikes/components/title"/>
                 <container
                     jcr:primaryType="nt:unstructured"
@@ -31,5 +26,8 @@
             </container>
         </root>
     </jcr:content>
-    <en/>
+    <motorcycle-services/>
+    <customer-support/>
+    <financing/>
+    <about-us/>
 </jcr:root>

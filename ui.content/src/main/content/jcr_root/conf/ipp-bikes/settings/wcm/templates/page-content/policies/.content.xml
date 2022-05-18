@@ -2,9 +2,13 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
+<<<<<<< Updated upstream
 
         cq:lastModified="{Date}2022-03-21T11:01:16.261+02:00"
 
+=======
+        cq:lastModified="{Date}2022-04-12T09:04:44.917+03:00"
+>>>>>>> Stashed changes
         cq:lastModifiedBy="admin"
         cq:policy="ipp-bikes/components/page/policy"
         jcr:primaryType="nt:unstructured"

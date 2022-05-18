@@ -3,9 +3,13 @@
     jcr:primaryType="cq:Page">
     <jcr:content
         cq:deviceGroups="[mobile/groups/responsive]"
+<<<<<<< Updated upstream
 
         cq:lastModified="{Date}2022-03-30T16:52:16.915+03:00"
 
+=======
+        cq:lastModified="{Date}2022-04-12T09:04:03.495+03:00"
+>>>>>>> Stashed changes
         cq:lastModifiedBy="admin"
         cq:template="/conf/ipp-bikes/settings/wcm/templates/page-content"
         jcr:primaryType="cq:PageContent"
@@ -32,6 +36,7 @@
                 <title
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="ipp-bikes/components/title"
+<<<<<<< Updated upstream
                     editable="{Boolean}true">
                     <cq:responsive jcr:primaryType="nt:unstructured">
                         <default
@@ -40,6 +45,16 @@
                             width="12"/>
                     </cq:responsive>
                 </title>
+=======
+                    editable="{Boolean}true"/>
+                <navigation
+                    jcr:created="{Date}2022-04-12T09:04:03.484+03:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-04-12T09:04:03.484+03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="ipp-bikes/components/navigation"/>
+>>>>>>> Stashed changes
                 <container
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="ipp-bikes/components/container"
