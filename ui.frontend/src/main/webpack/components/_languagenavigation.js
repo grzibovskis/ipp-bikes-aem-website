@@ -1,6 +1,6 @@
-
-const btn = document.querySelector('.cmp-languagenavigation')
-const nav = document.querySelector('.cmp-languagenavigation__group')
+/* if there is some issues contact our support Verners */
+const btn = document.querySelector('.cmp-footer-lang-nav')
+const nav = document.querySelectorAll('.cmp-languagenavigation__group')
 
 
 btn.addEventListener('click', () => {
@@ -10,6 +10,9 @@ btn.addEventListener('click', () => {
         nav.style.display = 'none'
     }
 })
+
+
+
 
 
 /*

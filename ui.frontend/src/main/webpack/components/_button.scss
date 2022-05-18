@@ -10,60 +10,40 @@
 //.cmp-button__icon--myIcon {}
 
 
-
-.cmp-button {}
-
-#youtube-i {
-    display: block;
-    background-image: url("/content/dam/ipp-bikes/youtube.png");
-    background-size: cover;
-    width: 40px;
-    height: 40px;
-    color: white;
-    text-decoration: none;
-
-    position: relative;
-    
-    right: 180px;
-
-    margin-top: 2em;
+/* if there is some issues contact our support Verners */
+.cmp-ippicons {
+    margin-top: 1em;
+    width: 20% !important;
 
     .cmp-button__text {
         display: none;
     }
-}
-
-#facebook-i {
-
-    display: block;
-    background-image: url("/content/dam/ipp-bikes/facebook.png");
-    background-size: cover;
-    width: 40px;
-    height: 40px;
-    color: white;
-    text-decoration: none;
-    margin-top: 2em;
-
-    .cmp-button__text {
-        display: none;
+    .cmp-button__icon--facebook {
+        background-image: url("/content/dam/ipp-bikes/facebook.png");
+        background-size: 40px 40px;
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        content:"";
+        
+    }
+    .cmp-button__icon--youtube {
+        display: inline-block;
+        background-image: url("/content/dam/ipp-bikes/youtube.png");
+        background-size: 40px 40px;
+        width: 40px;
+        height: 40px;
+    }
+    .cmp-button__icon--instagram {
+        &:before {
+            background-image: url("/content/dam/ipp-bikes/instagram.png");
+            background-size: 40px 40px;
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            content:"";
+        }
     }
 }
 
-#instagram-i {
-    display: block;
-    background-image: url("/content/dam/ipp-bikes/instagram.png");
-    background-size: cover;
-    width: 50px;
-    height: 50px;
-    color: white;
-    text-decoration: none;
-    position: relative;
-    bottom: 5px;
-    right: 100px;
-    margin-top: 2em;
-
-    .cmp-button__text {
-        display: none;
-    }
-}
 
