@@ -2,68 +2,746 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2022-03-18T09:46:45.986+02:00"
+        cq:lastModified="{Date}2022-05-11T13:41:06.466+03:00"
         cq:lastModifiedBy="admin"
-        cq:tags="[]"
         cq:template="/conf/ipp-bikes/settings/wcm/templates/xf-web-variation"
         cq:xfMasterVariation="{Boolean}true"
         cq:xfVariantType="web"
         jcr:primaryType="cq:PageContent"
-        jcr:title="Header"
+        jcr:title="Header - IPP Bikes"
         sling:resourceType="ipp-bikes/components/xfpage">
         <root
-            jcr:lastModified="{Date}2022-03-18T09:35:17.692+02:00"
+            jcr:lastModified="{Date}2022-03-21T11:17:10.685+02:00"
             jcr:lastModifiedBy="admin"
             jcr:primaryType="nt:unstructured"
             sling:resourceType="ipp-bikes/components/container"
             layout="responsiveGrid">
             <_1_copy jcr:primaryType="nt:unstructured"/>
-            <image
-                jcr:created="{Date}2022-03-18T09:36:07.236+02:00"
+            <logo/>
+            <container
+                jcr:created="{Date}2022-03-21T11:53:06.473+02:00"
                 jcr:createdBy="admin"
-                jcr:lastModified="{Date}2022-03-18T09:46:40.953+02:00"
+                jcr:lastModified="{Date}2022-03-21T12:03:07.472+02:00"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="ipp-bikes/components/image"
-                altValueFromDAM="true"
-                displayPopupTitle="true"
-                fileReference="/content/dam/ipp-bikes/harley-davidson-brandlogo.net.png"
-                isDecorative="false"
-                linkURL="/content/ipp-bikes/language-masters/en"
-                titleValueFromDAM="true">
+                sling:resourceType="ipp-bikes/components/container"
+                id="header-container-top"
+                layout="responsiveGrid">
+                <list
+                    jcr:created="{Date}2022-03-25T09:20:14.305+02:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-03-25T09:25:39.049+02:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="ipp-bikes/components/list"
+                    childDepth="1"
+                    id="header-top-linklist"
+                    linkItems="true"
+                    listFrom="static"
+                    pages="[/content/ipp-bikes/language-masters/en/dealer-locator,/content/ipp-bikes/language-masters/en/test-ride,/content/ipp-bikes/language-masters/en/track-order]"
+                    showDescription="false"
+                    showModificationDate="false"
+                    sortOrder="asc"
+                    tagsMatch="any">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="0"
+                            width="10"/>
+                    </cq:responsive>
+                </list>
+                <languagenavigation
+                    jcr:created="{Date}2022-03-21T11:58:14.729+02:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-03-21T11:59:55.559+02:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="ipp-bikes/components/languagenavigation"
+                    navigationRoot="/content/ipp-bikes/language-masters"
+                    structureDepth="1">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="0"
+                            width="2"/>
+                    </cq:responsive>
+                </languagenavigation>
+            </container>
+            <container_1348204993
+                jcr:created="{Date}2022-03-18T12:07:21.057+02:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2022-03-21T11:16:31.124+02:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="ipp-bikes/components/container"
+                id="header-container-bottom"
+                layout="responsiveGrid">
                 <cq:responsive jcr:primaryType="nt:unstructured">
                     <default
                         jcr:primaryType="nt:unstructured"
                         offset="0"
-                        width="1"/>
+                        width="12"/>
                 </cq:responsive>
-            </image>
-            <languagenavigation
-                jcr:created="{Date}2022-03-17T12:44:20.348+02:00"
-                jcr:createdBy="admin"
-                jcr:lastModified="{Date}2022-03-17T12:44:20.348+02:00"
-                jcr:lastModifiedBy="admin"
-                jcr:primaryType="nt:unstructured"
-                sling:resourceType="ipp-bikes/components/languagenavigation">
-                <cq:responsive jcr:primaryType="nt:unstructured">
-                    <default
+                <navigation_menu_611810526
+                    jcr:created="{Date}2022-04-11T15:44:15.851+03:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-05-11T13:41:06.157+03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="ipp-bikes/components/navigation-menu"
+                    fileReference="/content/dam/ipp-bikes/harley-davidson-brandlogo.net.png"
+                    iconLink="/content/ipp-bikes/language-masters/en"
+                    text="texty"
+                    title="something testy">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="0"
+                            width="9"/>
+                    </cq:responsive>
+                    <navItemFirstList jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            link="/content/ipp-bikes/language-masters/en"
+                            title="Bikes">
+                            <navItemSecondList jcr:primaryType="nt:unstructured">
+                                <item0
+                                    jcr:primaryType="nt:unstructured"
+                                    title="New Bikes">
+                                    <navItemThirdList jcr:primaryType="nt:unstructured">
+                                        <item0
+                                            jcr:primaryType="nt:unstructured"
+                                            title="Sport"/>
+                                        <item1
+                                            jcr:primaryType="nt:unstructured"
+                                            title="Cruser"/>
+                                        <item2
+                                            jcr:primaryType="nt:unstructured"
+                                            title="Adventure Touring"/>
+                                        <item3
+                                            jcr:primaryType="nt:unstructured"
+                                            title="Grand American Touring"/>
+                                        <item4
+                                            jcr:primaryType="nt:unstructured"
+                                            title="Trike"/>
+                                    </navItemThirdList>
+                                </item0>
+                                <item1
+                                    jcr:primaryType="nt:unstructured"
+                                    title="Pre-owned bikes">
+                                    <navItemThirdList jcr:primaryType="nt:unstructured">
+                                        <item0
+                                            jcr:primaryType="nt:unstructured"
+                                            title="Pre-owned Inventory"/>
+                                        <item1
+                                            jcr:primaryType="nt:unstructured"
+                                            title="Sell/Trade your bike"/>
+                                        <item2
+                                            jcr:primaryType="nt:unstructured"
+                                            title="Certified pre-owned"/>
+                                    </navItemThirdList>
+                                </item1>
+                                <item2
+                                    jcr:primaryType="nt:unstructured"
+                                    title="Collections">
+                                    <navItemThirdList jcr:primaryType="nt:unstructured">
+                                        <item0
+                                            jcr:primaryType="nt:unstructured"
+                                            title="CYO"/>
+                                        <item1
+                                            jcr:primaryType="nt:unstructured"
+                                            title="Icons"/>
+                                    </navItemThirdList>
+                                </item2>
+                                <item3
+                                    jcr:primaryType="nt:unstructured"
+                                    title="Electric">
+                                    <navItemThirdList jcr:primaryType="nt:unstructured">
+                                        <item0
+                                            jcr:primaryType="nt:unstructured"
+                                            title="Livewire TM"/>
+                                        <item1
+                                            jcr:primaryType="nt:unstructured"
+                                            title="Ebicycles"/>
+                                        <item2
+                                            jcr:primaryType="nt:unstructured"
+                                            title="Balance Bikes"/>
+                                    </navItemThirdList>
+                                </item3>
+                            </navItemSecondList>
+                        </item0>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            link="/content/ipp-bikes/language-masters/en/test-ride"
+                            title="Marketplace">
+                            <navItemSecondList jcr:primaryType="nt:unstructured">
+                                <item0
+                                    jcr:primaryType="nt:unstructured"
+                                    title="Pre-owned inventory"/>
+                                <item1
+                                    jcr:primaryType="nt:unstructured"
+                                    title="Sell / Trade Your Bike"/>
+                                <item2
+                                    jcr:primaryType="nt:unstructured"
+                                    title="Certified pre-owned"/>
+                            </navItemSecondList>
+                        </item1>
+                    </navItemFirstList>
+                    <navItemsMainList jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            title="Bikes">
+                            <navItemsFirstList jcr:primaryType="nt:unstructured">
+                                <item0
+                                    jcr:primaryType="nt:unstructured"
+                                    title="New Bikes">
+                                    <navItemsSecondList jcr:primaryType="nt:unstructured">
+                                        <item0
+                                            jcr:primaryType="nt:unstructured"
+                                            title="Sport"/>
+                                        <item1
+                                            jcr:primaryType="nt:unstructured"
+                                            title="Cruser"/>
+                                        <item2
+                                            jcr:primaryType="nt:unstructured"
+                                            title="Adventure Touring"/>
+                                        <item3
+                                            jcr:primaryType="nt:unstructured"
+                                            title="Grand American Touring"/>
+                                        <item4
+                                            jcr:primaryType="nt:unstructured"
+                                            title="Trike"/>
+                                    </navItemsSecondList>
+                                </item0>
+                                <item1
+                                    jcr:primaryType="nt:unstructured"
+                                    title="Pre-owned bikes">
+                                    <navItemsSecondList jcr:primaryType="nt:unstructured">
+                                        <item0
+                                            jcr:primaryType="nt:unstructured"
+                                            title="Pre-owned Inventory"/>
+                                        <item1
+                                            jcr:primaryType="nt:unstructured"
+                                            title="Sell/Trade your bike"/>
+                                        <item2
+                                            jcr:primaryType="nt:unstructured"
+                                            title="Certified pre-owned"/>
+                                    </navItemsSecondList>
+                                </item1>
+                                <item2
+                                    jcr:primaryType="nt:unstructured"
+                                    title="Collections">
+                                    <navItemsSecondList jcr:primaryType="nt:unstructured">
+                                        <item0
+                                            jcr:primaryType="nt:unstructured"
+                                            title="CYO"/>
+                                        <item1
+                                            jcr:primaryType="nt:unstructured"
+                                            title="Icons"/>
+                                    </navItemsSecondList>
+                                </item2>
+                                <item3
+                                    jcr:primaryType="nt:unstructured"
+                                    title="Electric">
+                                    <navItemsSecondList jcr:primaryType="nt:unstructured">
+                                        <item0
+                                            jcr:primaryType="nt:unstructured"
+                                            title="Livewire TM"/>
+                                        <item1
+                                            jcr:primaryType="nt:unstructured"
+                                            title="Ebicycles"/>
+                                        <item2
+                                            jcr:primaryType="nt:unstructured"
+                                            title="Balance Bikes"/>
+                                    </navItemsSecondList>
+                                </item3>
+                            </navItemsFirstList>
+                        </item0>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            title="Marketplace">
+                            <navItemsFirstList jcr:primaryType="nt:unstructured">
+                                <item0
+                                    jcr:primaryType="nt:unstructured"
+                                    title="Pre-owned inventory"/>
+                                <item1
+                                    jcr:primaryType="nt:unstructured"
+                                    title="Sell / Trade Your Bike"/>
+                                <item2
+                                    jcr:primaryType="nt:unstructured"
+                                    title="Certified pre-owned"/>
+                            </navItemsFirstList>
+                        </item1>
+                        <item2
+                            jcr:primaryType="nt:unstructured"
+                            listConnect="categories-parts"
+                            title="Parts"/>
+                        <item3
+                            jcr:primaryType="nt:unstructured"
+                            listConnect="categories-mens"
+                            title="Mens"/>
+                        <item4
+                            jcr:primaryType="nt:unstructured"
+                            listConnect="categories-womens"
+                            title="Womens"/>
+                        <item5
+                            jcr:primaryType="nt:unstructured"
+                            listConnect="kids-categories"
+                            title="Kids"/>
+                        <item6
+                            jcr:primaryType="nt:unstructured"
+                            listConnect="categories-gifts"
+                            title="Stuff"/>
+                        <item7
+                            jcr:primaryType="nt:unstructured"
+                            title="Experiance IPP">
+                            <navItemsFirstList jcr:primaryType="nt:unstructured">
+                                <item0
+                                    jcr:primaryType="nt:unstructured"
+                                    title="Events"/>
+                                <item1
+                                    jcr:primaryType="nt:unstructured"
+                                    title="Factory Tour"/>
+                                <item2
+                                    jcr:primaryType="nt:unstructured"
+                                    title="Bike owners group"/>
+                                <item3
+                                    jcr:primaryType="nt:unstructured"
+                                    title="IPP app"/>
+                                <item4
+                                    jcr:primaryType="nt:unstructured"
+                                    title="IPP museum"/>
+                                <item5
+                                    jcr:primaryType="nt:unstructured"
+                                    title="Bike rentals"/>
+                                <item6
+                                    jcr:primaryType="nt:unstructured"
+                                    title="Bike tours"/>
+                                <item7
+                                    jcr:primaryType="nt:unstructured"
+                                    title="Bike Training"/>
+                                <item8
+                                    jcr:primaryType="nt:unstructured"
+                                    title="Ride planner"/>
+                                <item9
+                                    jcr:primaryType="nt:unstructured"
+                                    title="The enthusiast magazine"/>
+                            </navItemsFirstList>
+                        </item7>
+                    </navItemsMainList>
+                    <categoryList jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            catListID="categories-parts">
+                            <categoryItems jcr:primaryType="nt:unstructured">
+                                <item0
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="Audio &amp; Electronics"/>
+                                <item1
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="Custom Accessories &amp; Trim"/>
+                                <item2
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="Handelbars &amp; Controls"/>
+                                <item3
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="maintenance"/>
+                                <item4
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="paint &amp; bodywork"/>
+                                <item5
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="security &amp; storage"/>
+                                <item6
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="windshields &amp; deflectors"/>
+                                <item7
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="bags, luggage &amp; racks"/>
+                                <item8
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="electrical &amp; batteries"/>
+                                <item9
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="instruments and gauges"/>
+                                <item10
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="mirrors"/>
+                                <item11
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="Screamin' Eagle Preformance"/>
+                                <item12
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="Tires &amp; wheels"/>
+                                <item13
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="breaks &amp; suspension"/>
+                                <item14
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="foot controls"/>
+                                <item15
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="lighting"/>
+                                <item16
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="oil change kits"/>
+                                <item17
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="seats &amp; backrests"/>
+                                <item18
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="vehicle protection"/>
+                            </categoryItems>
+                        </item0>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            catListID="Parts">
+                            <categoryItems jcr:primaryType="nt:unstructured">
+                                <item0
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="New Arrivals"/>
+                                <item1
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="Nighster New Arrivals"/>
+                                <item2
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="&quot;Bikes&quot; Audio Prowerd by Rockford Fosgate"/>
+                                <item3
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="See all Collections"/>
+                                <item4
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="Customize Bikes"/>
+                                <item5
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="Customize Packages"/>
+                            </categoryItems>
+                        </item1>
+                        <item2
+                            jcr:primaryType="nt:unstructured"
+                            catListID="Kids">
+                            <categoryItems jcr:primaryType="nt:unstructured">
+                                <item0
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="New arrivals"/>
+                            </categoryItems>
+                        </item2>
+                        <item3
+                            jcr:primaryType="nt:unstructured"
+                            catListID="kids-categories">
+                            <categoryItems jcr:primaryType="nt:unstructured">
+                                <item0
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="&quot;Bikes&quot; for boys"/>
+                                <item1
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="boy's riding gear"/>
+                                <item2
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="electric balance bikes"/>
+                                <item3
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="&quot;Bikes&quot; for girls"/>
+                                <item4
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="girls riding gear"/>
+                                <item5
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="baby &amp; toddler boys'"/>
+                                <item6
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="baby &amp; toddler girls'"/>
+                            </categoryItems>
+                        </item3>
+                        <item4
+                            jcr:primaryType="nt:unstructured"
+                            catListID="categories-mens">
+                            <categoryItems jcr:primaryType="nt:unstructured">
+                                <item0
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="Jackets &amp; vests"/>
+                                <item1
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="helmets"/>
+                                <item2
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="boots &amp; shoes"/>
+                                <item3
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="eyewear"/>
+                                <item4
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="gloves"/>
+                                <item5
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="riding pants &amp; chaps"/>
+                                <item6
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="vintage inspired"/>
+                                <item7
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="rain gear"/>
+                                <item8
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="heated gear"/>
+                                <item9
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="button downs"/>
+                                <item10
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="t-shirts &amp; polos"/>
+                                <item11
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="sweatshirts &amp; hodies"/>
+                                <item12
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="preformance apparel"/>
+                                <item13
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="jeans &amp; pants"/>
+                                <item14
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="accessories"/>
+                                <item15
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="watches"/>
+                                <item16
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="wallets"/>
+                                <item17
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="hats &amp; caps"/>
+                                <item18
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="face masks &amp; gaiters"/>
+                            </categoryItems>
+                        </item4>
+                        <item5
+                            jcr:primaryType="nt:unstructured"
+                            catListID="Mens">
+                            <categoryItems jcr:primaryType="nt:unstructured">
+                                <item0
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="New Arrivals"/>
+                                <item1
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="willie g skull collection"/>
+                                <item2
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="pan adventure touring"/>
+                                <item3
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="HD museum"/>
+                                <item4
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="Sale"/>
+                            </categoryItems>
+                        </item5>
+                        <item6
+                            jcr:primaryType="nt:unstructured"
+                            catListID="categories-womens">
+                            <categoryItems jcr:primaryType="nt:unstructured">
+                                <item0
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="jackets &amp; vests"/>
+                                <item1
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="helmets"/>
+                                <item2
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="boots &amp; shoes"/>
+                                <item3
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="eyewear"/>
+                                <item4
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="jeans &amp; pants"/>
+                                <item5
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="rain gear"/>
+                                <item6
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="heated gear"/>
+                                <item7
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="shirts &amp; t-shirts"/>
+                                <item8
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="sweatshirts &amp; hoodies"/>
+                                <item9
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="accessories"/>
+                                <item10
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="jewelry"/>
+                                <item11
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="watches"/>
+                                <item12
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="hats &amp; caps"/>
+                                <item13
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="gloves"/>
+                                <item14
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="riding pants &amp; chaps"/>
+                            </categoryItems>
+                        </item6>
+                        <item7
+                            jcr:primaryType="nt:unstructured"
+                            catListID="Womens">
+                            <categoryItems jcr:primaryType="nt:unstructured">
+                                <item0
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="New arrivals"/>
+                                <item1
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="billy g skull collection"/>
+                                <item2
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="top gifts for her"/>
+                                <item3
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="pan adventure tour"/>
+                                <item4
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="HD museum"/>
+                                <item5
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="Sale"/>
+                            </categoryItems>
+                        </item7>
+                        <item8
+                            jcr:primaryType="nt:unstructured"
+                            catListID="categories-gifts">
+                            <categoryItems jcr:primaryType="nt:unstructured">
+                                <item0
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="coffee mugs &amp; travel mugs"/>
+                                <item1
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="hog banks"/>
+                                <item2
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="garden gnomes"/>
+                                <item3
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="holiday collectibles"/>
+                                <item4
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="jewelry"/>
+                                <item5
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="home decor"/>
+                                <item6
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="electric balance bike"/>
+                                <item7
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="drinkware"/>
+                                <item8
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="ride bells"/>
+                                <item9
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="banners &amp; pennants"/>
+                            </categoryItems>
+                        </item8>
+                        <item9
+                            jcr:primaryType="nt:unstructured"
+                            catListID="Stuff">
+                            <categoryItems jcr:primaryType="nt:unstructured">
+                                <item0
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="New Arrivals"/>
+                                <item1
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="top gifts fro him"/>
+                                <item2
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="top gifts for her "/>
+                                <item3
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="top gifts for them"/>
+                                <item4
+                                    jcr:primaryType="nt:unstructured"
+                                    catName="gifts 4 kids"/>
+                            </categoryItems>
+                        </item9>
+                    </categoryList>
+                </navigation_menu_611810526>
+                <container
+                    jcr:created="{Date}2022-03-24T14:42:31.475+02:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-03-24T14:43:14.462+02:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="ipp-bikes/components/container"
+                    layout="responsiveGrid">
+                    <material_button_634189541
+                        jcr:created="{Date}2022-03-29T15:50:16.125+03:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-03-29T15:51:22.431+03:00"
+                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
-                        offset="7"
-                        width="3"/>
-                </cq:responsive>
-            </languagenavigation>
-            <search
-                jcr:primaryType="nt:unstructured"
-                sling:resourceType="ipp-bikes/components/search"
-                searchRoot="/content/ipp-bikes/us">
-                <cq:responsive jcr:primaryType="nt:unstructured">
-                    <default
+                        jcr:title="Search"
+                        sling:resourceType="ipp-bikes/components/material-button"
+                        icon="search"
+                        id="header-btn-search"
+                        linkTarget="_self">
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="0"
+                                width="1"/>
+                        </cq:responsive>
+                    </material_button_634189541>
+                    <material_button
+                        jcr:created="{Date}2022-03-24T10:28:57.620+02:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-03-24T11:47:32.590+02:00"
+                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
-                        offset="7"
-                        width="3"/>
-                </cq:responsive>
-            </search>
-            <logo/>
+                        jcr:title="Sign In"
+                        sling:resourceType="ipp-bikes/components/material-button"
+                        icon="person"
+                        id="header-btn-login"
+                        linkTarget="_self">
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="0"
+                                width="1"/>
+                        </cq:responsive>
+                    </material_button>
+                    <material_button_9739
+                        jcr:created="{Date}2022-03-24T11:25:57.767+02:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-03-28T15:07:48.888+03:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Cart (0)"
+                        sling:resourceType="ipp-bikes/components/material-button"
+                        icon="shopping_cart"
+                        id="header-btn-cart"
+                        linkTarget="_self">
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="0"
+                                width="1"/>
+                        </cq:responsive>
+                    </material_button_9739>
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="0"
+                            width="3"/>
+                    </cq:responsive>
+                </container>
+            </container_1348204993>
         </root>
+        <cq:metadata jcr:primaryType="nt:unstructured"/>
     </jcr:content>
 </jcr:root>

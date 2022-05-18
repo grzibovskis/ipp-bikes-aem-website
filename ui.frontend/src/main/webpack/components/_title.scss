@@ -1,3 +1,21 @@
-.cmp-title {}
-.cmp-title__text {}
+
+.cmp-title {
+    color: white;
+    text-align: left;
+    font-size: 18px;
+}
+.cmp-title__text {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 .cmp-title__link {}
+
+/*style for decorline */
+.cmp-title--decorline {
+    .cmp-title__text{
+        &::after {
+            padding-left: 5px;
+            content: '\2014';
+            color: #ff6600;
+        }
+    }
+}

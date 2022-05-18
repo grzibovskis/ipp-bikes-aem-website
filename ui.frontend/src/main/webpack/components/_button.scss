@@ -1,5 +1,6 @@
 .cmp-button {
 
+
 }
 .cmp-button__text {
     
@@ -46,4 +47,101 @@
     }
 }
 
+
+=======
+    display: inline-block;
+    box-shadow: 0 3px 5px rgba(20, 13, 10, 0.822);
+    clip-path: polygon(0% 0%, 0% 2%, 10% 0%, 15% 2%, 20% 0%, 10% 2%, 20% 0%, 35% 2%, 40% 0%, 45% 2%, 40% 0%, 50% 2%, 50% 0%, 65% 2%, 75% 0%, 75% 2%, 80% 0%, 85% 2%, 90% 0%, 95% 0%, 100% 0%, 100% 16%, 100% 20%, 100% 19%, 100% 25%, 99% 25%, 100% 38%, 100% 30%, 100% 50%, 100% 45%, 100% 55%, 100% 65%, 99% 70%, 100% 72%, 99% 80%, 99% 72%, 100% 89%, 99% 98%, 100% 90%, 99% 95%, 100% 100%, 100% 98%, 95% 100%, 85% 98%, 86% 100%, 75% 98%, 72% 100%, 65% 100%, 60% 100%, 55% 98%, 50% 98%, 45% 100%, 45% 100%, 39% 98%, 30% 100%, 25% 98%, 22% 100%, 15% 98%, 10% 100%, 10% 98%, 1% 100%, 0% 99%, 0% 92%, 0% 82%, 1% 80%, 0% 79%, 0% 70%, 1% 65%, 0% 50%, 0% 50%, 0% 45%, 0% 40%, 0% 22%, 0% 35%, 0% 40%, 0% 18%, 1% 17%, 0% 20%, 0% 10%, 0% 1%);  
+    background-color: #ff6600;
+    border: none;
+    padding: 10px;
+    width: fit-content;
+    min-width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    text-align: center;
+}
+.cmp-button__text {
+  font-size: 17px;
+  font-weight: 750;
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  cursor: pointer;
+  }
+
+.cmp-button__text:hover {
+    padding-right: 25px;
+  }
+
+.cmp-button__text:hover::after {
+    opacity: 1;
+    right: 0;
+  }
+
+.cmp-button__text::after {
+    content: '\1F86A';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+    }
+   
+
+  
+  //Button style variations//
+//solid//
+.cmp-button--solid {
+  .cmp-button {
+    border: solid;
+  }
+}
+
+//solid arrow up//
+.cmp-button--solidarrowup {
+  .cmp-button {
+    border: solid;
+  }
+  .cmp-button__text::after {
+    content: '\1F86D';
+  }
+}
+
+//Transparent//
+.cmp-button--transparent {
+  .cmp-button {
+  background-color: transparent;
+  }
+  .cmp-button__text::after {
+    opacity: 1;
+  }
+}
+
+//ripped arrow up//
+.cmp-button--arrowup {
+  .cmp-button__text::after {
+    content: '\1F86D';
+  }
+}
+
+//transparent arrow up//
+.cmp-button--transparentarrowup {
+  .cmp-button {
+  background-color: transparent;
+  }
+  .cmp-button__text::after {
+    opacity: 1;
+  }
+  .cmp-button__text::after {
+    content: '\1F86D';
+  }
+}
+
+.cmp-button__icon {}
+//.cmp-button__icon--myIcon {}
 

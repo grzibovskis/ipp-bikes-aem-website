@@ -1,1 +1,27 @@
-.cmp-form-button {}
+.cmp-form-button {
+    display: inline-block;
+    background-color: #ff6600;
+    border: none;
+    padding: 10px;
+    width: fit-content;
+    min-width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    text-align: center;
+    color: white;
+    margin-top: 15px;
+}
+.cmp-form-button::after{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.1s;
+}
+.cmp-form-button:hover {
+    padding-right: 25px;
+}
+.cmp-form-button:hover::after{
+    content: '\279D';
+    opacity: 1;
+    left: 6;
+}

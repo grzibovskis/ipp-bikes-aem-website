@@ -1,9 +1,370 @@
-.cmp-teaser {}
-.cmp-teaser__image {}
-.cmp-teaser__content {}
-.cmp-teaser__pretitle {}
-.cmp-teaser__title {}
-.cmp-teaser__title-link {}
-.cmp-teaser__description {}
-.cmp-teaser__action-container {}
-.cmp-teaser__action-link {}
+.cmp-teaser {
+    position: relative;
+    margin-bottom: 10px;
+    padding: 0;
+    min-height: 40px;
+
+    background: 50% no-repeat;
+    background-size: cover;
+}
+.cmp-teaser__image {
+    position: relative;
+
+    width: 100%;
+    height: 280pt;
+
+    overflow: hidden;
+    background-color: none;
+
+    &:before {
+        content: "";
+        display: block;
+        padding-top: 56.25%;
+    }
+
+    .cmp-image__image {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        min-height: 100%;
+        margin: 0;
+
+        transform: translate(-50%, -50%);
+    }
+}
+
+    .cmp-teaser__title,
+    .cmp-teaser__pretitle {
+    font-size: 16px;
+    font-weight: 780;
+    color: #ff6600;
+    text-decoration: none;
+    position: absolute;
+    left: 120px;
+    bottom: 75%;
+    }
+
+    .cmp-teaser__title {
+    display: block;
+    width: 30rem;
+    font-size: 40px;
+    font-weight: 780;
+    line-height: 1;
+    color: white;
+    text-decoration: none;
+    font-family: 'Franklin Gothic medium', sans-serif;
+    bottom: 45%;
+    left: 120px;
+    position: absolute;
+    }
+
+    .cmp-teaser__description {
+    display: block;
+    width: 28rem;
+    margin: 0;
+    text-transform: none;
+    font-family: 'Franklin Gothic lite', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 1.2;
+
+    position: absolute;
+    bottom: 30%;
+    left: 120px;
+    }
+    .cmp-teaser__action-container {
+    background-color: #ff6600;
+    font-size: 16px;
+    font-weight: 750;
+    text-align: center;
+    width: fit-content;
+    min-width: 100px;
+    position: absolute;
+    bottom: 20%;
+    left: 120px;
+    padding: 10px;
+    }
+
+    .cmp-teaser__action-link {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    cursor: pointer;
+    }
+    .cmp-teaser__action-link:hover{
+    padding-right: 25px;
+    }
+    .cmp-teaser__action-link:hover::after{
+    opacity: 1;
+    right: 0;
+    }
+
+    .cmp-teaser__action-link::after{
+    content: '\1F86A';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 00.5s;
+    }
+
+
+
+.cmp-LinkButton {
+    .cmp-teaser {
+        margin: 35px 0;
+    }
+
+    .cmp-teaser__image {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    .cmp-image__image {
+        display: none;
+    }
+
+    .cmp-teaser__pretitle {
+        display: none;
+    }
+
+    .cmp-teaser__title {
+        display: none;
+    }
+
+    .cmp-teaser__description {
+        display: none;
+    }
+    .cmp-teaser__action-link {
+        @extend
+            .cmp-button,
+            .cmp-button--solid;
+
+        text-decoration: none;
+    }
+
+    .cmp-teaser__action-link::after{
+        position: relative;
+    }
+    .cmp-teaser__action-container {
+        position: relative;
+        bottom: 0%;
+        left: 40%;
+        background-color: transparent;
+    }
+
+}
+.cmp-image--left {
+    .cmp-teaser{
+        margin-bottom: 5em;
+    }
+    .cmp-image__image {
+    width: 600px;
+    height: 280pt;
+    position:absolute;
+    left: 30%;
+    
+
+    overflow: hidden;
+    background-color: none;
+    }
+    .cmp-teaser__pretitle {
+        position: absolute;
+        left: 60%;
+    }
+    .cmp-teaser__title {
+        position: absolute;
+        left: 60%;
+        bottom: 60%;
+        text-transform: uppercase;
+        font-size: 28px;
+    }
+    .cmp-teaser__description {
+        position: absolute;
+        left: 60%;
+        bottom: 38%;
+        display: inline;
+        width: 400px;
+        font-weight: 400;
+    }
+    .cmp-teaser__action-container {
+        position: absolute;
+        left: 60%;
+        bottom: 25%;
+    }
+}
+.cmp-image--right {
+    .cmp-teaser{
+        margin-bottom: 5em;
+    }
+    .cmp-image__image {
+    width: 600px;
+    height: 280pt;
+    position:absolute;
+    left: 70%;
+    
+
+    overflow: hidden;
+    background-color: none;
+    }
+    .cmp-teaser__pretitle {
+        position: absolute;
+        left: 10%;
+    }
+    .cmp-teaser__title {
+        position: absolute;
+        left: 10%;
+        bottom: 60%;
+        text-transform: uppercase;
+        font-size: 28px;
+    }
+    .cmp-teaser__description {
+        position: absolute;
+        left: 10%;
+        bottom: 38%;
+        display: inline;
+        width: 400px;
+        font-weight: 400;
+    }
+    .cmp-teaser__action-container {
+        position: absolute;
+        left: 10%;
+        bottom: 25%;
+    }
+}
+.cmp-teaser--card {
+    .cmp-teaser__image {
+        position: relative;
+        max-width: 95%;
+        min-width: 25%;
+        left: 0%;
+        
+    }
+    .cmp-teaser__title {
+        position: relative;
+        bottom: 0%;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 18px;
+        text-align: left;
+        left: 0%;
+    }
+    .cmp-teaser__tile-link {
+        color: white;
+        text-decoration: none;
+    }
+    .cmp-teaser__pretitle {
+        position: relative;
+        bottom: 0%;
+        text-decoration: none;
+        text-align: left;
+        width: fit-content;
+        max-width: 80%;
+        font-weight: 400;
+        left: 0%;
+    }
+    .cmp-teaser__description {
+        position: relative;
+        bottom: 0%;
+        left: 0%;
+        text-decoration: none;
+        font-size: 17px;
+        text-align: left;
+        width: fit-content;
+        max-width: 80%;
+        font-weight: 400;
+    }
+    .cmp-teaser__action-container {
+        background-color: none;
+        font-size: 16px;
+        font-weight: 750;
+        text-align: left;
+        width: fit-content;
+        min-width: 100px;
+        position: absolute;
+        bottom: 20%;
+        left: 0%;
+        padding: 10px;
+        }
+    
+        .cmp-teaser__action-link {
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+        cursor: pointer;
+        }
+        .cmp-teaser__action-link:hover{
+        padding-right: 25px;
+        }
+        .cmp-teaser__action-link:hover::after{
+        opacity: 1;
+        right: 0;
+        }
+    
+        .cmp-teaser__action-link::after{
+        content: '\279D';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 00.5s;
+        }
+    
+}
+.cmp-teaser--ripped {
+    .cmp-teaser {
+        background-image: url('/content/dam/ipp-bikes/grey-background.jpg');
+        width: 100%;
+        height: 400pt;
+    }
+    .cmp-teaser__image {
+        display: inline-block;
+        box-shadow: 0 3px 5px #c5afa5d2;
+        clip-path: polygon(0% 2%, 15% 0%, 1% 3%, 1% 2%, 2% 2%, 1% 2%, 10% 2%, 3% 8%, 1% 0%, 5% 1%, 2% 0%, 35% 1%, 45% 0%, 65% 2%, 75% 0%, 75% 2%, 80% 0%, 85% 2%, 90% 0%, 95% 0%, 100% 0%, 100% 16%, 100% 20%, 100% 19%, 100% 25%, 99% 25%, 100% 38%, 100% 30%, 100% 50%, 100% 45%, 100% 55%, 100% 65%, 99% 70%, 100% 72%, 99% 80%, 99% 72%, 100% 89%, 99% 98%, 100% 90%, 99% 95%, 100% 100%, 100% 98%, 95% 100%, 85% 98%, 86% 100%, 75% 98%, 72% 100%, 65% 100%, 60% 100%, 55% 98%, 50% 98%, 45% 100%, 45% 100%, 39% 98%, 30% 100%, 25% 98%, 22% 100%, 15% 98%, 10% 100%, 10% 98%, 1% 100%, 0% 99%, 0% 92%, 0% 82%, 1% 80%, 0% 79%, 0% 70%, 1% 65%, 0% 50%, 0% 50%, 0% 45%, 0% 40%, 0% 22%, 0% 35%, 0% 40%, 0% 18%, 1% 17%, 0% 20%, 0% 10%, 0% 1%,0% 0%, 0% 2%, 10% 0%, 15% 2%, 20% 0%, 10% 2%, 20% 0%, 35% 2%, 40% 0%, 45% 2%, 40% 0%, 50% 2%, 50% 0%, 65% 2%, 75% 0%, 75% 2%, 80% 0%, 85% 2%, 90% 0%, 95% 0%, 100% 0%, 100% 16%, 100% 20%, 100% 19%, 100% 25%, 99% 25%, 100% 38%, 100% 30%, 100% 50%, 100% 45%, 100% 55%, 100% 65%, 99% 70%, 100% 72%, 99% 80%, 99% 72%, 100% 89%, 99% 98%, 100% 90%, 99% 95%, 100% 100%, 100% 98%, 95% 100%, 85% 98%, 86% 100%, 75% 98%, 72% 100%, 65% 100%, 60% 100%, 55% 98%, 50% 98%, 45% 100%, 45% 100%, 39% 98%, 30% 100%, 25% 98%, 22% 100%, 15% 98%, 10% 100%, 10% 98%, 1% 100%, 0% 99%, 0% 92%, 0% 82%, 1% 80%, 0% 79%, 0% 70%, 1% 65%, 0% 50%, 0% 50%, 0% 45%, 0% 40%, 0% 22%, 0% 35%, 0% 40%, 0% 18%, 1% 17%, 0% 20%, 0% 10%, 0% 1%,0% 0%, 0% 2%, 10% 0%, 15% 2%, 20% 0%, 10% 2%, 20% 0%, 35% 2%, 40% 0%, 45% 2%, 40% 0%, 50% 2%, 50% 0%, 65% 2%, 75% 0%, 75% 2%, 80% 0%, 85% 2%, 90% 0%, 95% 0%, 100% 0%, 100% 16%, 100% 20%, 100% 19%, 100% 25%, 99% 25%, 100% 38%, 100% 30%, 100% 50%, 100% 45%, 100% 55%, 100% 65%, 99% 70%, 100% 72%, 99% 80%, 99% 72%, 100% 89%, 99% 98%, 100% 90%, 99% 95%, 100% 100%, 100% 98%, 95% 100%, 85% 98%, 86% 100%, 75% 98%, 72% 100%, 65% 100%, 60% 100%, 55% 98%, 50% 98%, 45% 100%, 45% 100%, 39% 98%, 30% 100%, 25% 98%, 22% 100%, 15% 98%, 10% 100%, 10% 98%, 1% 100%, 0% 99%, 0% 92%, 0% 82%, 1% 80%, 0% 79%, 0% 70%, 1% 65%, 0% 50%, 0% 50%, 0% 45%, 0% 40%, 0% 22%, 0% 35%, 0% 40%, 0% 18%, 1% 17%, 0% 20%, 0% 10%, 0% 1%);  
+        position: relative;
+        
+        width: 600pt;
+        height: 350pt;
+        left: 25%;
+        top: 25pt;
+       
+    }
+    .cmp-teaser__title {
+        display: inline-block;
+        color: black;
+        text-align: center;
+        padding-top: 20pt;
+        background-color: white;
+        box-shadow: 0 3px 5px #302520d2;
+        clip-path: polygon(0% 2%, 15% 0%, 1% 3%, 1% 2%, 2% 2%, 1% 2%, 10% 2%, 3% 8%, 1% 0%, 5% 1%, 2% 0%, 35% 1%, 45% 0%, 65% 2%, 75% 0%, 75% 2%, 80% 0%, 85% 2%, 90% 0%, 95% 0%, 100% 0%, 100% 16%, 100% 20%, 100% 19%, 100% 25%, 99% 25%, 100% 38%, 100% 30%, 100% 50%, 100% 45%, 100% 55%, 100% 65%, 99% 70%, 100% 72%, 99% 80%, 99% 72%, 100% 89%, 99% 98%, 100% 90%, 99% 95%, 100% 100%, 100% 98%, 95% 100%, 85% 98%, 86% 100%, 75% 98%, 72% 100%, 65% 100%, 60% 100%, 55% 98%, 50% 98%, 45% 100%, 45% 100%, 39% 98%, 30% 100%, 25% 98%, 22% 100%, 15% 98%, 10% 100%, 10% 98%, 1% 100%, 0% 99%, 0% 92%, 0% 82%, 1% 80%, 0% 79%, 0% 70%, 1% 65%, 0% 50%, 0% 50%, 0% 45%, 0% 40%, 0% 22%, 0% 35%, 0% 40%, 0% 18%, 1% 17%, 0% 20%, 0% 10%, 0% 1%,0% 0%, 0% 2%, 10% 0%, 15% 2%, 20% 0%, 10% 2%, 20% 0%, 35% 2%, 40% 0%, 45% 2%, 40% 0%, 50% 2%, 50% 0%, 65% 2%, 75% 0%, 75% 2%, 80% 0%, 85% 2%, 90% 0%, 95% 0%, 100% 0%, 100% 16%, 100% 20%, 100% 19%, 100% 25%, 99% 25%, 100% 38%, 100% 30%, 100% 50%, 100% 45%, 100% 55%, 100% 65%, 99% 70%, 100% 72%, 99% 80%, 99% 72%, 100% 89%, 99% 98%, 100% 90%, 99% 95%, 100% 100%, 100% 98%, 95% 100%, 85% 98%, 86% 100%, 75% 98%, 72% 100%, 65% 100%, 60% 100%, 55% 98%, 50% 98%, 45% 100%, 45% 100%, 39% 98%, 30% 100%, 25% 98%, 22% 100%, 15% 98%, 10% 100%, 10% 98%, 1% 100%, 0% 99%, 0% 92%, 0% 82%, 1% 80%, 0% 79%, 0% 70%, 1% 65%, 0% 50%, 0% 50%, 0% 45%, 0% 40%, 0% 22%, 0% 35%, 0% 40%, 0% 18%, 1% 17%, 0% 20%, 0% 10%, 0% 1%,0% 0%, 0% 2%, 10% 0%, 15% 2%, 20% 0%, 10% 2%, 20% 0%, 35% 2%, 40% 0%, 45% 2%, 40% 0%, 50% 2%, 50% 0%, 65% 2%, 75% 0%, 75% 2%, 80% 0%, 85% 2%, 90% 0%, 95% 0%, 100% 0%, 100% 16%, 100% 20%, 100% 19%, 100% 25%, 99% 25%, 100% 38%, 100% 30%, 100% 50%, 100% 45%, 100% 55%, 100% 65%, 99% 70%, 100% 72%, 99% 80%, 99% 72%, 100% 89%, 99% 98%, 100% 90%, 99% 95%, 100% 100%, 100% 98%, 95% 100%, 85% 98%, 86% 100%, 75% 98%, 72% 100%, 65% 100%, 60% 100%, 55% 98%, 50% 98%, 45% 100%, 45% 100%, 39% 98%, 30% 100%, 25% 98%, 22% 100%, 15% 98%, 10% 100%, 10% 98%, 1% 100%, 0% 99%, 0% 92%, 0% 82%, 1% 80%, 0% 79%, 0% 70%, 1% 65%, 0% 50%, 0% 50%, 0% 45%, 0% 40%, 0% 22%, 0% 35%, 0% 40%, 0% 18%, 1% 17%, 0% 20%, 0% 10%, 0% 1%);  
+        position: absolute;
+        
+        height: 150pt;
+        left: 15%;
+        bottom: 30%;
+    }
+    .cmp-teaser__description {
+        color: black;
+        max-width: 220pt;
+        position: absolute;
+        left: 23%;
+        bottom: 50%;
+    }
+    .cmp-teaser__action-container {
+        position: absolute;
+        bottom: 41%;
+        left: 27%;
+        padding: 10px;
+        min-width: 130px;
+        }
+    
+}

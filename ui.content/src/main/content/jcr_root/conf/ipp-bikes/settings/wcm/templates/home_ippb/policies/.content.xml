@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2022-04-29T16:31:58.364+03:00"
+        cq:lastModifiedBy="admin"
+        cq:policy="ipp-bikes/components/page/policy"
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="wcm/core/components/policies/mappings">
+        <root
+            cq:policy="ipp-bikes/components/container/policy_1574694950110"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/core/components/policies/mapping">
+            <container
+                cq:policy="ipp-bikes/components/container/policy_27651474693800"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/core/components/policies/mapping">
+                <ipp-bikes jcr:primaryType="nt:unstructured">
+                    <components jcr:primaryType="nt:unstructured">
+                        <title
+                            cq:policy="ipp-bikes/components/title/policy_2963697867800"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="wcm/core/components/policies/mapping"/>
+                        <teaser
+                            cq:policy="ipp-bikes/components/teaser/policy_25373437732600"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="wcm/core/components/policies/mapping"/>
+                    </components>
+                </ipp-bikes>
+            </container>
+            <container_187973350
+                cq:policy="ipp-bikes/components/container/policy_649128221558427"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/core/components/policies/mapping">
+                <ipp-bikes jcr:primaryType="nt:unstructured">
+                    <components jcr:primaryType="nt:unstructured">
+                        <teaser
+                            cq:policy="ipp-bikes/components/teaser/policy_27868404692200"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="wcm/core/components/policies/mapping"/>
+                        <button
+                            cq:policy="ipp-bikes/components/button/policy_1649323746874"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="wcm/core/components/policies/mapping"/>
+                        <title
+                            cq:policy="ipp-bikes/components/title/policy_2963697867800"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="wcm/core/components/policies/mapping"/>
+                    </components>
+                </ipp-bikes>
+            </container_187973350>
+            <container_226184821
+                cq:policy="ipp-bikes/components/container/policy_16557677044500"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/core/components/policies/mapping">
+                <ipp-bikes jcr:primaryType="nt:unstructured">
+                    <components jcr:primaryType="nt:unstructured">
+                        <teaser
+                            cq:policy="ipp-bikes/components/teaser/policy_25373437732600"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="wcm/core/components/policies/mapping"/>
+                        <button
+                            cq:policy="ipp-bikes/components/button/policy_1649323746874"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="wcm/core/components/policies/mapping"/>
+                        <image
+                            cq:policy="ipp-bikes/components/image/policy_23099353302300"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="wcm/core/components/policies/mapping"/>
+                        <form jcr:primaryType="nt:unstructured">
+                            <options
+                                cq:policy="ipp-bikes/components/form/options/policy_1651125824615"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="wcm/core/components/policies/mapping"/>
+                            <text
+                                cq:policy="ipp-bikes/components/form/text/policy_1651126032790"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="wcm/core/components/policies/mapping"/>
+                        </form>
+                    </components>
+                </ipp-bikes>
+            </container_226184821>
+            <container_250480922
+                cq:policy="ipp-bikes/components/container/policy_16557677044500"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/core/components/policies/mapping">
+                <ipp-bikes jcr:primaryType="nt:unstructured">
+                    <components jcr:primaryType="nt:unstructured">
+                        <teaser
+                            cq:policy="ipp-bikes/components/teaser/policy_25373437732600"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="wcm/core/components/policies/mapping"/>
+                    </components>
+                </ipp-bikes>
+            </container_250480922>
+            <container_933290512
+                cq:policy="ipp-bikes/components/container/policy_4732374089900"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/core/components/policies/mapping">
+                <ipp-bikes jcr:primaryType="nt:unstructured">
+                    <components jcr:primaryType="nt:unstructured">
+                        <teaser
+                            cq:policy="ipp-bikes/components/teaser/policy_1575031387650"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="wcm/core/components/policies/mapping"/>
+                    </components>
+                </ipp-bikes>
+            </container_933290512>
+            <container_301766595
+                cq:policy="ipp-bikes/components/container/policy_27651474693800"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/core/components/policies/mapping">
+                <ipp-bikes jcr:primaryType="nt:unstructured">
+                    <components jcr:primaryType="nt:unstructured">
+                        <teaser
+                            cq:policy="ipp-bikes/components/teaser/policy_27868404692200"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="wcm/core/components/policies/mapping"/>
+                    </components>
+                </ipp-bikes>
+            </container_301766595>
+            <container_1350700615
+                cq:policy="ipp-bikes/components/container/policy_27651474693800"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/core/components/policies/mapping">
+                <ipp-bikes jcr:primaryType="nt:unstructured">
+                    <components jcr:primaryType="nt:unstructured">
+                        <teaser
+                            cq:policy="ipp-bikes/components/teaser/policy_25373437732600"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="wcm/core/components/policies/mapping"/>
+                    </components>
+                </ipp-bikes>
+            </container_1350700615>
+        </root>
+    </jcr:content>
+</jcr:root>
