@@ -4,7 +4,7 @@
     <jcr:content
         cq:contextHubPath="/etc/cloudsettings/default/contexthub"
         cq:contextHubSegmentsPath="/etc/segmentation/contexthub"
-        cq:lastModified="{Date}2022-05-17T13:09:28.306+03:00"
+        cq:lastModified="{Date}2022-05-13T14:39:34.502+03:00"
         cq:lastModifiedBy="admin"
         cq:template="/conf/ipp-bikes/settings/wcm/templates/home_ippb"
         jcr:primaryType="cq:PageContent"
@@ -325,6 +325,7 @@
                         cq:styleIds="[1649237980902]"
                         jcr:created="{Date}2022-04-06T14:55:00.032+03:00"
                         jcr:createdBy="admin"
+
                         jcr:description="&lt;p>Join us in support of United Way's effort in providing life-saving relief to the people of Ukraine. United We Ride.&lt;/p>&#xd;&#xa;"
                         jcr:lastModified="{Date}2022-04-06T15:13:26.244+03:00"
                         jcr:lastModifiedBy="admin"
@@ -437,6 +438,7 @@
                             text="&lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p>&#xa;"
                             textIsRich="true"/>
                     </container>
+
                 </container>
                 <title
                     cq:styleIds="[1649223588847]"
@@ -456,6 +458,7 @@
                     </cq:responsive>
                 </title>
             </container>
+
 
                 
             <container_250480922
