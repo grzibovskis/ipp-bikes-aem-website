@@ -2,9 +2,9 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-
-        cq:lastModified="{Date}2022-05-12T11:30:03.817+03:00"
-
+        cq:contextHubPath="/etc/cloudsettings/default/contexthub"
+        cq:contextHubSegmentsPath="/etc/segmentation/contexthub"
+        cq:lastModified="{Date}2022-05-17T13:09:28.306+03:00"
         cq:lastModifiedBy="admin"
         cq:template="/conf/ipp-bikes/settings/wcm/templates/home_ippb"
         jcr:primaryType="cq:PageContent"
@@ -312,52 +312,10 @@
                     </item_1_copy>
                 </tabs>
             </container_226184821>
-            <container_250480922
-                jcr:created="{Date}2022-03-18T12:47:26.630+02:00"
-                jcr:createdBy="admin"
-                jcr:lastModified="{Date}2022-04-20T16:13:30.527+03:00"
-                jcr:lastModifiedBy="admin"
-                jcr:primaryType="nt:unstructured"
-                sling:resourceType="ipp-bikes/components/container"
-                layout="responsiveGrid">
-                <heroimage
-                    jcr:created="{Date}2022-04-04T16:05:45.716+03:00"
-                    jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2022-04-21T08:40:23.781+03:00"
-                    jcr:lastModifiedBy="admin"
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="ipp-bikes/components/heroimage"
-                    fileReference="/content/dam/wknd/en/magazine/skitouring/Skitouring6Sjoeberg.JPG"
-                    name="Let's Travel"
-                    occupations="Hiking">
-                    <cq:responsive jcr:primaryType="nt:unstructured">
-                        <default
-                            jcr:primaryType="nt:unstructured"
-                            offset="0"
-                            width="6"/>
-                    </cq:responsive>
-                </heroimage>
-                <heroimage_430088673
-                    jcr:created="{Date}2022-04-20T16:08:49.399+03:00"
-                    jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2022-04-21T08:39:14.770+03:00"
-                    jcr:lastModifiedBy="admin"
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="ipp-bikes/components/heroimage"
-                    fileReference="/content/dam/ipp-bikes/raimond-klavins-CynwmwkNkio-unsplash.jpg"
-                    name="Harley Davidson"
-                    occupations="Cruiser">
-                    <cq:responsive jcr:primaryType="nt:unstructured">
-                        <default
-                            jcr:primaryType="nt:unstructured"
-                            offset="0"
-                            width="6"/>
-                    </cq:responsive>
-                </heroimage_430088673>
-            </container_250480922>
             <container
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="ipp-bikes/components/container">
+
                 <container
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="ipp-bikes/components/container"
@@ -443,7 +401,7 @@
                                 offset="2"
                                 width="3"/>
                         </cq:responsive>
-                    </material_button>
+                    </teaser_copy>
                     <material_button_708886313
                         jcr:created="{Date}2022-03-25T13:45:50.260+02:00"
                         jcr:createdBy="admin"
@@ -498,12 +456,18 @@
                     </cq:responsive>
                 </title>
             </container>
-            <container_933290512
-                jcr:lastModified="{Date}2022-04-05T11:29:27.883+03:00"
+
+                
+            <container_250480922
+                jcr:created="{Date}2022-03-18T12:47:26.630+02:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2022-04-20T16:13:30.527+03:00"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="ipp-bikes/components/container"
-                layout="responsiveGrid">
+                layout="responsiveGrid"
+            >
+
                 <teaser
                     jcr:createdBy="admin"
                     jcr:description="&lt;p>Sign up for spechial content releases and updates leading up to this world premiere event.&lt;/p>&#xd;&#xa;"
@@ -525,82 +489,118 @@
                             text="Sign up"/>
                     </actions>
                 </teaser>
-            </container_933290512>
-            <container_301766595
-                jcr:primaryType="nt:unstructured"
-                sling:resourceType="ipp-bikes/components/container">
-                <teaser
-                    cq:styleIds="[1649248437633]"
-                    jcr:created="{Date}2022-04-06T15:36:33.789+03:00"
+                <container_301766595
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="ipp-bikes/components/container">
+                    <teaser
+                        cq:styleIds="[1649248437633]"
+                        jcr:created="{Date}2022-04-06T15:36:33.789+03:00"
+                        jcr:createdBy="admin"
+                        jcr:description="&lt;p>Powered by the muscular Milwaukee-Eight 117, it's a performance bagger for the rider who can never get enough.&lt;/p>&#xd;&#xa;"
+                        jcr:lastModified="{Date}2022-04-06T16:55:38.357+03:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Street Glide ST"
+                        sling:resourceType="ipp-bikes/components/teaser"
+                        actionsEnabled="false"
+                        descriptionFromPage="false"
+                        fileReference="/content/dam/wknd/en/activities/hiking/hiking-campaign.jpg"
+                        linkURL="/content/ipp-bikes/language-masters/en/trike_bikes"
+                        textIsRich="true"
+                        titleFromPage="false">
+                        <actions jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                link="/content/ipp-bikes/language-masters/en/trike_bikes"
+                                text="Trike"/>
+                        </actions>
+                    </teaser>
+                </container_301766595>
+                <container_1350700615
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="ipp-bikes/components/container">
+                    <teaser
+                        cq:styleIds="[1649237980902]"
+                        jcr:created="{Date}2022-04-08T14:55:19.147+03:00"
+                        jcr:createdBy="admin"
+                        jcr:description="&lt;p>Join us in support of United Way’s effort in providing life-saving relief to the people of Ukraine. United We Ride.&lt;/p>&#xd;&#xa;"
+                        jcr:lastModified="{Date}2022-04-08T17:10:08.550+03:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="H-D™ FOR UKRAINE"
+                        sling:resourceType="ipp-bikes/components/teaser"
+                        actionsEnabled="true"
+                        descriptionFromPage="false"
+                        fileReference="/content/dam/ipp-bikes/engin-akyurt-inoaHM89CmQ-unsplash.jpg"
+                        textIsRich="true"
+                        titleFromPage="false">
+                        <actions jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                link="/content/ipp-bikes/language-masters/en/trike_bikes"
+                                text="Donate"/>
+                        </actions>
+                    </teaser>
+                    <teaser_1935143945
+                        cq:styleIds="[1647954889762]"
+                        jcr:created="{Date}2022-04-08T14:55:25.044+03:00"
+                        jcr:createdBy="admin"
+                        jcr:description="&lt;p>The Road to Harley-Davidson Homecoming Challenge starts now. Learn how to track miles for the chance to win big prizes! Ready to ride?&lt;/p>&#xd;&#xa;"
+                        jcr:lastModified="{Date}2022-04-08T15:31:12.691+03:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Kickstart your passion"
+                        sling:resourceType="ipp-bikes/components/teaser"
+                        actionsEnabled="true"
+                        descriptionFromPage="false"
+                        fileReference="/content/dam/ipp-bikes/harley-davidson-LUWVMSyNsR4-unsplash.jpg"
+                        textIsRich="true"
+                        titleFromPage="false">
+                        <actions jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                link="/content/ipp-bikes/language-masters/en/AT_bikes"
+                                text="Sign up"/>
+                        </actions>
+                    </teaser_1935143945>
+                </container_1350700615>
+
+                <heroimage
+                    jcr:created="{Date}2022-04-04T16:05:45.716+03:00"
                     jcr:createdBy="admin"
-                    jcr:description="&lt;p>Powered by the muscular Milwaukee-Eight 117, it's a performance bagger for the rider who can never get enough.&lt;/p>&#xd;&#xa;"
-                    jcr:lastModified="{Date}2022-04-06T16:55:38.357+03:00"
+                    jcr:lastModified="{Date}2022-04-21T08:40:23.781+03:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    jcr:title="Street Glide ST"
-                    sling:resourceType="ipp-bikes/components/teaser"
-                    actionsEnabled="false"
-                    descriptionFromPage="false"
-                    fileReference="/content/dam/wknd/en/activities/hiking/hiking-campaign.jpg"
-                    linkURL="/content/ipp-bikes/language-masters/en/trike_bikes"
-                    textIsRich="true"
-                    titleFromPage="false">
-                    <actions jcr:primaryType="nt:unstructured">
-                        <item0
+                    sling:resourceType="ipp-bikes/components/heroimage"
+                    fileReference="/content/dam/wknd/en/magazine/skitouring/Skitouring6Sjoeberg.JPG"
+                    name="Let's Travel"
+                    occupations="Hiking">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
                             jcr:primaryType="nt:unstructured"
-                            link="/content/ipp-bikes/language-masters/en/trike_bikes"
-                            text="Trike"/>
-                    </actions>
-                </teaser>
-            </container_301766595>
-            <container_1350700615
-                jcr:primaryType="nt:unstructured"
-                sling:resourceType="ipp-bikes/components/container">
-                <teaser
-                    cq:styleIds="[1649237980902]"
-                    jcr:created="{Date}2022-04-08T14:55:19.147+03:00"
+                            offset="0"
+                            width="6"/>
+                    </cq:responsive>
+                </heroimage>
+                <heroimage_430088673
+                    jcr:created="{Date}2022-04-20T16:08:49.399+03:00"
                     jcr:createdBy="admin"
-                    jcr:description="&lt;p>Join us in support of United Way’s effort in providing life-saving relief to the people of Ukraine. United We Ride.&lt;/p>&#xd;&#xa;"
-                    jcr:lastModified="{Date}2022-04-08T17:10:08.550+03:00"
+                    jcr:lastModified="{Date}2022-04-21T08:39:14.770+03:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    jcr:title="H-D™ FOR UKRAINE"
-                    sling:resourceType="ipp-bikes/components/teaser"
-                    actionsEnabled="true"
-                    descriptionFromPage="false"
-                    fileReference="/content/dam/ipp-bikes/engin-akyurt-inoaHM89CmQ-unsplash.jpg"
-                    textIsRich="true"
-                    titleFromPage="false">
-                    <actions jcr:primaryType="nt:unstructured">
-                        <item0
+                    sling:resourceType="ipp-bikes/components/heroimage"
+                    fileReference="/content/dam/ipp-bikes/raimond-klavins-CynwmwkNkio-unsplash.jpg"
+                    name="Harley Davidson"
+                    occupations="Cruiser">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
                             jcr:primaryType="nt:unstructured"
-                            link="/content/ipp-bikes/language-masters/en/trike_bikes"
-                            text="Donate"/>
-                    </actions>
-                </teaser>
-                <teaser_1935143945
-                    cq:styleIds="[1647954889762]"
-                    jcr:created="{Date}2022-04-08T14:55:25.044+03:00"
-                    jcr:createdBy="admin"
-                    jcr:description="&lt;p>The Road to Harley-Davidson Homecoming Challenge starts now. Learn how to track miles for the chance to win big prizes! Ready to ride?&lt;/p>&#xd;&#xa;"
-                    jcr:lastModified="{Date}2022-04-08T15:31:12.691+03:00"
-                    jcr:lastModifiedBy="admin"
-                    jcr:primaryType="nt:unstructured"
-                    jcr:title="Kickstart your passion"
-                    sling:resourceType="ipp-bikes/components/teaser"
-                    actionsEnabled="true"
-                    descriptionFromPage="false"
-                    fileReference="/content/dam/ipp-bikes/harley-davidson-LUWVMSyNsR4-unsplash.jpg"
-                    textIsRich="true"
-                    titleFromPage="false">
-                    <actions jcr:primaryType="nt:unstructured">
-                        <item0
-                            jcr:primaryType="nt:unstructured"
-                            link="/content/ipp-bikes/language-masters/en/AT_bikes"
-                            text="Sign up"/>
-                    </actions>
-                </teaser_1935143945>
-            </container_1350700615>
+                            offset="0"
+                            width="6"/>
+                    </cq:responsive>
+                </heroimage_430088673>
+            </container_250480922>
+
         </root>
     </jcr:content>
 

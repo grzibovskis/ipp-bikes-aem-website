@@ -1,6 +1,14 @@
-target/
+
 node_modules/
+target/
+ui.frontend/src/main/webpack/static/index.html
+
 package-lock.json
+site.css
+site.js
+TO-DO.txt
+aemsync
+
 
 pom.xml.tag
 pom.xml.releaseBackup
@@ -12,5 +20,4 @@ buildNumber.properties
 .mvn/timing.properties
 .mvn/wrapper/maven-wrapper.jar
 
-/ui.frontend/src/main/webpack/static/index.html
 /.vscode

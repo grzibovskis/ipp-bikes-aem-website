@@ -17,7 +17,6 @@
             sling:resourceType="ipp-bikes/components/container"
             layout="responsiveGrid">
             <_1_copy jcr:primaryType="nt:unstructured"/>
-            <logo/>
             <container
                 jcr:created="{Date}2022-03-21T11:53:06.473+02:00"
                 jcr:createdBy="admin"
@@ -741,6 +740,7 @@
                     </cq:responsive>
                 </container>
             </container_1348204993>
+            <logo/>
         </root>
         <cq:metadata jcr:primaryType="nt:unstructured"/>
     </jcr:content>
