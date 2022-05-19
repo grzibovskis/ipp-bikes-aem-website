@@ -1,2 +1,18 @@
-.cmp-experiencefragment {}
+.cmp-experiencefragment {
+    height: auto;
+    width: 100%;
+    vertical-align: middle;
+}
+.cmp-button {
+    margin-top: 2em;
+}
+.cmp-title {
+    position: relative;
+    left: 0%;
+    vertical-align: bottom;
+    margin-top: 2em;
+    margin-bottom: -10px;
+}
+.cmp-experiencefragment__teaser {
+}
 // .cmp-experiencefragment--<name> {}

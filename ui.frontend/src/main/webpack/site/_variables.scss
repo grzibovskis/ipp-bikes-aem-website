@@ -8,10 +8,13 @@ $font-height:           1.5;
 //== Color
 
 // Normal mode
-$color-foreground:      #ECECEC; // #202020;
-$color-background:      #333; //#ECECEC;
-$color-link:            #2020E0;
+
+
+$color-foreground:      #ECECEC;
+$color-background:      #202020;
+$color-link:            black;
 $brand-color:           #fa6600;
+
 
 // Dark mode
 $color-foreground-dark: invert($color-foreground);

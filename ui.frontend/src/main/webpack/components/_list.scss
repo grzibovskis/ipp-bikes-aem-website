@@ -3,3 +3,43 @@
 .cmp-list__item-link {}
 .cmp-list__item-title {}
 .cmp-list__item-date {}
+
+/* if there is some issues contact our support Verners */
+.cmp-footer-list {
+    .cmp-list {
+        
+    }
+
+    .cmp-list__item-link {
+        text-decoration: none;
+        color: white;
+        
+    }
+    
+    .cmp-list__item {
+        float: left;
+        
+
+    }
+    .cmp-list__item::marker {
+        
+        content: "|"; 
+        color: rgb(255, 255, 255); 
+    }
+    .cmp-list__item:nth-child(1)::marker {
+        
+        content: none; 
+    
+    }
+
+    .cmp-list__item-title {
+        float: left;
+        margin: 0 1em;
+    }
+
+
+    .cmp-list__item-title:hover {
+        text-decoration: underline;
+    }
+}
+

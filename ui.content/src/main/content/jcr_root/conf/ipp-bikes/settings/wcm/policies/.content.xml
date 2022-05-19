@@ -321,7 +321,9 @@
             <container jcr:primaryType="nt:unstructured">
                 <policy_1574694950110
                     jcr:description="Allows the template components and defines the component mapping (this configures what components should be automatically created when authors drop assets from the content finder to the page editor)."
+
                     jcr:lastModified="{Date}2022-04-08T16:06:33.791+03:00"
+
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Page Root"
@@ -361,7 +363,7 @@
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Page Content - custom"
                     sling:resourceType="wcm/core/components/policy/policy"
-                    components="[/libs/fd/af/components/guidedropdownlist,/libs/foundation/components/form/dropdown,group:IPP Bikes - Content,/apps/ipp-bikes/components/form/container]"
+                    components="[group:IPP Bikes - Content,/apps/ipp-bikes/components/form/container,group:WKND Sites Project - Structure]"
                     layoutDisabled="false">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                     <cq:authoring jcr:primaryType="nt:unstructured">
@@ -390,9 +392,15 @@
                 <policy_649128221558427
                     cq:styleDefaultElement="main"
                     jcr:description="Sets a &lt;main> element on the page content area."
+                    jcr:lastModified="{Date}2022-04-21T09:25:22.410+03:00"
+                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Page Main"
-                    sling:resourceType="wcm/core/components/policy/policy">
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    columns="12"
+                    components="[group:IPP Bikes - Content]"
+                    layout="responsiveGrid"
+                    layoutDisabled="false">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                 </policy_649128221558427>
                 <policy_1575040440977
@@ -400,9 +408,10 @@
                     jcr:lastModified="{Date}2022-05-11T11:00:12.700+03:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    jcr:title="XF Root - Modified"
+                    jcr:title="DividerTitle&amp;Button"
                     sling:resourceType="wcm/core/components/policy/policy"
-                    components="[group:IPP Bikes - Content,/apps/ipp-bikes/components/form/container,group:IPP Bikes - Structure]"
+                    backgroundImageEnabled="true"
+                    components="[/apps/ipp-bikes/components/button,/apps/ipp-bikes/components/text,/apps/ipp-bikes/components/title, group:IPP Bikes - Content,group:IPP Bikes - Structure]"
                     layoutDisabled="false">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                     <cq:authoring jcr:primaryType="nt:unstructured">
@@ -428,49 +437,9 @@
                         </assetToComponentMapping>
                     </cq:authoring>
                 </policy_1575040440977>
-                <policy_606330209028100
-                    jcr:lastModified="{Date}2022-03-28T10:34:37.291+03:00"
-                    jcr:lastModifiedBy="admin"
-                    jcr:primaryType="nt:unstructured"
-                    jcr:title="Container - Custom Policy"
-                    sling:resourceType="wcm/core/components/policy/policy"
-                    layoutDisabled="false">
-                    <jcr:content jcr:primaryType="nt:unstructured"/>
-                    <cq:styleGroups jcr:primaryType="nt:unstructured">
-                        <item0
-                            cq:styleGroupLabel="Color"
-                            jcr:primaryType="nt:unstructured">
-                            <cq:styles jcr:primaryType="nt:unstructured">
-                                <item0
-                                    cq:styleClasses="cmp-container-color_white"
-                                    cq:styleId="1648452712668"
-                                    cq:styleLabel="White"
-                                    jcr:primaryType="nt:unstructured"/>
-                                <item1
-                                    cq:styleClasses="cmp-container-color_black"
-                                    cq:styleId="1648452733906"
-                                    cq:styleLabel="Black"
-                                    jcr:primaryType="nt:unstructured"/>
-                            </cq:styles>
-                        </item0>
-                        <item1
-                            cq:styleGroupLabel="Padding - Vertical"
-                            jcr:primaryType="nt:unstructured">
-                            <cq:styles jcr:primaryType="nt:unstructured">
-                                <item0
-                                    cq:styleClasses="cmp-container-pad_vert_small"
-                                    cq:styleId="1648452753739"
-                                    cq:styleLabel=" Small"
-                                    jcr:primaryType="nt:unstructured"/>
-                                <item1
-                                    cq:styleClasses="cmp-container-pad_vert_large"
-                                    cq:styleId="1648452867778"
-                                    cq:styleLabel="Large"
-                                    jcr:primaryType="nt:unstructured"/>
-                            </cq:styles>
-                        </item1>
-                    </cq:styleGroups>
-                </policy_606330209028100>
+
+               
+
                 <policy_16557677044500
                     jcr:description="To change button title in container with button"
                     jcr:lastModified="{Date}2022-04-29T16:31:58.356+03:00"
@@ -506,14 +475,20 @@
                         <item0 jcr:primaryType="nt:unstructured"/>
                     </cq:styleGroups>
                 </policy_27651474693800>
+                
             </container>
             <teaser jcr:primaryType="nt:unstructured">
                 <policy_1575031387650
-                    jcr:description="Sets the title size to H3."
+                    jcr:description="Hero image"
+                    jcr:lastModified="{Date}2022-04-08T14:47:06.898+03:00"
+                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    jcr:title="Content Teaser"
+                    jcr:title="Hero-Teaser"
                     sling:resourceType="wcm/core/components/policy/policy"
-                    titleType="h3">
+                    imageLinkHidden="true"
+                    showTitleType="false"
+                    titleLinkHidden="true"
+                    titleType="h1">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                     <cq:styleGroups jcr:primaryType="nt:unstructured">
                         <item0 jcr:primaryType="nt:unstructured">
@@ -609,66 +584,8 @@
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                 </policy>
             </page>
-            <material-button jcr:primaryType="nt:unstructured">
-                <policy_1648199054898
-                    jcr:lastModified="{Date}2022-03-25T13:44:48.850+02:00"
-                    jcr:lastModifiedBy="admin"
-                    jcr:primaryType="nt:unstructured"
-                    jcr:title="Material Button - Policy 1"
-                    sling:resourceType="wcm/core/components/policy/policy">
-                    <jcr:content jcr:primaryType="nt:unstructured"/>
-                    <cq:styleGroups jcr:primaryType="nt:unstructured">
-                        <item0
-                            cq:styleGroupLabel="Alignment"
-                            jcr:primaryType="nt:unstructured">
-                            <cq:styles jcr:primaryType="nt:unstructured">
-                                <item0
-                                    cq:styleClasses="cmp-mat_btn-vertical"
-                                    cq:styleId="1648199058010"
-                                    cq:styleLabel="Vertical"
-                                    jcr:primaryType="nt:unstructured"/>
-                                <item1
-                                    cq:styleClasses="cmp-mat_btn-horizontal_left"
-                                    cq:styleId="1648199075579"
-                                    cq:styleLabel="Horizontal - Icon Left"
-                                    jcr:primaryType="nt:unstructured"/>
-                                <item2
-                                    cq:styleClasses="cmp-mat_btn-horizontal_right"
-                                    cq:styleId="1648200560538"
-                                    cq:styleLabel="Horizontal - Icon Right"
-                                    jcr:primaryType="nt:unstructured"/>
-                            </cq:styles>
-                        </item0>
-                        <item1
-                            cq:styleGroupLabel="Size"
-                            jcr:primaryType="nt:unstructured">
-                            <cq:styles jcr:primaryType="nt:unstructured">
-                                <item0
-                                    cq:styleClasses="cmp-mat_btn-large"
-                                    cq:styleId="1648200519826"
-                                    cq:styleLabel="Large"
-                                    jcr:primaryType="nt:unstructured"/>
-                            </cq:styles>
-                        </item1>
-                        <item2
-                            cq:styleGroupLabel="Content"
-                            jcr:primaryType="nt:unstructured">
-                            <cq:styles jcr:primaryType="nt:unstructured">
-                                <item0
-                                    cq:styleClasses="cmp-mat_btn-noText"
-                                    cq:styleId="1648201941031"
-                                    cq:styleLabel="No Text"
-                                    jcr:primaryType="nt:unstructured"/>
-                                <item1
-                                    cq:styleClasses="cmp-mat_btn-noIcon"
-                                    cq:styleId="1648201942567"
-                                    cq:styleLabel="No Icon"
-                                    jcr:primaryType="nt:unstructured"/>
-                            </cq:styles>
-                        </item2>
-                    </cq:styleGroups>
-                </policy_1648199054898>
-            </material-button>
+
+      
             <button jcr:primaryType="nt:unstructured">
                 <policy_1649323746874
                     cq:styleDefaultClasses="cmp-button--solid"

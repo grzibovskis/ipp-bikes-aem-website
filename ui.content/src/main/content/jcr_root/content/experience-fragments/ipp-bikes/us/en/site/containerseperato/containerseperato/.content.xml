@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2022-04-11T13:05:24.334+03:00"
+        cq:lastModifiedBy="admin"
+        cq:tags="[]"
+        cq:template="/conf/ipp-bikes/settings/wcm/templates/xf-web-variation"
+        cq:xfMasterVariation="{Boolean}true"
+        cq:xfVariantType="web"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="ContainerSeperato"
+        sling:resourceType="ipp-bikes/components/xfpage">
+        <root
+            jcr:lastModified="{Date}2022-04-11T13:05:24.236+03:00"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="ipp-bikes/components/container"
+            backgroundImageReference="/content/dam/ipp-bikes/page-background.png"
+            layout="responsiveGrid">
+            <container_828417464
+                jcr:created="{Date}2022-04-05T10:55:52.907+03:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2022-04-11T13:03:02.224+03:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="ipp-bikes/components/container"
+                layout="responsiveGrid">
+                <title
+                    jcr:created="{Date}2022-04-05T10:55:23.748+03:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-04-05T11:00:00.125+03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Exciting Events in 2022"
+                    sling:resourceType="ipp-bikes/components/title"
+                    type="h1">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="1"
+                            width="6"/>
+                    </cq:responsive>
+                </title>
+                <button
+                    jcr:created="{Date}2022-04-05T10:55:34.042+03:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-04-05T10:57:48.720+03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="View calendar"
+                    sling:resourceType="ipp-bikes/components/button"
+                    link="/content/ipp-bikes/language-masters/en/trike_bikes"
+                    linkTarget="_self">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="2"
+                            width="2"/>
+                    </cq:responsive>
+                </button>
+            </container_828417464>
+        </root>
+    </jcr:content>
+</jcr:root>

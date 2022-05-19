@@ -14,6 +14,8 @@ Ivars Knets; Līga Rozite; Verners Grizbovskis;
     Use `git checkout main` to move to main branch, if you aren't on it already.
     Then use `git merge branch-name`, replacing `branch-name` with the name of the branch you want to merge.
     If there are any conflicts and if you are doing so from an IDEs built-in command promt, then the respective files and their parent folders will have red name. Once found you can see the conflict and remove the unneeded part. 
+    
+    Or using GitHub Desktop. Make sure your changes saved to your branch. Switch to main branch. Go to Topbar -> Branch -> Merge. Select your branch proceed from there.
 
     
 
