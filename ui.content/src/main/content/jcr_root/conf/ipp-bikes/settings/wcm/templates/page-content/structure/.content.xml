@@ -30,7 +30,14 @@
                 <title
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="ipp-bikes/components/title"
-                    editable="{Boolean}true"/>
+                    editable="{Boolean}true">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="0"
+                            width="12"/>
+                    </cq:responsive>
+                </title>
                 <container
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="ipp-bikes/components/container"

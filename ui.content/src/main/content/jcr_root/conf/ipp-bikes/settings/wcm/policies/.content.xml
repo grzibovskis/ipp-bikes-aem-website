@@ -321,12 +321,14 @@
             <container jcr:primaryType="nt:unstructured">
                 <policy_1574694950110
                     jcr:description="Allows the template components and defines the component mapping (this configures what components should be automatically created when authors drop assets from the content finder to the page editor)."
-                    jcr:lastModified="{Date}2022-03-30T13:42:34.697+03:00"
+                    jcr:lastModified="{Date}2022-04-08T16:06:33.791+03:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Page Root"
                     sling:resourceType="wcm/core/components/policy/policy"
-                    components="[/libs/wcm/foundation/components/responsivegrid,group:IPP Bikes - Content,/apps/ipp-bikes/components/form/container,group:IPP Bikes - Structure]"
+                    backgroundImageEnabled="true"
+                    columns="6"
+                    components="[group:IPP Bikes - Content,/apps/ipp-bikes/components/form/container,group:IPP Bikes - Structure]"
                     layoutDisabled="false">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                     <cq:authoring jcr:primaryType="nt:unstructured">
@@ -354,7 +356,7 @@
                 </policy_1574694950110>
                 <policy_1574695586800
                     jcr:description="Allows the page components and defines the component mapping (this configures what components should be automatically created when authors drop assets from the content finder to the page editor)."
-                    jcr:lastModified="{Date}2022-04-01T14:29:44.757+03:00"
+                    jcr:lastModified="{Date}2022-04-12T09:04:44.911+03:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Page Content - custom"
@@ -395,7 +397,7 @@
                 </policy_649128221558427>
                 <policy_1575040440977
                     jcr:description="Allows the template components and defines the component mapping (this configures what components should be automatically created when authors drop assets from the content finder to the page editor)."
-                    jcr:lastModified="{Date}2022-03-22T09:41:55.357+02:00"
+                    jcr:lastModified="{Date}2022-05-11T11:00:12.700+03:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="XF Root - Modified"
@@ -714,6 +716,19 @@
                     </cq:styleGroups>
                 </policy_1649323746874>
             </button>
+            <accordion jcr:primaryType="nt:unstructured">
+                <policy_1652950908747
+                    cq:styleDefaultClasses="cmp-footer-nav"
+                    jcr:lastModified="{Date}2022-05-19T12:02:31.486+03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Accordion Policy IPP"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    allowedHeadingElements="[h2,h3,h4,h5,h6]"
+                    headingElement="h3">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                </policy_1652950908747>
+            </accordion>
         </components>
     </ipp-bikes>
 </jcr:root>
