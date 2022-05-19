@@ -24,7 +24,7 @@
 
             var cat = config.element.querySelectorAll(selectors.value_cat);
             cat = cat.length == 1 ? cat[0].textContent : null;
-
+            /*
             if (console && console.log) {
                 console.log(
                     "NavigationMenu component JavaScript example",
@@ -32,7 +32,7 @@
                     "\nModel message:\n", model,
                     "\nCat message:\n", cat
                 );
-            }
+            }*/
         }
 
         if (config && config.element) {

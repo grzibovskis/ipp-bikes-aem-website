@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2022-05-18T12:43:59.540+03:00"
+        cq:lastModified="{Date}2022-05-19T15:53:42.969+03:00"
         cq:lastModifiedBy="admin"
         cq:template="/conf/ipp-bikes/settings/wcm/templates/xf-web-variation"
         cq:xfMasterVariation="{Boolean}true"
@@ -14,132 +14,6 @@
             jcr:primaryType="nt:unstructured"
             sling:resourceType="ipp-bikes/components/container"
             layout="responsiveGrid">
-            <container
-                jcr:created="{Date}2022-03-18T10:37:57.992+02:00"
-                jcr:createdBy="admin"
-                jcr:lastModified="{Date}2022-03-18T10:38:26.974+02:00"
-                jcr:lastModifiedBy="admin"
-                jcr:primaryType="nt:unstructured"
-                sling:resourceType="ipp-bikes/components/container"
-                layout="responsiveGrid">
-                <container
-                    cq:masterBuildingBlock="{Boolean}true"
-                    jcr:created="{Date}2022-04-21T12:31:06.666+03:00"
-                    jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2022-04-21T12:31:16.521+03:00"
-                    jcr:lastModifiedBy="admin"
-                    jcr:primaryType="nt:unstructured"
-                    jcr:title="Building Block"
-                    sling:resourceType="wcm/foundation/components/responsivegrid">
-                    <button
-                        jcr:created="{Date}2022-04-21T12:31:36.794+03:00"
-                        jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2022-04-21T12:33:45.774+03:00"
-                        jcr:lastModifiedBy="admin"
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="ipp-bikes/components/button"
-                        link="/content/ipp-bikes/language-masters"/>
-                    <cq:responsive jcr:primaryType="nt:unstructured">
-                        <default
-                            jcr:primaryType="nt:unstructured"
-                            offset="0"
-                            width="3"/>
-                    </cq:responsive>
-                    <languagenavigation
-                        jcr:created="{Date}2022-04-21T11:56:00.663+03:00"
-                        jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2022-04-25T08:57:09.393+03:00"
-                        jcr:lastModifiedBy="admin"
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="ipp-bikes/components/languagenavigation"
-                        id="language-nav"
-                        navigationRoot="/content/ipp-bikes/language-masters"
-                        structureDepth="1"/>
-                </container>
-                <text_1240881600
-                    jcr:created="{Date}2022-03-18T10:39:09.880+02:00"
-                    jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2022-03-18T10:45:22.631+02:00"
-                    jcr:lastModifiedBy="admin"
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="ipp-bikes/components/text"
-                    text="&lt;p>&lt;b>&lt;b>&lt;/b>©&amp;nbsp;2022 Some legalies about how we totaly own all the stuff and its used legaly. But since this will not be public, this doesn't matter. But thats what would be here.&lt;/b>&lt;/p>&#xd;&#xa;"
-                    textIsRich="true">
-                    <cq:responsive jcr:primaryType="nt:unstructured">
-                        <default
-                            jcr:primaryType="nt:unstructured"
-                            offset="0"
-                            width="4"/>
-                    </cq:responsive>
-                </text_1240881600>
-                <container_715227227
-                    cq:masterBuildingBlock="{Boolean}true"
-                    jcr:created="{Date}2022-05-10T15:31:50.454+03:00"
-                    jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2022-05-10T15:32:40.280+03:00"
-                    jcr:lastModifiedBy="admin"
-                    jcr:primaryType="nt:unstructured"
-                    jcr:title="Building Block"
-                    sling:resourceType="wcm/foundation/components/responsivegrid">
-                    <cq:responsive jcr:primaryType="nt:unstructured">
-                        <default
-                            jcr:primaryType="nt:unstructured"
-                            offset="2"
-                            width="3"/>
-                    </cq:responsive>
-                    <button
-                        jcr:created="{Date}2022-05-11T11:46:21.615+03:00"
-                        jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2022-05-11T11:47:32.370+03:00"
-                        jcr:lastModifiedBy="admin"
-                        jcr:primaryType="nt:unstructured"
-                        jcr:title="Facebook"
-                        sling:resourceType="ipp-bikes/components/button"
-                        id="facebook-i"
-                        link="#">
-                        <cq:responsive jcr:primaryType="nt:unstructured">
-                            <default
-                                jcr:primaryType="nt:unstructured"
-                                offset="0"
-                                width="1"/>
-                        </cq:responsive>
-                    </button>
-                    <button_1837696849
-                        jcr:created="{Date}2022-05-11T11:46:24.976+03:00"
-                        jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2022-05-11T12:20:06.100+03:00"
-                        jcr:lastModifiedBy="admin"
-                        jcr:primaryType="nt:unstructured"
-                        jcr:title="Instagram"
-                        sling:resourceType="ipp-bikes/components/button"
-                        id="instagram-i"
-                        link="#">
-                        <cq:responsive jcr:primaryType="nt:unstructured">
-                            <default
-                                jcr:primaryType="nt:unstructured"
-                                offset="0"
-                                width="1"/>
-                        </cq:responsive>
-                    </button_1837696849>
-                    <button_1927883650
-                        jcr:created="{Date}2022-05-11T11:46:27.945+03:00"
-                        jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2022-05-11T12:20:17.470+03:00"
-                        jcr:lastModifiedBy="admin"
-                        jcr:primaryType="nt:unstructured"
-                        jcr:title="Youtube"
-                        sling:resourceType="ipp-bikes/components/button"
-                        id="youtube-i"
-                        link="#">
-                        <cq:responsive jcr:primaryType="nt:unstructured">
-                            <default
-                                jcr:primaryType="nt:unstructured"
-                                offset="0"
-                                width="1"/>
-                        </cq:responsive>
-                    </button_1927883650>
-                </container_715227227>
-            </container>
             <text
                 jcr:created="{Date}2022-04-11T16:06:12.539+03:00"
                 jcr:createdBy="admin"
@@ -157,6 +31,13 @@
                         width="11"/>
                 </cq:responsive>
             </text>
+            <separator
+                jcr:created="{Date}2022-05-19T15:53:42.893+03:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2022-05-19T15:53:42.893+03:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="ipp-bikes/components/separator"/>
             <container_1261375943
                 cq:masterBuildingBlock="{Boolean}true"
                 jcr:created="{Date}2022-04-11T16:35:21.382+03:00"
@@ -327,13 +208,6 @@
                         width="3"/>
                 </cq:responsive>
             </container_469503578>
-            <separator_352993938
-                jcr:created="{Date}2022-04-11T16:47:37.281+03:00"
-                jcr:createdBy="admin"
-                jcr:lastModified="{Date}2022-04-11T16:47:37.281+03:00"
-                jcr:lastModifiedBy="admin"
-                jcr:primaryType="nt:unstructured"
-                sling:resourceType="ipp-bikes/components/separator"/>
             <navigation
                 jcr:created="{Date}2022-04-12T09:06:31.085+03:00"
                 jcr:createdBy="admin"
@@ -504,15 +378,6 @@
                         </cq:responsive>
                     </button_1927883650>
                 </container_715227227>
-                <title
-                    jcr:created="{Date}2022-03-18T10:40:40.979+02:00"
-                    jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2022-03-18T10:41:41.146+02:00"
-                    jcr:lastModifiedBy="admin"
-                    jcr:primaryType="nt:unstructured"
-                    jcr:title="Sample text"
-                    sling:resourceType="ipp-bikes/components/button"
-                    linkTarget="_self"/>
             </accordion>
         </root>
         <cq:metadata jcr:primaryType="nt:unstructured"/>
